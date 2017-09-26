@@ -1,0 +1,48 @@
+#pageheader{
+	width:86px;
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:48px;
+	color:#28313f;
+	text-align:left;
+	height:65px;
+	line-height:65px;
+	position:relative;
+	}
+article{ overflow:hidden;}
+#articlecont{ margin:0 auto;height:100%; padding:20px 0; margin-bottom:20px; width:71%
+}
+#articlecont h2{
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:30px;
+	color:#28313f;
+	margin-bottom:10px;
+	}	
+#articlecont hr{
+	border:none;
+	background:#666;
+	width:100%;
+	height:1px;
+	margin-bottom:10px
+	}
+#articlecont p{
+	color:#333;
+	font-size:11px;
+	}
+#prodcont{background:url(../images/bg-pattern4.png) repeat-x top; width:100%; padding-top:15px;}			
+@media screen and (max-width : 650px) {
+	#pageheader{
+		margin:0 auto;
+	}
+	section{
+	margin-top:30px !important;
+	}
+	
+	
+	}	
+@media screen and (max-width : 480px) {
+	section{
+	margin-top:30px !important;
+	}
+	
+	
+	}

@@ -1,0 +1,25 @@
+/*
+    css-plus by Jamy Golden
+*/
+.gallery-wrap { margin: 0 auto; overflow: hidden;  margin-top:10px; }
+.gallery { width:100%; position: relative; left: 0; top: 0; overflow:hidden; }
+.gallery__item { list-style: none; float:left; margin-right: 20px; height:125px; width:250px; text-align:center; display: inline-block}
+.gallery__item ul{ list-style:none;
+	}
+.gallery__item li a{ text-decoration:none; font-size:11px; color:#999; font-family:Arial, Helvetica, sans-serif;
+	}
+.gallery__item li a:hover{ color:#d54f27;
+	}
+.gallery__img { display: block; }
+
+.gallery__controls { top:100px; z-index:999 !important; width:100%; position:absolute;}
+.gallery__controls-prev { cursor: pointer; float: left; position: absolute; left:10%; top:0px; z-index:999 !important;}
+.gallery__controls-next { cursor: pointer; float: right; position: absolute; right:10%; top:0px; z-index:999 !important;}
+
+/*
+    For clearfix information visit:
+    http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1;}

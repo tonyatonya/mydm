@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>MYDM</title>   
+
+<meta name="description" content="Branding, Creative, Design, Colors, Graphic Design, Typography, Logo Design, Identity Design, Concept, Patterns, Corporate Identity, Products, Website, Print, Pattern, Packaging, Graphic Design Bangkok, Graphic Design Thailand, Lovely Graphic, Design House, Design Studio, Collaterals, Creative, Details, Refined Graphic, Crafty Graphic, Phai Subhawita Klunson, Art Direction, Lifestyle Product, Textile, Hand screen, Hand Paint, Concept Store, Craft, Details, Happy Design, Art Direction, Pattern, Visuals, Luxury, Stitch, Thread, Premium Product, Mydm, Arts, Homemade, Fabrics, DIY, Concept, Beautiful, Pretty Design, Chic, Minimal, Stylish, Friendly, Detailed Visual, myMom myDad, Family, Handmade, Homemade, Warm, Passion, Home, Irresistible, Design Solutions, Cute, Pretty, Beautiful, Smart, Typography, Bangkok Graphic Design, Thailand Graphic Studio, Custom Design, Original Design, Thai Design, Oriental, Idea, International, Paint, Illustration, Food, Homey, Slow life, MYDM" /> 
+
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+
+<!--CSS -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+<link href="css/header-menu.css" rel="stylesheet" type="text/css" />
+<link href="css/general-style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsiveslides.css" rel="stylesheet" type="text/css" />
+<link href="css/column.css" rel="stylesheet" type="text/css" />
+<link href="css/grid.css" rel="stylesheet" type="text/css" />
+<link href="css/gen-font.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+
+<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/responsiveslides.js"></script>		
+
+
+</head>
+<body>
+<header class="header">
+	<div id="top-nav">
+        <div class="boxleft">
+            <a id="swit-btn" class="current" href="#">STORE</a>
+            <a id="swit-btn" href="#" style="margin-right:20px;">STUDIO</a>
+            <ul>
+                <li><a id="others-btn" href="#modal" class="current">THAILAND</a></li>
+                <li id="others-btn">$ USD</li>
+                <li><a id="others-btn" href="#modal">ENGLISH</a></li>
+            </ul>
+		</div>	
+        
+  </div>
+<div class="container clearfix">  
+	<a id="logo" class="col" href="#"></a>
+    <div class="boxright">
+    	<ul>
+    	<li><a id="icon-btn" href="#modal"><img src="images/top-icon-fav.svg"></a></li>
+        <li><a id="icon-btn" href="#modal"><img src="images/top-icon-count.svg"></a></li>  
+        <li><a id="icon-btn" href="#modal"><img src="images/top-icon-member.svg"></a></li>
+        </ul>        
+	</div>   
+	<nav>
+		<a href="#modal" class="navitem">COLLECTIONS</a>
+		<a href="#modal" class="navitem">SHOP</a>
+		<a href="#modal" class="navitem">STORY</a>
+        <a href="#modal" class="navitem">BLOG</a>
+        <a href="#modal" class="navitem">LOCATION</a>
+	</nav>
+    </div>
+</header>
+
+        
+<footer>
+		<div class="container clearfix">
+        <div class="grid_12" style="margin:0 !important;">           
+                    <div class="cpr">© 2015 MYDM Co., Ltd.</div>
+        </div>     
+        </div>
+</footer> 
+
+ 
+<script>
+$(document).ready(function() {
+    $('nav').before('<div id="smartbutton"></div>');
+    $('#smartbutton').append('<div class="buttonline"></div>');
+    $('#smartbutton').append('<div class="buttonline"></div>');
+    $('#smartbutton').append('<div class="buttonline"></div>');
+
+    // add click listener
+    $('#smartbutton').click(function(event) 
+    {
+      $('nav').animate({height:'toggle'},200);
+    });
+});
+</script>
+  <script>
+	  $(document).ready(function() {
+  
+	var nice = $("html").niceScroll();  // The document page (body)
+    
+  });
+  
+</script>
+
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('header').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('header');
+        }
+    }
+    
+    lastScrollTop = st;
+}  
+</script>      
+</body>
+</html>

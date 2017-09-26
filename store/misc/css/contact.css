@@ -1,0 +1,150 @@
+@charset "utf-8";
+#cont{width:68%; margin:17% auto 0 auto; padding-bottom:5%; height:auto; position:relative; overflow:hidden}
+.infocol{
+	width:48%;
+	float:left;
+	overflow:hidden;
+	}
+.infocol p{
+	font-family:'gotham_mediumregular';
+	font-size:0.8rem;
+	line-height:20px;
+	}
+.infocol h3{
+	font-family:'gotham_boldregular';
+	font-size:0.8rem;
+	line-height:30px;
+	}	
+.formcol{
+	width:48%;
+	float:right;
+	overflow:hidden;
+	display:block;	
+	}/* CSS Document */
+
+    #form
+    {
+        min-width:300px;
+        max-width:100%;
+        margin:auto;
+        font-family:'gotham_lightregular';
+        padding:30px 40px;
+		background:#c5c6c5;
+		overflow:hidden
+    }
+
+    #form h2
+    {
+        color:#fff;
+        font-size:2rem;
+        margin:0;
+    }
+
+    #form p
+    {
+        font-size:15px;
+        color:#fff;
+    }
+
+    #form div
+    {
+        margin-top:20px;
+    }
+
+    #form input, textarea, button, select, option
+    {
+        border:2px solid #fff;
+        padding:3px 5px;
+		background:#c3c3c3;
+		width:97%;
+		max-width:97%;
+    }
+	textarea{
+		height:160px;}
+	
+	.style-select select {
+		width:100%;
+		max-width:100%;
+		background:#fff;
+		padding:3px 5px;
+		font-size: 16px;
+		line-height: 1;
+		-webkit-appearance: none;
+		border:2px solid #fff;
+		font-family:'gotham_mediumregular';
+		font-size:0.8rem;
+   }
+    #form label
+    {
+        font-weight:bold;
+        font-size:0.8rem;
+        color:#ffffff;
+		line-height:24px;
+    }
+
+    #form button
+    {
+		width:70px;
+        background-color: #fff;
+        color: #000;
+        cursor:pointer;
+		border:none;
+		float:right;
+		margin-left:10px;
+		font-family:'gotham_mediumregular';
+		font-size:0.7rem;
+		
+    }
+
+    #form button:hover
+    {
+        background-color: #666666;
+		color:#fff;
+    }
+
+    .required
+    {
+        color:#a70000;
+    }
+@media (max-width : 1440px){ }
+@media (max-width : 1360px){ }
+@media (max-width : 1280px){ }
+@media (max-width : 1024px){ }
+@media (max-width : 768px) {
+	#cont{width:96%; margin:300px auto 0 auto;}
+	.infocol{
+	width:90% !important;
+	float:ืnone !important;
+	margin:0 auto !important;
+	position: relative;
+	padding:30px;
+	}
+	.formcol{
+	width:100% !important;
+	float:ืnone !important;
+	margin:50px 0 0 0;
+	overflow:hidden;
+	position: relative;	
+	}
+	 #form{
+        width:100%;
+        margin:0 auto;
+		padding:30px 25px;
+    }
+	#form input, textarea, select, option{
+        border:2px solid #fff;
+        padding:3px 5px;
+		background:#c3c3c3;
+		width:78%;
+		max-width:78%;
+    }
+	    #form button{
+		float:left;
+		
+    }
+		.style-select select {
+		width:83%;
+		max-width:83%;
+   }
+	}
+

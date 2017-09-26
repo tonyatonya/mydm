@@ -1,0 +1,243 @@
+a { text-decoration:none;}
+@charset "utf-8";
+body,ul,li,p,h1,h2,h3,h4,h5,h6,br,hr{
+	margin:0;
+	padding:0;
+	}
+
+img{
+	border: 0;
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+#header, #intro, #second{
+	width: 100%;
+}
+
+/*--------------------------------*
+arrow container
+*--------------------------------*/
+#arrowdown{
+	width:100%; text-align:center; padding-bottom:56px; position:absolute; bottom:0px;
+	}
+	
+#arrowup{
+	width:100%; text-align:center; padding-top:10px; position: relative; background:url(../images/bg-pattern4.png)repeat-x; clear:both; overflow:hidden; bottom:0px; margin-bottom:40px;
+	}
+.arrowup{
+	width:100%; text-align:center; padding-top:10px; position: relative; background:url(../images/bg-pattern4.png)repeat-x; clear:both; overflow:hidden; bottom:0px; margin-bottom:40px; font-style:italic; 
+	}
+.arrowup a{
+	color:#333; 
+	}	
+#arrowup img{
+	margin:0 auto;
+	}
+	
+#arrowup a span{
+	color:#333;
+	font-style:italic;
+	font-size:13pt;
+	color:#333;
+	font-family:'Times New Roman', Times, serif
+	}
+#pagedes{ position:relative; font-size:14px; font-family:Georgia, 'Times New Roman', Times, serif; color:#666; font-style:italic; margin-left:2px; width:100%; text-align:left; margin-top:-10px; margin-bottom:20px; }			
+/*--------------------------------*
+intro
+*--------------------------------*/
+
+#topcontent{
+	color:#fff;
+	height: 678px;
+	padding: 0;
+	top:0px;
+	position:relative;
+
+}
+
+.btn a{
+	float:right;
+	width:70px;
+	height:16px;
+	text-align:center;
+	background:#28313F;
+	color:#FFF;
+	display:block;
+	line-height:16px;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	margin-bottom:30px;
+	z-index:999 !important;
+}
+.btn a:hover{
+	background:#fff;
+	color:#D54F27;
+}
+
+.exbtn a{
+	float:right;
+	width:160px;
+	height:16px;
+	text-align:center;
+	background:#28313F;
+	color:#FFF;
+	display:block;
+	line-height:16px;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	position: absolute;
+	right:10px;
+	top:0px;
+	font-style:normal;
+}
+
+.exbtn a:hover{
+	background:#D54F27;
+	color:#FFF;
+}
+.exbtn a:after{
+	float:right;
+	margin:1px 5px 0 0;
+	content: url(../images/social-pdf2.png);
+}
+/*--------------------------------*
+section
+*--------------------------------*/
+section{
+	clear:both;
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	float:left;
+	margin-top:165px;
+	}
+	#scontainer{
+		border:none;
+	}
+
+/*--------------------------------*
+footer
+*--------------------------------*/
+
+
+footer{
+	clear: both;
+	position:relative;
+	bottom:0px;
+	width:100%;
+	border-top:#D54F27 solid 4px;
+	height:auto;
+	background:#28313F;
+	color:#C4C6C8;
+	padding:30px 0;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+.grid_3 .cont{
+	width:100%;
+	text-align:center;
+	}
+.grid_3 .cont ul li{
+	list-style:none;
+	text-align:center;
+	float:none !important;
+	}
+.grid_7 .cont{
+	text-align:left;
+	}		
+.grid_12 p{
+	margin:0;
+	padding:0;
+	font-family:'Arial' sans-serif;
+	font-size:10px;
+	}
+.grid_4 .container{
+	float:right;
+	width:100%;
+	}
+.grid_4 .container .cont{	
+	margin-top:20px;
+	}
+.grid_4 .container .cont ul{
+	float:right;
+	}
+.grid_4 .container .cont li{
+	display:inline-block;
+	list-style:none;
+	float:left;
+	}
+.grid_4 .container .cpr{
+	width:100%;
+	text-align:right;  
+	margin-top:-10px;
+	float:right;
+	}			
+	
+@media screen and (max-width: 820px) {
+	#second .captionbg .tcont {
+	width:80%;
+}
+	
+	
+	}
+@media screen and (max-width: 600px) {
+	.exbtn a{
+		position:relative !important;	
+}
+	
+	
+	#pagedes{ text-align:center; }
+	#second .captionbg .tcont {
+	width:90%;
+	}
+	.grid_7 .cont{
+	text-align:center !important;
+	}	
+	.grid_4 .container{
+	width:100%;
+	}
+	.grid_4 .container .cont{
+	text-align:center;
+	}
+	.grid_4 .container .cont ul{
+	margin:0 auto;
+	float:none;
+	display:inline-block ;
+	text-align:center;
+	}
+	.grid_4 .container .cont li{
+
+	}
+	.grid_4 .container .cpr{
+	width:100%;
+	text-align:center;  
+	margin-top:-10px auto 0 auto;
+	}
+	
+	.exbtn a{
+		left:0.5%;
+	position:relative;
+	float:none;
+	margin:20px auto;
+}	
+}
+		

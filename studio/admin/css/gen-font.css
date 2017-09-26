@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'DINSchriftLight';
+    src: url('../fonts/dngl___.eot');
+    src: url('../fonts/dngl___.eot') format('embedded-opentype'),
+         url('../fonts/dngl___.woff') format('woff'),
+         url('../fonts/dngl___.ttf') format('truetype'),
+		          url('../fonts/dinmi__.svg#DINSchriftMittelschrift') format('svg');;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINSchriftRegular';
+    src: url('../fonts/dinen__.eot');
+    src: url('../fonts/dinen__.eot') format('embedded-opentype'),
+         url('../fonts/dinen__.woff') format('woff'),
+         url('../fonts/dinen__.ttf') format('truetype'),
+         url('../fonts/dinen__.svg#DINSchriftRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family:'DINSchriftAlternate';
+    src: url('../fonts/dinea__.eot');
+    src: url('../fonts/dinea__.eot') format('embedded-opentype'),
+         url('../fonts/dinea__.woff') format('woff'),
+         url('../fonts/dinea__.ttf') format('truetype'),
+         url('../fonts/dinea__.svg#DINSchriftAlternate') format('svg');
+ 
+}
+
+
+@font-face {
+    font-family: 'DINSchriftMittelschrift';
+    src: url('../fonts/dinmi__.eot');
+    src: url('../fonts/dinmi__.eot') format('embedded-opentype'),
+         url('../fonts/dinmi__.woff') format('woff'),
+         url('../fonts/dinmi__.ttf') format('truetype'),
+         url('../fonts/dinmi__.svg#DINSchriftMittelschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINSchriftBoldCond';
+    src: url('../fonts/dngbc__.eot');
+    src: url('../fonts/dngbc__.eot') format('embedded-opentype'),
+         url('../fonts/dngbc__.woff') format('woff'),
+         url('../fonts/dngbc__.ttf') format('truetype'),
+		 url('../fonts/dinmi__.svg#DINSchriftMittelschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

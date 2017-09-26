@@ -1,0 +1,104 @@
+.wrapper {
+	text-align:left;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea,
+#contact-form button[type="submit"] {
+	font:400 10px/10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact-form {
+	padding:0 25px ;
+}
+#contact-form h3 {
+	font-family:'bebas_neueregular', sans-serif;
+	color:#28313f;
+	display:block;
+	font-size:28px;
+}
+#contact-form h4 {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:5px 0 15px;
+	display:block;
+	font-size:10px;
+	color:#28313f;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:#28313f;
+	display:block;
+	margin:5px 0;
+	font-weight:900;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="tel"]:hover,
+#contact-form input[type="url"]:hover,
+#contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #333;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	font-size:13px;
+	cursor:pointer;
+	width:14%;
+	border:none;
+	background:#28313f;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background:#d54f27;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #28313f;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+@media screen and (max-width : 830px) {
+	#contact-form button[type="submit"] {
+	margin-left:10px;
+	width:100%;
+
+}
+	
+	
+	}
