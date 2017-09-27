@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+#cont{
+	width:100%; 
+	margin:17% auto 0 auto; 
+	padding-bottom:5%; 
+	height:auto; 
+	position:relative; 
+	overflow:hidden
+	}
+#cont p{
+	font-family:'gotham_mediumregular';
+	font-size:0.8rem;
+	line-height:18px;
+	}
+#cont h4{
+	font-family:'gotham_boldregular';
+	font-size:1.4rem;
+	}
+#cont img{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:50px;
+	}
+.phai{ text-align:center; }
+.phai img{width:50%; }	
+
+@media (max-width: 920px) {
+#cont{
+	width:90%;
+	margin-top:250px; 
+	}
+}

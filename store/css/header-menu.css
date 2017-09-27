@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body {
+	margin:0;
+	padding:0;
+	left:0;
+	right:0;
+}
+
+header {
+	overflow:hidden;
+	width:100%;
+	z-index:999;
+	position:fixed;
+
+}
+.header{
+	background-color:rgba(255,255,255,0.0);
+	width:100%;
+    top: 0;
+    left: 0;
+    padding: 0 0 20px 0;
+    transition: all 0.2s ease-in-out;
+    height: auto;
+	}
+.nav-up {
+    top: -140px;
+}	
+.header.active {
+    background-color:rgba(255,255,255,0.9);
+}	
+#top-nav{
+	margin:0 0 12px 0;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	}
+#top-nav .boxleft{
+	width:40%;
+	margin-left:0.5%;
+	float:left;
+	}			
+#swit-btn{
+	float:left;
+	margin:10px 2px 2px 2px;
+	text-decoration:none;
+	display:block;
+	font-family: 'gotham_mediumregular', sans-serif;
+	padding:4px 8px;
+	color:#27313f;
+	font-size:10px;
+	}
+#swit-btn:hover{
+	color:#fff;
+	background:#27313f;
+	}
+#swit-btn.current{
+	color:#fff;
+	background:#27313f;
+	}
+#top-nav .boxleft ul{
+	
+	}
+#top-nav .boxleft li{
+	list-style:none;
+	float:left;
+	margin:0;
+	text-decoration:none;
+	font-family:'gotham_boldregular', sans-serif;
+	padding:0 2px;
+	color:#27313f;
+	font-size:10px;
+	line-height:9px;
+	}		
+#top-nav .boxleft li a{
+	color:#27313f;
+	text-decoration:none;
+	}
+#top-nav .boxleft li a:hover{
+	text-decoration:underline;
+	}
+#top-nav .boxleft li a.current{
+	text-decoration:underline;
+	}
+#top-nav .boxleft li:last-child{
+	border-left: solid 1px #333;
+	margin-left:5px;
+	padding-left:7px;
+	}
+#top-nav .boxleft li:first-child{
+	margin-left:26px;
+	}					
+		
+.allitem-nav{
+	margin:0 0  10px 0;
+	float:left;
+	width:100%;
+	}	
+#logo {
+	margin-top:10px;
+	float:left;
+	width:100%;
+	width:205px;
+	height:80px;
+	display:block;
+	background-image: url(../images/logo-mydm.svg);
+	background-repeat:no-repeat;
+}
+#gimmic{
+	width:100%;
+}
+
+#top-nav .boxright{
+	margin:0;
+	padding:0;
+	float:right;
+	width: auto;
+	}
+.boxright ul{
+	float:right;
+	}
+.boxright li{
+	text-align:right;
+	float:left;
+	margin:-16px 26px 8px 2px;
+	display:block;
+	height:18px;
+	width:18px;
+	}	
+.boxright li img{
+	zoom:170%;
+}
+.boxright li:last-child{
+	margin-right:0;
+	}		
+.bagcount{
+	position:absolute;
+	content:"";
+	left:12px;
+	top:12px;
+	display:block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.6rem;
+	font-weight:bold;
+	}		
+nav {
+	clear:right;
+	float:right;
+	padding-top:0;
+	margin-right:-8px;
+}
+
+.navitem {
+	color:#333;
+	font-family:'gotham_boldregular', sans-serif;
+	font-size:14px;
+	margin-left:5px;
+	text-decoration:none;
+	padding:10px;
+}
+.navitem:last-child {
+	padding-right:0 !important;
+	margin-right:0 !important;
+}
+.navitem:hover {
+	color:#000;
+}
+
+#smartbutton {
+	float:left;
+	width:20px;
+	height:15px;
+	padding:7px;
+	border:1px solid #666;
+	margin-top:5px;
+	margin-left:3%;
+	display:none;
+}
+
+.buttonline {
+	background-color:#333;
+	height:3px;
+	margin-top:4px;
+}
+
+.buttonline:first-child {
+	margin-top:0px;
+}
+.switch-btn{
+	float:left	
+}
+
+/* standard menu */
+@media (max-width : 1440px){ }
+@media (max-width : 1360px){ }
+@media (max-width : 1280px){ }
+@media (max-width : 1024px){ }
+
+@media (min-width:921px) {
+	#smartbutton {
+		display:none;
+	}
+
+	nav {
+		display:inline-block !important;
+	}
+}
+@media (max-width : 920px) {
+
+.header{
+	background-color:rgba(255,255,255,0.9) !important;
+	padding:0 0  20px 0 !important;
+	}
+.nav-up {
+    top: -500px;
+}
+.allitem-nav{
+	margin-top:40px !important;
+	margin-bottom:10px !important;
+	}		
+/*---------------nav---------------*/
+	#smartbutton {
+		display:inline-block;
+		margin-top:20px;
+		margin-left:2%;
+	}
+
+	nav {
+		display:none;
+		width:100%;
+		position:relative;
+		top:5px;
+	}
+	
+	.navitem {
+		border-top:1px solid #999;
+		display:block;
+		margin:0px;
+	}	
+/*---------------nav---------------*/	
+#top-nav .boxleft{
+	width:100%;
+	}	
+#logo {
+	width:100% !important;
+	zoom:100% !important;
+	margin:20px auto 0 auto!important;
+	padding:0;
+	background-position:center center !important;
+}
+.boxright ul{
+	float:right;
+	margin-right:5%;
+	}
+.boxright li{
+	margin:0 26px 0 2px;
+	}		
+}

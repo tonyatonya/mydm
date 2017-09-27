@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'DINSchriftLight';
+    src: url('../fonts/dngl___.eot');
+    src: url('../fonts/dngl___.eot') format('embedded-opentype'),
+         url('../fonts/dngl___.woff') format('woff'),
+         url('../fonts/dngl___.ttf') format('truetype'),
+		          url('../fonts/dinmi__.svg#DINSchriftMittelschrift') format('svg');;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINSchriftRegular';
+    src: url('../fonts/dinen__.eot');
+    src: url('../fonts/dinen__.eot') format('embedded-opentype'),
+         url('../fonts/dinen__.woff') format('woff'),
+         url('../fonts/dinen__.ttf') format('truetype'),
+         url('../fonts/dinen__.svg#DINSchriftRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family:'DINSchriftAlternate';
+    src: url('../fonts/dinea__.eot');
+    src: url('../fonts/dinea__.eot') format('embedded-opentype'),
+         url('../fonts/dinea__.woff') format('woff'),
+         url('../fonts/dinea__.ttf') format('truetype'),
+         url('../fonts/dinea__.svg#DINSchriftAlternate') format('svg');
+ 
+}
+
+
+@font-face {
+    font-family: 'DINSchriftMittelschrift';
+    src: url('../fonts/dinmi__.eot');
+    src: url('../fonts/dinmi__.eot') format('embedded-opentype'),
+         url('../fonts/dinmi__.woff') format('woff'),
+         url('../fonts/dinmi__.ttf') format('truetype'),
+         url('../fonts/dinmi__.svg#DINSchriftMittelschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINSchriftBoldCond';
+    src: url('../fonts/dngbc__.eot');
+    src: url('../fonts/dngbc__.eot') format('embedded-opentype'),
+         url('../fonts/dngbc__.woff') format('woff'),
+         url('../fonts/dngbc__.ttf') format('truetype'),
+		 url('../fonts/dinmi__.svg#DINSchriftMittelschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Gotham */
+
+
+
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('../fonts/copyfonts.com_gotham-bold-webfont.eot');
+    src: url('../fonts/copyfonts.com_gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/copyfonts.com_gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/copyfonts.com_gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/copyfonts.com_gotham-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('../fonts/copyfonts.com_gotham-light-webfont.eot');
+    src: url('../fonts/copyfonts.com_gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/copyfonts.com_gotham-light-webfont.woff2') format('woff2'),
+         url('../fonts/copyfonts.com_gotham-light-webfont.woff') format('woff'),
+         url('../fonts/copyfonts.com_gotham-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham_htfbook';
+    src: url('../fonts/gothamhtf-book-webfont.eot');
+    src: url('../fonts/gothamhtf-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamhtf-book-webfont.woff2') format('woff2'),
+         url('../fonts/gothamhtf-book-webfont.woff') format('woff'),
+         url('../fonts/gothamhtf-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('../fonts/ufonts.com_gotham-bold-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_gotham-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('../fonts/ufonts.com_gotham-medium-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

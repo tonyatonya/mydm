@@ -1,0 +1,136 @@
+﻿/* www.menucool.com/tooltip/javascript-tooltip */
+
+/*For tooltip target element that has set class="tooltip" */
+.tooltip {text-decoration: none; outline: none; }
+
+/*For tooltip box*/
+#mcTooltip 
+{
+    border-right: 1px solid #ccc; 
+	border-left: 1px solid #ccc; 
+	border-top:none !important;
+	border-bottom:none !important;      
+    color:#333; 
+    font-size: 0.7rem;
+    font-family:'gotham_mediumregular', sans-serif;
+    background-color:#fff;
+	overflow:visible;
+	height:auto;
+	position:relative;
+}
+#mcTooltip .body
+{
+	 padding:15px;
+	 text-align:center;
+	 background-color:#f6f6f6;
+}
+#mcTooltip .body table
+{
+	width:100%;
+	text-transform:uppercase;
+	font-family: 'gotham_boldregular', sans-serif;
+	text-decoration:none;
+	letter-spacing:0px;
+	text-align:left;
+	font-size: 0.65rem;
+}
+#mcTooltip .body td, #mcTooltip .body tr
+{
+	padding:0 !important;
+}
+#mcTooltip .head 
+{
+	line-height:30px;
+	text-align:center;
+    border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;   
+    color:#333; 
+    font-size: 0.7rem;
+    font-family: 'gotham_boldregular', sans-serif;
+    background-color:#fff;
+}
+#mcTooltip .bottom 
+{
+    line-height:30px;
+    border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;   
+    color:#333; 
+    font-size: 0.7rem;
+    font-family: 'gotham_boldregular', sans-serif;
+	height: auto;
+	background-color:#fff;
+}
+#mcTooltip .bottom .btn 
+{
+	text-align:center;
+    border: 1px solid #ccc;
+	display:block;  
+    color:#333; 
+    font-size: 0.65rem;
+    font-family: 'gotham_boldregular', sans-serif;
+	text-decoration:none;
+	letter-spacing:-1px;
+	line-height:20px;
+	margin:5px auto 5px auto;
+	width:50%;
+}
+#mcTooltip.no-padding
+{
+    padding:0;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+#mcTooltip, #mcttCo b {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+/* For hyperlink within tooltip */
+#mcTooltip a { color:#069; }
+
+/*Close button. Available when sticky or overlay has been set to true, or is on touch-enabled devices. */
+#mcttCloseButton
+{ 
+    border-radius:4px;
+    width:10px;
+    height:10px;
+    margin-right:5px;
+    margin-top:5px;
+	position:relative;
+   
+}
+
+/*Close button X symbol*/
+#mcttCloseButton:after {
+    font: 30px/10px  'gotham_lightregular';
+	color:#666;
+    top:4px;left:-8px;
+}
+
+/*Give the close button a bigger size on smaller devices*/
+@media only screen and (max-width: 736px) {
+    #mcttCloseButton {
+        width:28px;
+        height:28px;
+    }
+    #mcttCloseButton:after {
+        font-size:48px;
+        line-height:28px;
+    }    
+} 
+
+/* Useful when overlay has been set to true or 1 in JS */
+#mcOverlay 
+{
+    background-color: rgba(255,255,255,0.8);
+    display:none;top:0;left:0;width:100%;height: 100%;overflow:visible;z-index:4; 
+}
+#mcTooltip img {border:0;vertical-align:middle;}
+
+/*The settings below should remain unchanged*/
+#mcTooltipWrapper {position:absolute;visibility:hidden;overflow:visible;z-index:9999999999;top:-2000px;}
+#mcTooltip {float:left;position:relative;overflow:hidden;}
+.mcTooltipInner {float:left;position:relative;width:auto;height:auto;}
+#mcttCo,  #mcttCo b{position:absolute;overflow:hidden;}
+
+/*compatible with bootstrap*/
+#mcTooltip, #mcTooltip div {box-sizing:content-box;}
