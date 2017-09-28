@@ -26,10 +26,10 @@ header {
 	}
 .nav-up {
     top: -140px;
-}	
+}
 .header.active {
     background-color:rgba(255,255,255,0.9);
-}	
+}
 #top-nav{
 	margin:0 0 12px 0;
 	width:100%;
@@ -40,7 +40,7 @@ header {
 	width:40%;
 	margin-left:0.5%;
 	float:left;
-	}			
+	}
 #swit-btn{
 	float:left;
 	margin:10px 2px 2px 2px;
@@ -60,7 +60,7 @@ header {
 	background:#27313f;
 	}
 #top-nav .boxleft ul{
-	
+
 	}
 #top-nav .boxleft li{
 	list-style:none;
@@ -72,7 +72,7 @@ header {
 	color:#27313f;
 	font-size:10px;
 	line-height:9px;
-	}		
+	}
 #top-nav .boxleft li a{
 	color:#27313f;
 	text-decoration:none;
@@ -90,13 +90,13 @@ header {
 	}
 #top-nav .boxleft li:first-child{
 	margin-left:26px;
-	}					
-		
+	}
+
 .allitem-nav{
 	margin:0 0  10px 0;
 	float:left;
 	width:100%;
-	}	
+	}
 #logo {
 	margin-top:10px;
 	float:left;
@@ -117,33 +117,38 @@ header {
 	float:right;
 	width: auto;
 	}
+
+
 .boxright ul{
 	float:right;
-	}
-.boxright li{
-	text-align:right;
-	float:left;
-	margin:-16px 26px 8px 2px;
-	display:block;
-	height:18px;
-	width:18px;
-	}	
-.boxright li img{
-	zoom:170%;
+	list-style: none;
 }
-.boxright li:last-child{
-	margin-right:0;
-	}		
-.bagcount{
-	position:absolute;
-	content:"";
-	left:12px;
+.boxright ul li{
+	float: left;
+	margin-top:-16px;
+	padding-left: 15px;
+	padding-left: 15px;
+}
+.boxright ul li img{
+	zoom: 170%;
+}
+.boxright ul li .bag-container{
+	position: relative;
+	width: auto;
+	height: auto;
+
+}
+.boxright ul li .bagcount{
+	position: absolute;
 	top:12px;
-	display:block;
+	width: 100%;
+	text-align: center;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:0.6rem;
 	font-weight:bold;
-	}		
+}
+
+
 nav {
 	clear:right;
 	float:right;
@@ -188,7 +193,7 @@ nav {
 	margin-top:0px;
 }
 .switch-btn{
-	float:left	
+	float:left
 }
 
 /* standard menu */
@@ -218,7 +223,7 @@ nav {
 .allitem-nav{
 	margin-top:40px !important;
 	margin-bottom:10px !important;
-	}		
+	}
 /*---------------nav---------------*/
 	#smartbutton {
 		display:inline-block;
@@ -232,16 +237,16 @@ nav {
 		position:relative;
 		top:5px;
 	}
-	
+
 	.navitem {
 		border-top:1px solid #999;
 		display:block;
 		margin:0px;
-	}	
-/*---------------nav---------------*/	
+	}
+/*---------------nav---------------*/
 #top-nav .boxleft{
 	width:100%;
-	}	
+	}
 #logo {
 	width:100% !important;
 	zoom:100% !important;
@@ -255,5 +260,5 @@ nav {
 	}
 .boxright li{
 	margin:0 26px 0 2px;
-	}		
+	}
 }

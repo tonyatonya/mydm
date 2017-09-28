@@ -76,6 +76,7 @@ if ($db->read()) {
             background: #fff;
         }
     </style>
+<!-- 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
 
     <script language="javascript" type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -84,9 +85,9 @@ if ($db->read()) {
     <script type="text/javascript" src="js/responsiveslides.js"></script>
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="account.js"></script>
 
 </head>
 <body>
@@ -109,10 +110,12 @@ if ($db->read()) {
                 </li>
 
                 <li style="position:relative">
+                	<div class="bag-container">
                     <div class="bagcount"></div>
                     <a id="icon-btn" class="tooltip" href="#demo1_tip"
                        onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
                             src="images/top-icon-count.svg"></a>
+                	</div>
                 </li>
 
                 <li>
@@ -508,5 +511,8 @@ if ($db->read()) {
 
 
 </script>
+<!--------------------------- ---------------------------------------->
+<?php include('login.php'); ?>
+<!--------------------------- ---------------------------------------->
 </body>
 </html>
