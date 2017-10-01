@@ -81,7 +81,7 @@ if ($db->read()) {
     <script language="javascript" type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/responsiveslides.js"></script>
 
     <!--  CART  -->
@@ -119,9 +119,14 @@ if ($db->read()) {
                 </li>
 
                 <li>
+               		<a id="icon-btn" class="tooltip member-btn" href="#">
+	               		<img src="images/top-icon-member.svg">
+	               	</a>
+                	<!--
                     <a id="icon-btn" class="tooltip" href="#demo1_tip"
                        onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img
                             src="images/top-icon-member.svg"></a>
+                    -->
                 </li>
             </ul>
         </div>

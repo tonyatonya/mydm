@@ -1,6 +1,17 @@
+/* line 13, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.clear {
+  width: 100%;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 19, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-open {
   overflow: hidden;
 }
+
+/* line 23, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal {
   position: fixed;
   top: 0;
@@ -13,42 +24,54 @@
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+
+/* line 34, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform .3s ease-out;
-       -o-transition:      -o-transform .3s ease-out;
-          transition:         transform .3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
   -webkit-transform: translate(0, -25%);
-      -ms-transform: translate(0, -25%);
-       -o-transform: translate(0, -25%);
-          transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
 }
+
+/* line 43, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-       -o-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
+
+/* line 51, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+/* line 56, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
+
+/* line 62, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-content {
   position: relative;
   background-color: #fff;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 }
+
+/* line 75, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -58,45 +81,67 @@
   z-index: 1040;
   background-color: #000;
 }
+
+/* line 83, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
   opacity: 0;
 }
+
+/* line 87, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-backdrop.in {
   filter: alpha(opacity=50);
   opacity: .5;
 }
+
+/* line 93, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-header {
   min-height: 16.42857143px;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
+
+/* line 97, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-header .close {
   margin-top: -2px;
 }
+
+/* line 102, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
 }
+
+/* line 107, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-body {
   position: relative;
   padding: 15px;
 }
+
+/* line 112, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-footer {
   padding: 15px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
+
+/* line 116, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
 }
+
+/* line 120, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
+
+/* line 123, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
+
+/* line 128, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -104,21 +149,308 @@
   height: 50px;
   overflow: scroll;
 }
+
 @media (min-width: 768px) {
+  /* line 137, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
   }
+  /* line 141, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
+  /* line 145, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
   .modal-sm {
     width: 300px;
   }
 }
+
 @media (min-width: 992px) {
+  /* line 151, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
   .modal-lg {
     width: 900px;
   }
 }
+
+/*======================= login popup ======================*/
+/* line 158, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 160, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-dialog {
+  max-width: 580px;
+}
+
+/* line 163, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-content {
+  background-color: #f2f2f2;
+  border: 2.5px solid #c6b15a;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 25px 30px;
+}
+
+/* line 171, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-title {
+  font-family: "Yaquote Script Personal Use";
+  color: #1f4396;
+  font-size: 60px;
+  font-weight: 100px;
+  text-align: center;
+}
+
+/* line 178, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+
+/* line 181, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-header p {
+  color: #808285;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* line 187, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-header button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: none;
+  padding: 0;
+  float: right;
+  background: none;
+  font-size: 25px;
+  color: #c6b15a;
+}
+
+/* line 198, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-header .line-section {
+  position: relative;
+  border-top: 1px solid #c6b15a;
+  margin-top: 30px;
+}
+
+/* line 202, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-header .line-section:before {
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  left: -7px;
+  top: -10px;
+  content: url(../images/addtheme/line-arrow-left.png);
+}
+
+/* line 211, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-header .line-section:after {
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  right: -7px;
+  top: -10px;
+  content: url(../images/addtheme/line-arrow-right.png);
+}
+
+/* line 222, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-footer {
+  border-top: none;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-footer:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 225, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .modal-footer button {
+  display: inline;
+  float: right;
+  width: auto;
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-indent: 3px;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: #c6b15a;
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 242, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 246, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group label {
+  font-family: Helvetica Arial;
+  color: #58595b;
+  font-size: 16px;
+  font-weight: lighter;
+  float: left;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group label:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 258, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group label span {
+  color: #f28c78;
+  font-size: 12px;
+}
+
+/* line 263, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group input {
+  border: none;
+  border: none;
+  box-shadow: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #919191;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 281, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group input:focus {
+  outline: none;
+}
+
+/* line 285, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group textarea {
+  border: none;
+  border: none;
+  box-shadow: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #919191;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 304, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group textarea:focus {
+  outline: none;
+}
+
+/* line 308, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group .select-holder {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group .select-holder:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 316, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group .select-holder > div {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 1;
+}
+
+/* line 323, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group select {
+  border: none;
+  box-shadow: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 0;
+  color: #919191;
+  width: 100%;
+  height: 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  position: relative;
+}
+
+/* line 363, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-group select:focus {
+  outline: none;
+}
+
+/* line 368, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-link {
+  color: #f28c78;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+/* line 373, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/modal.scss */
+.std-popup .form-section-link:hover {
+  text-decoration: underline;
+}
+
+/*======================= end login popup ======================*/
