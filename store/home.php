@@ -144,7 +144,7 @@ if ($db->read()) {
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -158,9 +158,9 @@ if ($db->read()) {
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -192,8 +192,8 @@ if ($db->read()) {
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="account/login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -270,14 +270,14 @@ if ($db->read()) {
             </article>
 
             <article class="col2">
-                <a href="/store/blog/blog-detail.php?id=<?= $inspi_blog['blog_id'] ?>">
-                    <img src="/store/blog/images/blog/<?= $inspi_blog['blog_thumb_img'] ?>">
+                <a href="blog/blog-detail.php?id=<?= $inspi_blog['blog_id'] ?>">
+                    <img src="blog/images/blog/<?= $inspi_blog['blog_thumb_img'] ?>">
                     <span>Inspiration Design</span></a>
             </article>
 
             <article class="col2">
-                <a href="/store/blog/blog-detail.php?id=<?= $press_blog['blog_id'] ?>">
-                    <img src="/store/blog/images/blog/<?= $press_blog['blog_thumb_img'] ?>">
+                <a href="blog/blog-detail.php?id=<?= $press_blog['blog_id'] ?>">
+                    <img src="blog/images/blog/<?= $press_blog['blog_thumb_img'] ?>">
                     <span>Press</span></a>
             </article>
 

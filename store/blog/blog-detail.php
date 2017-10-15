@@ -72,9 +72,9 @@ while ($db->read()) {
     <link href="../css/tooltip.css" rel="stylesheet" type="text/css"/>
     <script src="../js/tooltip.js" type="text/javascript"></script>
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 
     <script type="text/javascript">
         $(function () {
@@ -110,7 +110,7 @@ while ($db->read()) {
     <div id="top-nav">
         <div class="boxleft">
             <a id="swit-btn" class="current" href="../index.html">STORE</a>
-            <a id="swit-btn" href="../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
+            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
         </div>
 
     </div>
@@ -141,8 +141,8 @@ while ($db->read()) {
         <nav>
             <a href="index.html" class="navitem">COLLECTIONS</a>
             <a href="../shop/index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -155,7 +155,7 @@ while ($db->read()) {
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="../account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -169,9 +169,9 @@ while ($db->read()) {
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="../shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -203,8 +203,8 @@ while ($db->read()) {
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="../account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="../account/login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -215,9 +215,9 @@ while ($db->read()) {
 
 <section class="container clearfix">
     <div class="bmenucont">
-        <a href="/store/blog/blog.php" class="blogmenu">view all</a>
-        <a href="/store/blog/blog.php?type=inspiring design" class="blogmenu">inspiring design</a>
-        <a href="/store/blog/blog.php?type=press" class="blogmenu">press</a>
+        <a href="../blog/blog.php" class="blogmenu">view all</a>
+        <a href="../blog/blog.php?type=inspiring design" class="blogmenu">inspiring design</a>
+        <a href="../blog/blog.php?type=press" class="blogmenu">press</a>
     </div>
 
     <div id="cont" style="border-bottom:#000 1px solid; margin-bottom:50px;">

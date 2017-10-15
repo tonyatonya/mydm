@@ -42,11 +42,11 @@ function hasScrolled() {
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 50) {
         $(".header").addClass("active");
-        console.log("header active");
+        //console.log("header active");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
         $(".header").removeClass("active");
-        console.log("header no active");
+        //console.log("header no active");
     }
 });
 

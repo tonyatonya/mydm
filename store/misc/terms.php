@@ -71,10 +71,10 @@
             </ul>
         </div>
         <nav>
-            <a href="../collection/index.html" class="navitem">COLLECTIONS</a>
-            <a href="../shops/index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -101,7 +101,7 @@
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag" style="display: none">VIEW BAG </a>
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag" style="display: none">VIEW BAG </a>
                     <a href="#" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
@@ -133,7 +133,7 @@
                 </table>
 
             </div>
-            <div class="bottom"><a href="/store/account/login.php" class="btn">SIGN IN</a></div>
+            <div class="bottom"><a href="../account/login.php" class="btn">SIGN IN</a></div>
         </div>
     </div>
 

@@ -73,11 +73,11 @@ while ($db->read()) {
     <link href="../css/tooltip.css" rel="stylesheet" type="text/css" />
     <script src="../js/tooltip.js" type="text/javascript"></script>
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Favorite -->
     <script type="text/javascript" src="/store/addfav.js"></script>
     <!--  Favorite -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 
 </head>
 <body>
@@ -111,8 +111,8 @@ while ($db->read()) {
         <nav>
             <a href="index.html" class="navitem">COLLECTIONS</a>
             <a href="../shop/index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>

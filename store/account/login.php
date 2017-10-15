@@ -50,16 +50,16 @@ if ($user_type == "admin")
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <!--   ################ Smart  Ajax ####################-->
-    <script type="text/javascript" src="/store/shops/library/Common/appfunction.js"></script>
+    <script type="text/javascript" src="../shops/library/Common/appfunction.js"></script>
 
-    <link rel="stylesheet" href="/store/css/remodal.css">
-    <link rel="stylesheet" href="/store/css/remodal-default-theme.css">
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
 
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 
     <!--    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
@@ -115,10 +115,10 @@ if ($user_type == "admin")
             </ul>
         </div>
         <nav>
-            <a href="../collection/index.html" class="navitem">COLLECTIONS</a>
-            <a href="../shops/index.html" class="navitem">SHOP</a>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
             <a href="index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -131,7 +131,7 @@ if ($user_type == "admin")
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -145,9 +145,9 @@ if ($user_type == "admin")
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="../shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -179,8 +179,8 @@ if ($user_type == "admin")
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -213,7 +213,7 @@ if ($user_type == "admin")
         ajax = new SmartAjax('POSTFORM', 'operations.php', 'form');
         ajax.executeAjax("loginUser",
             function (result) {
-           
+
                 if (result[0] == "true") {
                     // if (confirm("Login Successfuly Do you want go to previous page.")) {
 
@@ -254,7 +254,7 @@ if ($user_type == "admin")
                 </div>
                 <div>
                     <!--                    <a href="#">forgot password</a>-->
-                    <a href="/store/account/sign-up.php">register</a>
+                    <a href="sign-up.php">register</a>
                 </div>
 
                 <div>

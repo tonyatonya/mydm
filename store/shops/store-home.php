@@ -109,22 +109,22 @@ if (!$_POST) {
     <script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <!--   ################ Smart  Ajax ####################-->
-    <script type="text/javascript" src="/store/shops/library/Common/appfunction.js"></script>
+    <script type="text/javascript" src="../shops/library/Common/appfunction.js"></script>
 
-    <link rel="stylesheet" href="/store/css/remodal.css">
-    <link rel="stylesheet" href="/store/css/remodal-default-theme.css">
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
 
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
 
             var nice = $("html").niceScroll();  // The document page (body)
 
-           
+
         });
     </script>
 </head>
@@ -163,10 +163,10 @@ if (!$_POST) {
             </ul>
         </div>
         <nav>
-            <a href="../collection/index.html" class="navitem">COLLECTIONS</a>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
             <a href="index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -179,7 +179,7 @@ if (!$_POST) {
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="../account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -193,9 +193,9 @@ if (!$_POST) {
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="../shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -227,8 +227,8 @@ if (!$_POST) {
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="../account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="../account/login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -253,11 +253,11 @@ if (!$_POST) {
                 var category = cat_id;
             }else{
                 var category = '';
-              
+
                  category = $('#cateogory').val();
             }
                   var pattern = $('#pattern').val();
-        
+
 
 //            if(price_start > 0 && price_end <= 0 | price_end == ""){
 //                alert('Please type input Price End');
@@ -290,7 +290,7 @@ if (!$_POST) {
                 $('#cateogory').val(type)
                 searchProduct(type);
             }else{
-                
+
                  searchProduct();
             }
 

@@ -50,7 +50,7 @@
 
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <script type="text/javascript" src="/store/js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="/store/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript">

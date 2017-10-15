@@ -50,9 +50,9 @@
 
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -104,8 +104,8 @@
         <nav>
             <a href="index.html" class="navitem">COLLECTIONS</a>
             <a href="../shop/index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>

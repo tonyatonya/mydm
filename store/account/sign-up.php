@@ -45,9 +45,9 @@
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <!--  CART  -->
 
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 
 </head>
 
@@ -87,8 +87,8 @@
         <nav>
             <a href="index.html" class="navitem">COLLECTIONS</a>
             <a href="../shop/index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -101,7 +101,7 @@
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="../account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -115,9 +115,9 @@
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="../shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -149,8 +149,8 @@
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="../account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="../account/login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -168,7 +168,7 @@
            var login_name = $('input[name^=login_name]').val();
            var country = $('#country option:selected').val();
            var address = $('textarea#address').val();
-    
+
            console.log(address)
            if(!name){
                 $('#msg_name').html('Please Enter your name')
@@ -192,7 +192,7 @@
             if(country == '- please select -'){
                 $('#msg_country').html('Please Enter your Country')
                 return false
-           }else{   
+           }else{
                 $('#msg_country').html('')
            }
             if(!address){

@@ -22,6 +22,8 @@
     <meta name="MobileOptimized" content="320"/>
 
     <!--CSS -->
+    <link href="../css/tooltip.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/tooltip.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <link href="../css/header-menu.css" rel="stylesheet" type="text/css"/>
     <link href="../css/general-style.css" rel="stylesheet" type="text/css"/>
@@ -32,37 +34,30 @@
     <link href="../css/gen-font.css" rel="stylesheet" type="text/css"/>
     <link href="css/collection-style.css" rel="stylesheet" type="text/css"/>
 
-    <script language="javascript" type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
     <script src="js/jquery.excoloSlider.js"></script>
-    <!--    TOOL TIPS -->
-    <link href="../css/tooltip.css" rel="stylesheet" type="text/css"/>
-    <script src="../js/tooltip.js" type="text/javascript"></script>
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 </head>
 <body>
 <!-- HEADER BOX -->
 <header class="header">
     <div id="top-nav">
         <div class="boxleft">
-            <a id="swit-btn" class="current" href="#">STORE</a>
-            <a id="swit-btn" href="#" style="margin-right:20px;">STUDIO</a>
-            <ul>
-                <li><a id="others-btn" href="#modal" class="current">THAILAND</a></li>
-                <li id="others-btn">$ USD</li>
-                <li><a id="others-btn" href="#modal">ENGLISH</a></li>
-            </ul>
+            <a id="swit-btn" class="current" href="../index.html">STORE</a>
+            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
         </div>
 
     </div>
     <div class="container clearfix">
-        <a id="logo" class="col" href="#"></a>
+        <a id="logo" href="../index.html"></a>
         <div class="boxright">
             <ul>
                 <li>
@@ -70,26 +65,29 @@
                        onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
                             src="../images/top-icon-fav.svg"></a>
                 </li>
-
-                <li style="position:relative">
-                    <div class="bagcount"></div>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-count.svg"></a>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
                 </li>
 
+
                 <li>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-member.svg"></a>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
                 </li>
             </ul>
         </div>
         <nav>
-            <a href="index.html" class="navitem">COLLECTIONS</a>
-            <a href="../shop/index.html" class="navitem">SHOP</a>
-            <a href="../story/index.html" class="navitem">STORY</a>
-            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -102,7 +100,7 @@
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="../account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -116,9 +114,9 @@
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="../shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -150,8 +148,8 @@
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="../account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="../account/login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -186,10 +184,8 @@
     <article>
         <div class="clearfix">
             <div id="sliderB" class="slider">
-                <div
-                    style="background:url(images/slide1.jpg) no-repeat; background-size:contain; background-position:top center"></div>
-                <div
-                    style="background:url(images/slide2.jpg) no-repeat; background-size:contain; background-position:top center"></div>
+                <div style="background:url(images/slide1.jpg) no-repeat; background-size:contain; background-position:top center"></div>
+                <div style="background:url(images/slide2.jpg) no-repeat; background-size:contain; background-position:top center"></div>
             </div>
         </div>
 
@@ -215,9 +211,8 @@
         </div>
         <div class="container clearfix" style="margin-top:80px; margin-bottom:80px;">
             <img src="images/collection08.jpg" style="width:100%; margin-bottom:4%;">
-            <a class="collbtn" href="../pdf/MYDM Catalogue_151217 with no price.pdf" target="_blank">DOWNLOAD CATALOGUE
-                WITHOUT PRICE</a>
-            <a class="collbtn" href="../shop/index.html">SHOP THE COLLECTION</a>
+            <a class="collbtn" href="../pdf/MYDM Catalogue_151217 with no price.pdf" target="_blank">DOWNLOAD CATALOGUE</a>
+            <!--<a class="collbtn" href="../shop/index.html">SHOP THE COLLECTION</a>-->
         </div>
     </article>
 
@@ -233,7 +228,7 @@
                     <div id="footer-btn-bullet"></div>
                     <a id="footer-btn" href="../misc/terms.php">TERMS</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="../misc/contact.php">CONTACT</a>
+                    <a id="footer-btn" href="../misc/privacy-policy.php">PRIVACY POLICY</a>
                 </div>
             </article>
 
@@ -247,11 +242,11 @@
                     <div class="cont">
                         <ul>
                             <li><a href="https://www.facebook.com/MYDM.ME" target="_blank"><img
-                                        src="../images/bullet-fb.svg"></a></li>
+                                    src="../images/bullet-fb.svg"></a></li>
                             <li><a href="https://www.instagram.com/mydm.me" target="_blank"><img
-                                        src="../images/bullet-insta.svg"></a></li>
+                                    src="../images/bullet-insta.svg"></a></li>
                             <li><a href="https://www.pinterest.com/mydmme" target="_blank"><img
-                                        src="../images/bullet-pin.svg"></a></li>
+                                    src="../images/bullet-pin.svg"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -267,70 +262,12 @@
     </div>
 </footer>
 
-
-<script>
-    $(document).ready(function () {
-        $('nav').before('<div id="smartbutton"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-
-        // add click listener
-        $('#smartbutton').click(function (event) {
-            $('nav').animate({height: 'toggle'}, 200);
-        });
-    });
-</script>
-<script>
-    $(document).ready(function () {
-
-        var nice = $("html").niceScroll();  // The document page (body)
-
-    });
-    $(function () {
-        $("#sliderB").excoloSlider();
-    });
-
-</script>
-
-<script>
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
-
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $('header').removeClass('header').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('header');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-</script>
+<script type="text/javascript" src="../js/main.js"></script>
+<!--------------------------- ---------------------------------------->
+<link href="../css/modal.css" rel="stylesheet"/>
+<link href="../css/form.css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<?php include('../login.php'); ?>
+<!--------------------------- ---------------------------------------->
 </body>
 </html>
