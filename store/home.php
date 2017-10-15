@@ -291,11 +291,11 @@ if ($db->read()) {
 
             <article class="col">
                 <div class="footer-nav">
-                    <a id="footer-btn" href="misc/faq.html">FAQ</a>
+                    <a id="footer-btn" href="misc/faq.php">FAQ</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="misc/terms.html">TERMS</a>
+                    <a id="footer-btn" href="misc/terms.php">TERMS</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="misc/privacy-policy.html">PRIVACY POLICY</a>
+                    <a id="footer-btn" href="misc/privacy-policy.php">PRIVACY POLICY</a>
                 </div>
             </article>
 

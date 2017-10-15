@@ -1,0 +1,77 @@
+/* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row {
+  display: block;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+/* line 2, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 14, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row .headtopic {
+  font-family: 'gotham_boldregular';
+  font-weight: bold;
+  color: #d5c080;
+  font-size: 31px;
+  padding-bottom: 45px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #d5c080;
+}
+
+/* line 25, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 29, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 1px solid #d5c080;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 36, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li:hover .bullet-row-topic {
+  color: #d3bd8d;
+}
+
+/* line 40, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li .bullet-row-topic {
+  position: relative;
+  font-family: 'gotham_boldregular';
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 51, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li .bullet-row-topic:before {
+  content: url(../images/addtheme/line-arrow-right.png);
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+/* line 58, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li .bullet-row-content {
+  font-family: 'gotham_lightregular';
+  font-size: 14px;
+  color: #1d1714;
+  display: none;
+}

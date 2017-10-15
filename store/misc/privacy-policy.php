@@ -7,9 +7,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>MYDM</title>   
+<title>MYDM</title>
 
-<meta name="description" content="Branding, Creative, Design, Colors, Graphic Design, Typography, Logo Design, Identity Design, Concept, Patterns, Corporate Identity, Products, Website, Print, Pattern, Packaging, Graphic Design Bangkok, Graphic Design Thailand, Lovely Graphic, Design House, Design Studio, Collaterals, Creative, Details, Refined Graphic, Crafty Graphic, Phai Subhawita Klunson, Art Direction, Lifestyle Product, Textile, Hand screen, Hand Paint, Concept Store, Craft, Details, Happy Design, Art Direction, Pattern, Visuals, Luxury, Stitch, Thread, Premium Product, Mydm, Arts, Homemade, Fabrics, DIY, Concept, Beautiful, Pretty Design, Chic, Minimal, Stylish, Friendly, Detailed Visual, myMom myDad, Family, Handmade, Homemade, Warm, Passion, Home, Irresistible, Design Solutions, Cute, Pretty, Beautiful, Smart, Typography, Bangkok Graphic Design, Thailand Graphic Studio, Custom Design, Original Design, Thai Design, Oriental, Idea, International, Paint, Illustration, Food, Homey, Slow life, MYDM" /> 
+<meta name="description" content="Branding, Creative, Design, Colors, Graphic Design, Typography, Logo Design, Identity Design, Concept, Patterns, Corporate Identity, Products, Website, Print, Pattern, Packaging, Graphic Design Bangkok, Graphic Design Thailand, Lovely Graphic, Design House, Design Studio, Collaterals, Creative, Details, Refined Graphic, Crafty Graphic, Phai Subhawita Klunson, Art Direction, Lifestyle Product, Textile, Hand screen, Hand Paint, Concept Store, Craft, Details, Happy Design, Art Direction, Pattern, Visuals, Luxury, Stitch, Thread, Premium Product, Mydm, Arts, Homemade, Fabrics, DIY, Concept, Beautiful, Pretty Design, Chic, Minimal, Stylish, Friendly, Detailed Visual, myMom myDad, Family, Handmade, Homemade, Warm, Passion, Home, Irresistible, Design Solutions, Cute, Pretty, Beautiful, Smart, Typography, Bangkok Graphic Design, Thailand Graphic Studio, Custom Design, Original Design, Thai Design, Oriental, Idea, International, Paint, Illustration, Food, Homey, Slow life, MYDM" />
 
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 <meta name="HandheldFriendly" content="true"/>
@@ -25,34 +25,48 @@
 <link href="../css/grid.css" rel="stylesheet" type="text/css" />
 <link href="../css/gen-font.css" rel="stylesheet" type="text/css" />
 <link href="css/accordion.css" rel="stylesheet" type="text/css" />
+<link href="../css/faq.css" rel="stylesheet" type="text/css" />
 
 <script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.accordion.js"></script>
-    <script src="/store/addcart.js" type="text/javascript"></script>
+    <script src="../addcart.js" type="text/javascript"></script>
 
 </head>
 <body>
 <header class="header">
 	<div id="top-nav">
         <div class="boxleft">
-            <a id="swit-btn" class="current" href="#">STORE</a>
-            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
-		</div>	
-        
+            <a id="swit-btn" class="current" href="../index.html">STORE</a>
+            <a id="swit-btn" href="../../studio/index.html" style="margin-right:20px;">STUDIO</a>
+            <ul>
+                <li><a id="others-btn" href="#modal" class="current">THAILAND</a></li>
+                <li id="others-btn">$ USD</li>
+                <li><a id="others-btn" href="#modal">ENGLISH</a></li>
+            </ul>
+		</div>
+
   </div>
-<div class="container clearfix">  
-	<a id="logo" class="col" href="#"></a>
+<div class="container clearfix">
+	<a id="logo" class="col" href="../index.html"></a>
     <div class="boxright">
         <ul>
             <li>
                 <a  id="icon-btn" class="tooltip" href="#demo1_tip" onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img src="../images/top-icon-fav.svg"></a>
             </li>
 
-            <li style="position:relative"><div class="bagcount"></div>
-                <a id="icon-btn" class="tooltip" href="#demo1_tip" onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img src="../images/top-icon-count.svg"></a>
+
+            <li style="position:relative">
+            	<div class="bag-container">
+                <div class="bagcount"></div>
+                <a id="icon-btn" class="tooltip" href="#demo1_tip"
+                   onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
+                        src="../images/top-icon-count.svg"></a>
+            	</div>
             </li>
+
+
 
             <li>
                 <a id="icon-btn" class="tooltip" href="#demo1_tip" onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img src="../images/top-icon-member.svg"></a>
@@ -128,44 +142,45 @@
 
 </div>
 
-<section class="container clearfix" style="left:-16px;">
-<div id="st-accordion" class="st-accordion"><div class="headptc">PRIVACY POLICY</div>
+<section class="container clearfix">
+<div class="bullet-row">
+		<div class="headtopic">-PRIVACY POLICY-</div>
 
                     <ul>
                         <li>
-                            <a href="#">1. Data Controller<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">1. Data Controller</h3>
+                            <div class="bullet-row-content">
                                 <p>MYDM<br><br>
 								13 Sukumvit 85 Bangkok Thailand</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#">2. The contact person for matters relating to the register<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">2. The contact person for matters relating to the register</h3>
+                            <div class="bullet-row-content">
                                 <p>Subhawita Klunsorn</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#">3. Name of the register<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">3. Name of the register</h3>
+                            <div class="bullet-row-content">
                                 <p>MYDM’s customer register.</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#">4.  Group of data subject<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">4.  Group of data subject</h3>
+                            <div class="bullet-row-content">
                                 <p>Persons signed-up for the MYDM Corporation’s loyal customer program and customers of MYDM Corporation’s web shop.</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#">5. The purpose of processing personal data<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">5. The purpose of processing personal data</h3>
+                            <div class="bullet-row-content">
                                 <p>Personal data stored in the register is used for managing the relationships with customers and for managing, developing and analyzing the Data Controller’s customer service and other operations as well as to direct marketing at special customer groups.</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#"> 6. Content of the register<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic"> 6. Content of the register</h3>
+                            <div class="bullet-row-content">
                                 <p>Information included in the following data groups may be processed in the register:<br><br>
 Basic data, such as: Name; date of birth; gender; e-mail addresses; telephone numbers; mailing addresses; profession and household size.<br><br>
 Information related to the customer or co-operation relationship: Identification data related to the use of MYDM’s services (loyal customer number); date of becoming a loyal customer; as well as direct marketing permissions and prohibitions.<br><br>
@@ -173,15 +188,15 @@ Data related to offers and purchases as well as other communication, such as: Be
                             </div>
                         </li>
                         <li>
-                            <a href="#">7. Regular sources of information<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">7. Regular sources of information</h3>
+                            <div class="bullet-row-content">
                                 <p>Most of the information is collected from the data subjects themselves at the beginning of and during the customer or co-operation relationship.<br><br>
 Updates to the personal data are also received from authorities, organizations, companies offering updating services, public directories and other public sources of information.</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#" style="letter-spacing:-1px;">8. Regular destinations of disclosed data and the transfer of data to countries outside of the European Union or the European Economic Area<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+                             <h3 class="bullet-row-topic">8. Regular destinations of disclosed data and the transfer of data to countries outside of the European Union or the European Economic Area</h3>
+                            <div class="bullet-row-content">
                                 <p>MYDM may disclose personal data within the limitations imposed by effective legislation as follows:<br><br>
 - On the basis of a data subject’s consent;<br><br>
 - To companies belonging to the MYDM group and to authorized third parties to the extent they participate in the realization of the purposes of use stated in this description of data file. MYDM obliges said parties to keep confidential all personal data disclosed to them and to secure such personal data in an adequate manner; and
@@ -193,40 +208,40 @@ For technical reasons and practical reasons relating to usage, data may be store
                             </div>
                         </li>
                         <li>
-                            <a href="#">9. Rights of the data subjects<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">9. Rights of the data subjects</h3>
+                            <div class="bullet-row-content">
                                 <p>Data subjects are, within the limitations imposed by applicable law, entitled to a) check what data MYDM has collected of him/her; b) require that any incorrect, useless, incomplete or outdated information be corrected or removed; c) prohibit MYDM from processing his/her personal data for the purposes of direct marketing, market research and opinion polls.<br><br>
 Data subjects may use their above rights by contacting MYDM at the addresses stated in the beginning of this description of file.</p>
                             </div>
                         </li>
                         <li>
-                            <a href="#">10. The principles in accordance to which the data file has been secured.<span class="st-arrow">Open or Close</span></a>
-                            <div class="st-content">
+	            <h3 class="bullet-row-topic">10. The principles in accordance to which the data file has been secured.</h3>
+                            <div class="bullet-row-content">
                                 <p>Tangible material (paper registration forms) is disposed after the data has been saved into the register. Before the disposal, the material will be saved in a locked space. Use of the register within the Data Controller’s organisation has been instructed, and access to the personal data file is restricted so that access to the information stored in the system and contained in the register and the right to use that information is only vested in those employees of the Data Controller who have such right on the basis of their work assignments. The data processing system is protected by data protection software for the operating system. Access to the system requires that each user of the register enters a user ID and password.
 </p>
                             </div>
                         </li>
                     </ul>
-                </div>         
+                </div>
 </section>
 
 <section class="container clearfix">
 			<div class="grid_12">
             <div class="wrapper grid3">
-	
+
 			<article class="col">
                 <div class="footer-nav">
                     <a id="footer-btn" href="faq.php">FAQ</a>
                     <div id="footer-btn-bullet"></div>
                     <a id="footer-btn" href="terms.php">TERMS</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="privacy-policy.php">PRIVACY POLICY</a>	
+                    <a id="footer-btn" href="privacy-policy.html">PRIVACY POLICY</a>
                 </div>
             </article>
-            
+
             <article class="col3" style=" width:38%; font-size:11px; color:#333; margin-top:20px; letter-spacing:1px; font-family:Georgia, 'Times New Roman', Times, serif; font-weight:bold;">MYDM : Inspiring handcraft patterns created for your everyday life
 		  	</article>
-	
+
 			<article class="col4" style="width:24%;">
             <div class="contain">
 					<div class="cont">
@@ -237,94 +252,19 @@ Data subjects may use their above rights by contacting MYDM at the addresses sta
                         </ul>
 					</div>
             	</div>
-			</article>					
+			</article>
 		</div>
 		</div>
-</section>        
+</section>
 <footer>
 		<div class="container clearfix">
-        <div class="grid_12" style="margin:0 !important;">           
+        <div class="grid_12" style="margin:0 !important;">
                     <div class="cpr">© 2015 MYDM Co., Ltd.</div>
-        </div>     
         </div>
-</footer> 
+        </div>
+</footer>
 
- 
-<script>
-$(document).ready(function() {
-    $('nav').before('<div id="smartbutton"></div>');
-    $('#smartbutton').append('<div class="buttonline"></div>');
-    $('#smartbutton').append('<div class="buttonline"></div>');
-    $('#smartbutton').append('<div class="buttonline"></div>');
 
-    // add click listener
-    $('#smartbutton').click(function(event) 
-    {
-      $('nav').animate({height:'toggle'},200);
-    });
-});
-</script>
-  <script>
-	  $(document).ready(function() {
-  
-	var nice = $("html").niceScroll();  // The document page (body)
-    
-  });
-  
-      $(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $(".header").removeClass("active");
-    }
-});
-  
-</script>
-
-<script>
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('header').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('header');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-		$(function() {
-			
-				$('#st-accordion').accordion();
-				
-            });  
-</script>  
+<script type="text/javascript" src="../js/main.js" ></script>
 </body>
 </html>

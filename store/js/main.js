@@ -85,7 +85,21 @@ $(document).ready(function () {
 		}, 5000)
 	});
 	/************************************ End Modal *****************************/
+	$(".bullet-row .bullet-row-topic").click(function(){
+		if($(this).parent().hasClass("active")==false){
+			$(".bullet-row li.active").find(".bullet-row-content").slideToggle();
+			$(".bullet-row li.active").removeClass("active");
+			$(this).parent().addClass("active");
+			$(this).parent().find(".bullet-row-content").slideToggle();
+		}else{
+			$(this).parent().removeClass("active");
+			$(this).parent().find(".bullet-row-content").slideToggle();
+		}
 
+	})
+
+
+	/*********************************** Bullet List ****************************/
 
 
 });

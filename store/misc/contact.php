@@ -360,11 +360,11 @@ function IsInjected($str)
 
             <article class="col">
                 <div class="footer-nav">
-                    <a id="footer-btn" href="faq.html">FAQ</a>
+                    <a id="footer-btn" href="faq.php">FAQ</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="term.html">TERMS</a>
+                    <a id="footer-btn" href="terms.php">TERMS</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="privacy-policy.html">PRIVACY POLICY</a>
+                    <a id="footer-btn" href="privacy-policy.php">PRIVACY POLICY</a>
                 </div>
             </article>
 

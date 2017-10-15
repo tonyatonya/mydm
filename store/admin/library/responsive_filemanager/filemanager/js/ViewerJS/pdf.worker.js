@@ -7291,7 +7291,7 @@ var CalGrayCS = (function CalGrayCSClosure() {
     // Computes L as per spec. ( = cs.YW * AG )
     // Except if other than default BlackPoint values are used.
     var L = cs.YW * AG;
-    // http://www.poynton.com/notes/colour_and_gamma/ColorFAQ.html, Ch 4.
+    // http://www.poynton.com/notes/colour_and_gamma/Colorfaq.php, Ch 4.
     // Convert values to rgb range [0, 255].
     var val = Math.max(295.8 * Math.pow(L, 0.333333333333333333) - 40.8, 0) | 0;
     dest[destOffset] = val;

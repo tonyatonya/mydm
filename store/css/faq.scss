@@ -1,0 +1,66 @@
+@mixin clearfix{
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+		visibility: hidden;
+	}
+}
+.bullet-row{
+	display: block;
+	margin-top: 200px;
+	margin-bottom: 50px;
+	@include clearfix;
+	.headtopic{
+		font-family: 'gotham_boldregular';
+		font-weight: bold;
+		color: #d5c080;
+		font-size: 31px;
+		padding-bottom: 45px;
+		margin-bottom: 40px;
+		width: 100%;
+		text-align: center;
+		border-bottom: 2px solid #d5c080;
+	}
+	>ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		>li{
+			padding-left: 30px;
+			padding-right: 30px;
+			border-bottom: 1px solid #d5c080;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			&:hover{
+				.bullet-row-topic{
+					color: #d3bd8d;
+				}
+			}
+			.bullet-row-topic{
+				position: relative;
+				font-family: 'gotham_boldregular';
+				font-size: 14px;
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: #000000;
+				margin: 0;
+				padding: 0;
+				cursor: pointer;
+
+				&:before{
+					content: url(../images/addtheme/line-arrow-right.png);
+					position: absolute;
+					left: -30px;
+					top:0;
+				}
+			}
+			.bullet-row-content{
+				font-family: 'gotham_lightregular';
+				font-size: 14px;
+				color: #1d1714;
+				display: none;
+			}
+		}
+	}
+}

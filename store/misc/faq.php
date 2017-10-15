@@ -25,60 +25,57 @@
 <link href="../css/grid.css" rel="stylesheet" type="text/css" />
 <link href="../css/gen-font.css" rel="stylesheet" type="text/css" />
 <link href="css/accordion.css" rel="stylesheet" type="text/css" />
+<link href="../css/faq.css" rel="stylesheet" type="text/css" />
 
-<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.accordion.js"></script>
     <script src="../addcart.js" type="text/javascript"></script>
 
 </head>
 <body>
 <header class="header">
-	<div id="top-nav">
+    <div id="top-nav">
         <div class="boxleft">
             <a id="swit-btn" class="current" href="../index.html">STORE</a>
-            <a id="swit-btn" href="../../studio/index.html" style="margin-right:20px;">STUDIO</a>
-            <ul>
-                <li><a id="others-btn" href="#modal" class="current">THAILAND</a></li>
-                <li id="others-btn">$ USD</li>
-                <li><a id="others-btn" href="#modal">ENGLISH</a></li>
-            </ul>
-		</div>
+            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
+        </div>
 
-  </div>
-<div class="container clearfix">
-	<a id="logo" class="col" href="../index.html"></a>
-    <div class="boxright">
-        <ul>
-            <li>
-                <a  id="icon-btn" class="tooltip" href="#demo1_tip" onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img src="../images/top-icon-fav.svg"></a>
-            </li>
-
-
-            <li style="position:relative">
-            	<div class="bag-container">
-                <div class="bagcount"></div>
-                <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                   onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                        src="../images/top-icon-count.svg"></a>
-            	</div>
-            </li>
-
-
-
-            <li>
-                <a id="icon-btn" class="tooltip" href="#demo1_tip" onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img src="../images/top-icon-member.svg"></a>
-            </li>
-        </ul>
     </div>
-	<nav>
-		<a href="../collection/index.html" class="navitem">COLLECTIONS</a>
-		<a href="../shops/index.html" class="navitem">SHOP</a>
-		<a href="../story/index.html" class="navitem">STORY</a>
-        <a href="../blog/index.html" class="navitem">BLOG</a>
-        <a href="contact.php" class="navitem">LOCATION</a>
-	</nav>
+    <div class="container clearfix">
+        <a id="logo" href="../index.html"></a>
+        <div class="boxright">
+            <ul>
+                <li>
+                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+                       onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
+                            src="../images/top-icon-fav.svg"></a>
+                </li>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
+                </li>
+
+
+                <li>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <a href="../collection/index.html" class="navitem">COLLECTIONS</a>
+            <a href="../shops/index.html" class="navitem">SHOP</a>
+            <a href="../story/index.html" class="navitem">STORY</a>
+            <a href="../blog/index.html" class="navitem">BLOG</a>
+            <a href="contact.php" class="navitem">LOCATION</a>
+        </nav>
     </div>
 </header>
 <div style="display:none;">
@@ -140,163 +137,167 @@
     </div>
 
 </div>
-<section class="container clearfix" style="left:-16px;">
-	<div id="st-accordion" class="st-accordion"><div class="headptc">FAQ</div>
+<section class="container clearfix">
+	<!--<div id="st-accordion" class="st-accordion">-->
+	<div class="bullet-row">
+		<div class="headtopic">- FAQ -</div>
 	    <ul>
 	        <li>
-	            <a href="#">Can I return a purchase?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Can I return a purchase?</h3>
+	            <div class="bullet-row-content">
 	                <p>There is no option for returning goods unfortunately, expect for product defects. If you wish to return for any reason at all, please let us know by e-mail to Customer service and we will look for a solution together.</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Can I combine two orders that I have placed?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Can I combine two orders that I have placed?</h3>
+
+	            <div class="bullet-row-content">
 	                <p>We process each order individually and cannot combine them later.</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Can I order online and pay by invoice?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Can I order online and pay by invoice?</h3>
+
+	            <div class="bullet-row-content">
 	                <p>Our online store does have the option to pay by invoice.</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Is it possible for an order to be canceled after I have received an order confirmation?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Is it possible for an order to be canceled after I have received an order confirmation?</h3>
+	            <div class="bullet-row-content">
 	                <p>We aim to deliver all orders as confirmed but there is a very minor possibility of stocks running out if several orders are placed at the same time. This situation is highly unusual. If this happens, our customer service will contact the customer.</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">The product I added to my cart had expired by the time I proceeded to checkout. How can this happen?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">The product I added to my cart had expired by the time I proceeded to checkout. How can this happen?</h3>
+	            <div class="bullet-row-content">
 	                <p>The item is reserved for you only upon payment. Sometimes another customer may purchase the last item and proceed to checkout before you have done so.</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">I would like to exchange the product I bought for another one – what should I do?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">I would like to exchange the product I bought for another one – what should I do?</h3>
+	            <div class="bullet-row-content">
 	                <p>Exchanging is not applicable</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">The product I received is faulty or I noticed a defect when I used it. What should I do?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">The product I received is faulty or I noticed a defect when I used it. What should I do?</h3>
+	            <div class="bullet-row-content">
 	                <p>We apologize for the faulty product. In the event of a product defect, you can contact a MYDM at Customer service and we will get back to you as soon as we can. If we can verify the product defect, we will refund the price. </p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">I wish to change the delivery address for the order. What should I do?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">I wish to change the delivery address for the order. What should I do?</h3>
+	            <div class="bullet-row-content">
 	                <p>If you have already received a delivery confirmation, you can arrange for the products to be delivered to a different address by contacting Customer service.   </p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">I am having trouble making a payment, what should I do?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">I am having trouble making a payment, what should I do?</h3>
+	            <div class="bullet-row-content">
 	                <p>If you are having trouble making a payment or have any questions about the process, please send an e-mail to Customer service. </p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">My order was not delivered in full, but I want my complete order.<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">My order was not delivered in full, but I want my complete order.</h3>
+	            <div class="bullet-row-content">
 	                <p>Sometimes when you order more than one item, they are not all shipped at the same time. This is because some products are stocked later. If you ordered an item that was not in stock at that moment, it will be shipped the moment it comes back in stock. If you have any more questions about your order, please send an e-mail to Customer service and Include your order number in your e-mail so that we can answer your question as quickly as possible.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Which countries do MYDM ship to?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Which countries do MYDM ship to?</h3>
+	            <div class="bullet-row-content">
 	                <p>We ship our Flow products all over the world. Are there problems with delivery in your country? Please send us an e-mail and we’ll see what we can do.</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">When will I receive my order?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">When will I receive my order?</h3>
+	            <div class="bullet-row-content">
 	                <p>Delivery time is varied by countries. Generally, it takes 14 working days for Europe, North America and Australia, and 7 days for Japan. For more detail, please contact Customer service.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Will I receive an invoice and confirmation of shipping?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Will I receive an invoice and confirmation of shipping?</h3>
+	            <div class="bullet-row-content">
 	                <p>Immediately after placing your order you will receive an e-mail from MYDM with an overview of your order. You will not receive an invoice.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Can I order products for a company, for example as business gifts?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Can I order products for a company, for example as business gifts?</h3>
+	            <div class="bullet-row-content">
 	                <p>You can order products for a company, for example by using the company's credit card as the means of payment. If you would prefer to place an order and receive an invoice, please contact  Customer service.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">How long does delivery take?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">How long does delivery take?</h3>
+	            <div class="bullet-row-content">
 	                <p>Packing takes 1 to 3 working days, but shipping is varied by countries.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Can products be ordered as gifts?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Can products be ordered as gifts?</h3>
+	            <div class="bullet-row-content">
 	                <p>Yes, you can select a separate shipping address.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">How will the recipient be informed of the delivery?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">How will the recipient be informed of the delivery?</h3>
+	            <div class="bullet-row-content">
 	                <p>The recipient will be informed by the shipping provider. However, it is a good idea to inform the recipient of the upcoming delivery so they know to expect it.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">Do I have to register to place orders online?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">Do I have to register to place orders online?</h3>
+	            <div class="bullet-row-content">
 	                <p>No. You may shop online without registering as a customer or signing in. Please note, however, that some of our benefits are only available to registered users.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">I have registered as a MYDM member. How can I update my contact details?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">I have registered as a MYDM member. How can I update my contact details?</h3>
+	            <div class="bullet-row-content">
 	                <p>Once you have signed in on our website, you can change your password and update your contact details when logged in. In some countries, when you move, we will receive your new address automatically from the population register, unless you have chosen to prevent companies from accessing your details.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">What is the width of MYDM fabrics?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">What is the width of MYDM fabrics?</h3>
+	            <div class="bullet-row-content">
 	                <p>The fabrics are 145 to 150 cm wide.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">What are fabrics sold by the repeat?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">What are fabrics sold by the repeat?</h3>
+	            <div class="bullet-row-content">
 	                <p>Some of our fabrics are sold by the repeat rather than by the meter. This means that the unit of measurement is the length of one entire repeated pattern. Check the product page of the individual fabric to see whether it is sold by the meter or by the repeat.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">I forgot my password.<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">I forgot my password.</h3>
+	            <div class="bullet-row-content">
 	                <p>On the page ‘My profile’ you can request a new password. You will then receive your new password in an e-mail. If you don’t receive an e-mail, e-mail us.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">How can I close my account?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">How can I close my account?</h3>
+	            <div class="bullet-row-content">
 	                <p>It is not possible for you to close your account yourself. If you wish to close your account, please let us know via email, and we will make sure your account is removed from our system within a few days.
 	</p>
 	            </div>
 	        </li>
 	        <li>
-	            <a href="#">How can I contact MYDM?<span class="st-arrow">Open or Close</span></a>
-	            <div class="st-content">
+	            <h3 class="bullet-row-topic">How can I contact MYDM?</h3>
+	            <div class="bullet-row-content">
 	                <p>If you have a question for us that you haven’t found among our FAQ, send us an e-mail to Customer service.
 	</p>
 	            </div>
@@ -346,84 +347,12 @@
         </div>
 </footer>
 
-<!--
-<script>
-$(document).ready(function() {
-    $('nav').before('<div id="smartbutton"></div>');
-    $('#smartbutton').append('<div class="buttonline"></div>');
-    $('#smartbutton').append('<div class="buttonline"></div>');
-    $('#smartbutton').append('<div class="buttonline"></div>');
-
-    // add click listener
-    $('#smartbutton').click(function(event)
-    {
-      $('nav').animate({height:'toggle'},200);
-    });
-});
-</script>
-<script>
-	  $(document).ready(function() {
-
-	var nice = $("html").niceScroll();  // The document page (body)
-
-  });
-
-      $(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $(".header").removeClass("active");
-    }
-});
-
-</script>
-<script>
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('header').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('header');
-        }
-    }
-
-    lastScrollTop = st;
-}
-		$(function() {
-
-				$('#st-accordion').accordion();
-
-            });
-</script>
--->
 <script type="text/javascript" src="../js/main.js" ></script>
-
+<!--------------------------- ---------------------------------------->
+<link href="../css/modal.css" rel="stylesheet"/>
+<link href="../css/form.css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<?php include('../login.php'); ?>
+<!--------------------------- ---------------------------------------->
 </body>
 </html>

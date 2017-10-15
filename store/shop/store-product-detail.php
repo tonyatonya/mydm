@@ -150,7 +150,7 @@
                     <div id="footer-btn-bullet"></div>
                     <a id="footer-btn" href="#modal">TERMS</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="../misc/privacy-policy.html">PRIVACY POLICY</a>	
+                    <a id="footer-btn" href="../misc/privacy-policy.php">PRIVACY POLICY</a>	
                 </div>
             </article>
             
