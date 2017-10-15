@@ -3,9 +3,10 @@ session_start();
 $your_email = 'phai.subhawita@mydm.me';// <<=== update to your email address // phai.subhawita@mydm.me oudluck@gmail.com
 
 $errors = '';
-
+/***  หน่อง สองบรรทัดนี้มันขึ้น error ผมเลยปิดไปก่อน หน่องลองเช็คดูนะครับ
 $name = $_SESSION['u_name'];
 $email = $_SESSION['u_email'];
+*/
 $sendto = '';
 $user_message = '';
 $user = $_SESSION;
@@ -122,19 +123,21 @@ function IsInjected($str)
     <link href="../css/column.css" rel="stylesheet" type="text/css"/>
     <link href="../css/grid.css" rel="stylesheet" type="text/css"/>
     <link href="../css/gen-font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/form.css" rel="stylesheet"/>
 
-    <script language="javascript" type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 
     <!--  CART  -->
-    <script type="text/javascript" src="/store/addcart.js"></script>
+    <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="/store/account.js"></script>
+    <script type="text/javascript" src="../account.js"></script>
 </head>
 <body>
 <!-- HEADER BOX -->
+
 <header class="header">
     <div id="top-nav">
         <div class="boxleft">
@@ -144,7 +147,7 @@ function IsInjected($str)
 
     </div>
     <div class="container clearfix">
-        <a id="logo" class="col" href="../index.html"></a>
+        <a id="logo" href="../index.html"></a>
         <div class="boxright">
             <ul>
                 <li>
@@ -152,18 +155,21 @@ function IsInjected($str)
                        onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
                             src="../images/top-icon-fav.svg"></a>
                 </li>
-
-                <li style="position:relative">
-                    <div class="bagcount"></div>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-count.svg"></a>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
                 </li>
 
+
                 <li>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-member.svg"></a>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
                 </li>
             </ul>
         </div>
@@ -176,6 +182,9 @@ function IsInjected($str)
         </nav>
     </div>
 </header>
+
+
+
 <div style="display:none;">
     <div id="tip1">
         <div>
@@ -241,59 +250,74 @@ function IsInjected($str)
 
 </div>
 <!-- HEADER BOX -->
-
+<div class="clear"></div>
 <section class="container clearfix">
     <div id="cont">
-        <div class="infocol">
+        <div class="contact-col infocol">
             <img src="images/logo2.svg" style="zoom:80%;">
-            <h3>MYDM PRODUCT ENQUIRIES</h3>
-            <p>If you have a question about any of our<br>
-                products, feel free to contact us:</p>
-            <p>E: info@mydm.me</p>
+            <div class="infocol-group">
+	            <h3>MYDM PRODUCT ENQUIRIES</h3>
+	            <p>If you have a question about any of our
+	                products, feel free to contact us:</p>
+	            <div class="email-link"><a href="mailto:info@mydm.me"><span>E:</span> info@mydm.me</a></div>
+            </div>
+			<div class="infocol-group">
+				<h3>MYDM STUDIO</h3>
+	            <p>MYDM studio is our homey place where<br>
+	                we create all beautiful design.<br></p>
+	            <address>
+	            	13 Sukhumvit 85 Road<br>
+	                Bangchak, Phra Khanong<br>
+	                Bangkok 10260, Thailand.<br>
+	            </address>
+	            <div class="email-link">
+		            <a href="mailto:info@mydm.me"><span>E:</span> info@mydm.me</a>
+		            <a href="mailto:phai.subhawita@mydm.me">phai.subhawita@mydm.me</a>
+	            </div>
+			</div>
+			<div class="infocol-group">
+				 <h3>PR & MARKETING ENQUIRIES</h3>
+	            <p>Please be in touch with us at:
+	                E: marketing@mydm.me</p>
+	            <div class="email-link">
+		            <a href="mailto:marketing@mydm.me"><span>E:</span> marketing@mydm.me</a>
+	            </div>
+			</div>
+			<div class="infocol-group">
+				<h3>INTERN / JOB ENQUIRIES</h3>
+	            <p>
+		            If you would like to get some hand-on
+	                experience at MYDM, please include
+	                your resume and the reason you’d like to
+	                intern or become a part of us.
+	            </p>
+	            <div class="email-link"><a href="mailto:info@mydm.me"><span>E:</span> info@mydm.me</a></div>
+			</div>
 
-            <h3>MYDM STUDIO</h3>
-            <p>MYDM studio is our homey place where<br>
-                we create all beautiful design.<br></p>
-            <p>13 Sukhumvit 85 Road<br>
-                Bangchak, Phra Khanong<br>
-                Bangkok 10260, Thailand.<br>
-                E: info@mydm.me<br>
-                phai.subhawita@mydm.me</p>
 
-            <h3>PR & MARKETING ENQUIRIES</h3>
-            <p>Please be in touch with us at:<br>
-                E: marketing@mydm.me</p>
-
-            <h3>INTERN / JOB ENQUIRIES</h3>
-            <p>If you would like to get some hand-on<br>
-                experience at MYDM, please include<br>
-                your resume and the reason you’d like to<br>
-                intern or become a part of us.<br><br>
-                E: info@mydm.me</p>
         </div>
-
-        <div class="formcol">
+        <div class="contact-col formcol">
             <?php
             if (!empty($errors)) {
                 echo "<p class='err' style='color: red'>" . nl2br($errors) . "</p>";
             }
             ?>
 
+			<h2>contact us</h2>
+            <form id="form" class="form-section" name="form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
 
-            <form id="form" name="form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
-
-                <img src="images/contact.svg" style="zoom:150%;">
-                <div>
-                    <label for='name'>your name <span class='required'>(required)</span></label>
-                    <input type='text' name='name' value="<?php echo $name ?>">
+                <div class="form-section-group">
+                    <label for='name'>your name <span>(required)</span></label>
+                    <input type='text' name='name' value="<?php //echo $name ?>">
                 </div>
 
-                <div>
+                <div class="form-section-group">
                     <label for='email'>your email <span class='required'>(required)</span></label>
-                    <input type='email' name='email' value="<?php echo $email ?>">
+                    <input type='email' name='email' value="<?php //echo $email ?>">
                 </div>
-                <div class="style-select">
+                <div class="form-section-group">
                     <label for='subject'>select subject <span class='required'>(required)</span></label>
+                    <div class="select-holder">
                     <select name='subject' size="1">
                         <!--                        List Email in value              -->
                         <option value="">- please select -</option>
@@ -303,27 +327,26 @@ function IsInjected($str)
                         <option value="info@mydm.me">Career opportunity</option>
                         <option value="info@mydm.me">Others</option>
                         select subject require<span class='required'>(required)</span></select>
+                    </div>
                 </div>
 
-                <div>
+                <div class="form-section-group">
                     <label for='message'>your message <span class='required'>(required)</span></label>
                     <textarea name='message' required><?php echo $user_message ?></textarea>
                 </div>
-                <div>
-                    <img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg'><br>
-                    <label for='message'>
-                        <h4>Enter the code above here :<h4>
-                    </label><br>
+                <div class="form-section-group">
+                    <img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg'/><br/>
+                    <label for='message'>Enter the code above here :</label>
+                    	<br>
                     <input id="6_letters_code" name="6_letters_code" type="text"><br>
-                    <h4>Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh<h4>
+                    <div class="notice-capcha">Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh</div>
                 </div>
+				<div class="btn-group al-right">
+					<button name="submit" type='submit' class="send">SEND</button>
+					<button type='reset'>RESET</button>
+				</div>
 
-                <div>
 
-                    <button name="submit" type='submit'>SEND</button>
-                    <button type='reset'>RESET</button>
-
-                </div>
             </form>
 
 
@@ -395,80 +418,49 @@ function IsInjected($str)
     }
 </script>
 
-<script>
-    $(document).ready(function () {
-        $('nav').before('<div id="smartbutton"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
 
-        // add click listener
-        $('#smartbutton').click(function (event) {
-            $('nav').animate({height: 'toggle'}, 200);
-        });
-    });
+<script type="text/javascript" src="../js/main.js"></script>
+<!--------------------------- ---------------------------------------->
+<link href="../css/modal.css" rel="stylesheet"/>
+<link href="../css/form.css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<?php include('../login.php'); ?>
+<!--------------------------- ---------------------------------------->
+<!-------------------------------------------------------------------->
+
+<script type="text/javascript">
+	$(".send").click(function(){
+		// check เงื่อนไขว่ากรอกครบแล้วด้วยค่อยแสดง
+		// เมื่อปิดแล้วให้ Redirect กลับไปหน้า Home ตามชื่อปุ่ม
+		$("#contact-complete").modal('show');
+	})
 </script>
-<script>
-    $(document).ready(function () {
+<div id="contact-complete" class="std-popup modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Thank you</h4>
+                <div class="line-section"></div>
+            </div>
+            <div class="modal-body">
+	            <div class="text-response">
+	            	- We'll get back to you within 24 hours. -
+	            </div>
+	            <div class="archer">
+		            <img src="../images/addtheme/archer.png">
+	            </div>
+            </div>
+            <div class="modal-footer al-center">
+	            <button type="button" class="btn btn-primary"  data-dismiss="modal">BACK TO HOME PAGE</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------------------------->
 
-        var nice = $("html").niceScroll();  // The document page (body)
 
-    });
 
-    $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-            $(".header").addClass("active");
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("active");
-        }
-    });
 
-</script>
-
-<script>
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
-
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $('header').removeClass('header').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('header');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-    $(function () {
-
-        $('#st-accordion').accordion();
-
-    });
-</script>
 </body>
 </html>

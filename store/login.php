@@ -102,33 +102,3 @@
 </div>
 
 
-
-
-
-<link href="css/modal.css" rel="stylesheet"/>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".member-btn").click(function(e){
-			e.preventDefault();
-			$("#login").modal('show');
-		})
-
-		$(".register").click(function(e){
-			e.preventDefault();
-			$('#login').on('hidden.bs.modal', function (e){
-				$("#register").modal('show');
-			})
-		})
-
-		$("#complete").on('show.bs.modal', function (e){
-			setTimeout(function(){
-				$("#complete").modal('hide');
-			}, 5000)
-		});
-		$('#modal').on('hidden.bs.modal', function (e){})
-
-		$("#complete").modal('show');
-	});
-</script>
-

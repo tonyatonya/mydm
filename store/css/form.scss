@@ -1,0 +1,175 @@
+$writing : 'Yaquote Script Personal Use';
+$btntext : 'Bebas Neue';
+$gold: #c6b15a;
+
+@mixin clearfix{
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+		visibility: hidden;
+	}
+}
+.form-section{
+	&-group{
+		width: 100%;
+		margin-bottom: 20px;
+		@include clearfix;
+		label{
+			font-family:Helvetica;
+			color: #58595b;
+			font-size: 14px;
+			font-weight: lighter;
+			float: left;
+			display: block;
+			width: 100%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			letter-spacing: 1px;
+			@include clearfix;
+			span{
+				color: #f28c78;
+				font-size: 12px;
+			}
+		}
+		input{
+			border:none;
+			border:none;
+			box-shadow: none;
+			padding: 8px 10px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			color: #919191;
+			font-family: 'Open Sans' sans-serif;
+			font-size: 11px;
+			font-style: italic;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    -o-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		    box-sizing: border-box;
+
+			&:focus{
+				outline: none;
+			}
+		}
+		textarea{
+			border:none;
+			border:none;
+			box-shadow: none;
+			padding: 8px 10px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			color: #919191;
+			font-family: 'Open Sans' sans-serif;
+			font-size: 13px;
+			font-style: italic;
+			width: 100%;
+			max-width: 100%;
+			min-height: 130px;
+			-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    -o-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		    box-sizing: border-box;
+		    &:focus{
+				outline: none;
+			}
+		}
+		.select-holder{
+			position: relative;
+			-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    -o-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		    box-sizing: border-box;
+			@include clearfix;
+			>div{
+				position: absolute;
+				right: 12px;
+				top: 12px;
+				z-index: 1;
+			}
+		}
+		select{
+
+			border:none;
+			box-shadow: none;
+			padding: 8px 10px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			background-color: white;
+			border-radius: 0;
+			color: #919191;
+			width: 100%;
+			height: 35px;
+			-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    -o-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		    box-sizing: border-box;
+
+			-webkit-appearance: button;
+			-moz-appearance: button;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-webkit-padding-end: 20px;
+			-moz-padding-end: 20px;
+			-webkit-padding-start: 2px;
+			-moz-padding-start: 2px;
+			position: relative;
+
+			::-webkit-input-placeholder {
+
+			}
+			:-moz-placeholder {
+
+			}
+			::-moz-placeholder {
+
+			}
+			:-ms-input-placeholder {
+
+			}
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	&-link{
+		color: #f28c78;
+		font-size: 12px;
+		letter-spacing: 3px;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+
+		}
+	}
+}
+
+button{
+	font-family: $btntext;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-indent: 3px;
+    padding: 5px;
+	margin-left: 15px;
+	background-color: $gold;
+	color:white;
+	border: none;
+	box-shadow: none;
+}
+.btn-group{
+	width: 100%;
+	display: block;
+
+	@include clearfix;
+	&.al-right{
+		text-align: right;
+	}
+	button{
+		display: inline-block;
+	}
+}

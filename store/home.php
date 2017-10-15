@@ -49,7 +49,6 @@ if ($db->read()) {
     <link href="css/tooltip.css" rel="stylesheet" type="text/css"/>
     <script src="js/tooltip.js" type="text/javascript"></script>
 
-<!--    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>-->
     <link href="css/header-menu.css" rel="stylesheet" type="text/css"/>
     <link href="css/general-style.css" rel="stylesheet" type="text/css"/>
     <link href="css/responsiveslides.css" rel="stylesheet" type="text/css"/>
@@ -76,10 +75,9 @@ if ($db->read()) {
             background: #fff;
         }
     </style>
-<!-- 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
 
-    <script language="javascript" type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/responsiveslides.js"></script>
@@ -91,6 +89,8 @@ if ($db->read()) {
 
 </head>
 <body>
+
+
 <header class="header">
     <div id="top-nav">
         <div class="boxleft">
@@ -122,11 +122,7 @@ if ($db->read()) {
                		<a id="icon-btn" class="tooltip member-btn" href="#">
 	               		<img src="images/top-icon-member.svg">
 	               	</a>
-                	<!--
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="images/top-icon-member.svg"></a>
-                    -->
+
                 </li>
             </ul>
         </div>
@@ -139,6 +135,7 @@ if ($db->read()) {
         </nav>
     </div>
 </header>
+
 <div style="display:none;">
     <div id="tip1">
         <div>
@@ -347,19 +344,7 @@ if ($db->read()) {
         <a href="pdf/MYDM Catalogue_151217 with no price.pdf" target="_blank" class="head" style="letter-spacing:2px;">download</a>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $('nav').before('<div id="smartbutton"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
 
-        // add click listener
-        $('#smartbutton').click(function (event) {
-            $('nav').animate({height: 'toggle'}, 200);
-        });
-    });
-</script>
 <script>
     // You can also use "$(window).load(function() {"
     $(function () {
@@ -381,22 +366,6 @@ if ($db->read()) {
         });
 
     });
-    $(document).ready(function () {
-
-        var nice = $("html").niceScroll();  // The document page (body)
-
-    });
-
-
-    $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-            $(".header").addClass("active");
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("active");
-        }
-    });
-
 
 </script>
 
@@ -516,7 +485,12 @@ if ($db->read()) {
 
 
 </script>
+
+<script type="text/javascript" src="js/main.js"></script>
 <!--------------------------- ---------------------------------------->
+<link href="css/modal.css" rel="stylesheet"/>
+<link href="css/form.css" rel="stylesheet"/>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 <?php include('login.php'); ?>
 <!--------------------------- ---------------------------------------->
 </body>
