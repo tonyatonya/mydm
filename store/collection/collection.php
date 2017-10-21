@@ -38,13 +38,13 @@
 
     <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.excoloSlider.js"></script>
 
     <!--  CART  -->
     <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
-    <script type="text/javascript" src="../account.js"></script>
+    <!--<script type="text/javascript" src="../account.js"></script>-->
 </head>
 <body>
 <!-- HEADER BOX -->
@@ -183,9 +183,9 @@
     </article>
     <article>
         <div class="clearfix">
-            <div id="sliderB" class="slider">
+            <div id="sliderB" class="slider collection-slider">
                 <div style="background:url(images/slide1.jpg) no-repeat; background-size:contain; background-position:top center"></div>
-                <div style="background:url(images/slide2.jpg) no-repeat; background-size:contain; background-position:top center"></div>
+<!--                 <div style="background:url(images/slide2.jpg) no-repeat; background-size:contain; background-position:top center"></div> -->
             </div>
         </div>
 
@@ -263,6 +263,11 @@
 </footer>
 
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#sliderB").excoloSlider();
+	})
+</script>
 <!--------------------------- ---------------------------------------->
 <link href="../css/modal.css" rel="stylesheet"/>
 <link href="../css/form.css" rel="stylesheet"/>

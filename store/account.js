@@ -1,6 +1,6 @@
 
 $(function(){
-    
+
     $.ajax({
         method: "POST",
         url: "/store/account/myinfo.php",
@@ -73,6 +73,6 @@ $(function(){
 
 
 
-    
+
 
 

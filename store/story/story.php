@@ -164,7 +164,7 @@
 <section class="container clearfix">
     <div id="cont">
         <h4 style="text-align:center;">Behind MYDM</h4>
-        <p>Phai Subhawita Klunson, a graphic designer, a homemaker, a mother of one cute son, has worked in graphic
+        <p>Phai Subhawita Klunson, a graphic designer, a homemaker, a mother, has worked in graphic
             design for several years,
             creating remarkable design for her clients many industries. But design is not only found in her job, it can
             be found in every piece of her
@@ -177,12 +177,14 @@
             found to inspire people’s life by
             creatively lively pattern for everyday use.</p>
         <div class="phai"><img src="images/phai.jpg">
+            <p>“</p>
             <p style="text-align:center; color:#039; font-family:'MinionPro-Bold'; font-style:italic; font-size:1rem; font-weight:600">
-                “ There is something amazing about pattern, it’s imperfectly perfect. When u move a piece just slightly,
+                 There is something amazing about pattern, it’s imperfectly perfect. When u move a piece just slightly,
                 everything changes.<br>
                 When you darken the shade just a bit, the mood changes. It’s fun to make it just right, and when you got
                 a perfect pattern, it’s never perfect.
-                Pattern and colour can light up our mood, and get us inspired. ”</p>
+                Pattern and colour can light up our mood, and get us inspired. </p>
+                <p>”</p>
             <img src="images/brushes.jpg" style="width:100%;"></div>
 </section>
 

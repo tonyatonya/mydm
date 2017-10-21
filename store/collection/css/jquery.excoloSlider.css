@@ -9,7 +9,7 @@
 	height:480px;
 	overflow:hidden;
 	position:relative;
-	left:-12.5%;
+	/*left:-12.5%;*/
 }
 .slider img{
 	width:100%;
@@ -47,14 +47,14 @@
 	top:45%;
 	right: 16px;
 	content: url(../images/arrow_left1.png);
-	color:#000; 
+	color:#000;
 }
 .slider .slide-next:before {
 	position:absolute;
 	top:45%;
     left: 16px;  /* for better central alignment */
 	content: url(../images/arrow_right1.png);
-	color:#000;  
+	color:#000;
 }
 .slider .slide-next:hover, .slider .slide-prev:hover {
     background-color: rgba(255,255,255,0.9);
@@ -107,29 +107,29 @@ ul.es-pager li.act {
 @media (max-width : 1680px){
 .slider {
 	height:420px;
-	left:-7%;
+	/*left:-7%;*/
 }
 @media (max-width : 1600px){
 .slider {
 	height:420px;
-	left:-6%;
+	/*left:-6%;*/
 }
 @media (max-width : 1440px){
 .slider {
 	height:420px;
-	left:-5%;
+	/*left:-5%;*/
 }
 	}
 @media (max-width : 1360px){
 .slider {
 	height:320px;
-	left:-5%;
+	/*left:-5%;*/
 }
 	}
 @media (max-width : 1280px){
 .slider {
 	height:320px;
-	left:-6%;
+	/*left:-6%;*/
 }
 	}
 @media (max-width : 1024px){ }
@@ -137,5 +137,5 @@ ul.es-pager li.act {
 @media (max-width : 414px){
 .slider {
 	height:320px;
-	left:-15%;
+	/*left:-15%;*/
 }

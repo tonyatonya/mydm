@@ -110,7 +110,9 @@ if (!$_POST) {
 
     <link rel="stylesheet" href="../css/remodal.css">
     <link rel="stylesheet" href="../css/remodal-default-theme.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <!--  CART  -->
     <script type="text/javascript" src="../addcart.js"></script>
@@ -129,7 +131,7 @@ if (!$_POST) {
 
     </div>
     <div class="container clearfix">
-        <a id="logo" class="col" href="../index.html"></a>
+        <a id="logo" href="../index.html"></a>
         <div class="boxright">
             <ul>
                 <li>
@@ -137,18 +139,21 @@ if (!$_POST) {
                        onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
                             src="../images/top-icon-fav.svg"></a>
                 </li>
-
-                <li style="position:relative">
-                    <div class="bagcount"></div>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-count.svg"></a>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
                 </li>
 
+
                 <li>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-member.svg"></a>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
                 </li>
             </ul>
         </div>
@@ -156,7 +161,7 @@ if (!$_POST) {
             <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
             <a href="../shops/store-home.php" class="navitem">SHOP</a>
             <a href="../story/story.php" class="navitem">STORY</a>
-            <a href="index.html" class="navitem">BLOG</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
@@ -227,58 +232,7 @@ if (!$_POST) {
 </div>
 <!-- HEADER BOX -->
 
-<script type="text/javascript">
 
-    function searchProduct(type) {
-        var submit = 1;
-        if (typeof(type) === "undefined") {
-            type = 0;
-        }
-        var tag = $('#tag').val();
-        var navigate_type = $('#type').val();
-
-        if (navigate_type != "") {
-            type = navigate_type;
-        }
-
-
-        if (submit == 1) {
-            var ajax = new SmartAjax('POST', '<?=$list_page?>', 'type=' + type + '&tag=' + tag);
-            ajax.requestJSON("loadBlog",
-                function (response) {
-                    var msg = response.message;
-
-                    $('#cont').html(msg.content_data);
-                    $('#cont').trigger("create");
-                    $('.wall').jaliswall({item: '.wall-item'});
-
-                }
-            );
-        }
-
-    }
-
-    $(document).ready(function () {
-        searchProduct();
-    });
-
-
-    $(document).ready(function () {
-
-        $('#all').click(function () {
-            searchProduct(0);
-        });
-
-        $('#inspi_type').click(function () {
-            searchProduct('inspiring design');
-        });
-
-        $('#press_type').click(function () {
-
-            searchProduct('press');
-        });
-    });
-</script>
 <style>
 
     .wall-item {
@@ -359,10 +313,7 @@ if (!$_POST) {
 
     <input type="hidden" id="tag" value="<?= $tag ?>">
     <input type="hidden" id="type" value="<?= $type ?>">
-    <div id="cont" class="wall">
-
-    </div>
-
+    <div id="cont" class="wall"></div>
 
 </section>
 
@@ -411,86 +362,97 @@ if (!$_POST) {
 </footer>
 
 
-<script>
-    $(document).ready(function () {
-        $('nav').before('<div id="smartbutton"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
+<script type="text/javascript" src="../js/main.js"></script>
+<!--------------------------- ---------------------------------------->
+<link href="../css/modal.css" rel="stylesheet"/>
+<link href="../css/form.css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<?php include('../login.php'); ?>
+<!--------------------------- ---------------------------------------->
 
-        // add click listener
-        $('#smartbutton').click(function (event) {
-            $('nav').animate({height: 'toggle'}, 200);
+
+
+<script src="js/jaliswall.js"></script>
+<script>
+    //$('.wall').jaliswall({item: '.wall-item'});
+</script>
+
+
+<script type="text/javascript">
+
+    function searchProduct(type) {
+        var submit = 1;
+        if (typeof(type) === "undefined") {
+            type = 0;
+        }
+        var tag = $('#tag').val();
+        var navigate_type = $('#type').val();
+
+        if (navigate_type != "") {
+            type = navigate_type;
+        }
+
+
+        if (submit == 1) {
+            var ajax = new SmartAjax('POST', '<?=$list_page?>', 'type=' + type + '&tag=' + tag);
+            ajax.requestJSON("loadBlog",
+                function (response) {
+                    var msg = response.message;
+
+                    $('#cont').html(msg.content_data);
+                    $('#cont').trigger("create");
+                    $('.wall').jaliswall({item: '.wall-item'});
+
+                }
+            );
+        }
+        setTimeout(function(){
+	        equalheight('.wall-item');
+        }, 300)
+
+
+    }
+
+    $(document).ready(function () {
+        searchProduct();
+    });
+
+
+    $(document).ready(function () {
+
+        $('#all').click(function () {
+            searchProduct(0);
+        });
+
+        $('#inspi_type').click(function () {
+            searchProduct('inspiring design');
+        });
+
+        $('#press_type').click(function () {
+
+            searchProduct('press');
         });
     });
 </script>
-<script>
-    $(document).ready(function () {
 
-        var nice = $("html").niceScroll();  // The document page (body)
 
-    });
+<script type="text/javascript">
 
-    $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-            $(".header").addClass("active");
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("active");
-        }
-    });
+
+
+	$(window).load(function() {
+	  //equalheight('.wall-item');
+	});
+
+
+	$(window).resize(function(){
+	  equalheight('.wall-item');
+	});
+
 
 </script>
 
-<script>
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
 
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
 
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $('header').removeClass('header').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('header');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-    //		$(function() {
-    //
-    //				$('#st-accordion').accordion();
-    //
-    //            });
-</script>
-<script src="js/jaliswall.js"></script>
-
-<script>
-
-    $('.wall').jaliswall({item: '.wall-item'});
-</script>
 </body>
 </html>
