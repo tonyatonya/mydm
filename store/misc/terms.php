@@ -27,7 +27,8 @@
 <link href="css/accordion.css" rel="stylesheet" type="text/css" />
 <link href="../css/faq.css" rel="stylesheet" type="text/css" />
 
-<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
@@ -144,7 +145,7 @@
 
                     <ul>
                         <li>
-	            <h3 class="bullet-row-topic">1. General</h3>
+	            <h3 class="bullet-row-topic">General</h3>
                             <div class="bullet-row-content">
                                 <p>These general terms (”general terms”) apply to you (”you” or ”customer”) when you make an order from MYDM (”we” or ”MYDM”) through our website at www.mydm.me or another website associated therewith (”web shop”). We encourage you to carefully familiarize yourself with these general terms before making any orders in the web shop.<br><br>
 Any person making orders in the web shop must be at least 18 years old and he/she must hold a permanent delivery address within the delivery area of the web shop. For example, mail box addresses, hotels and other similar temporary addresses are not regarded as permanent addresses.<br><br>
@@ -153,28 +154,28 @@ Please note that these general terms give you specific rights, and you may have 
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">2. Your contracting party</h3>
+	            <h3 class="bullet-row-topic">Your contracting party</h3>
                             <div class="bullet-row-content">
                                 <p>Your contracting party in all orders made in the web shop is MYDM, whose contact details are:<br><br>
-Address : 13 Sukumvit 85 Bangkok Thailand<br><br>
+Address : MYDM Co., Ltd. 13 Sukhumvit 85, Bangchak, Prakhanong, Bangkok 10260, Thailand<br><br>
 e-mail: info@mydm.me
 </p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">3. Product orders and contract formation</h3>
+	            <h3 class="bullet-row-topic">Product orders and contract formation</h3>
                             <div class="bullet-row-content">
                                 <p>Product orders are made in the web shop by adding the desired product(s) to the basket and making the respective payment on the “Payments” page. Our order process allows you to check and amend any errors before submitting your order to us. Please take the time to read and check your order at each page of the order process. Making orders in the web shop requires that you provide us with a valid e-mail address. A contract is concluded when MYDM confirms the order by e-mail; or other written materials, whether on MYDM’s web shop or given to you, is for information only and not an offer by MYDM to supply any product(s). The confirmation includes the price and the costs of delivery of the order, the ordered products, as well as other information required by applicable mandatory legislation.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">4. Prices, costs and taxes</h3>
+	            <h3 class="bullet-row-topic">Prices, costs and taxes</h3>
                             <div class="bullet-row-content">
                                 <p>The prices only apply to orders made in this web shop. All prices are inclusive of value added tax. The formulation of delivery costs has been described in these general terms under Section “Shipping and handling”. Order-specific delivery costs are shown in the basket. MYDM reserves the right to change the prices and the delivery costs applied to the web shop, provided that any changes shall only apply to orders made after the entry into force of such changes.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">5. Methods of Payment</h3>
+	            <h3 class="bullet-row-topic">Methods of Payment</h3>
                             <div class="bullet-row-content">
                                 <p>The customer may pay his/her orders by using the methods of payment defined in the web shop. Unless otherwise agreed, MYDM charges the customer upon making the respective order. In case of invoicing or payment in instalments, MYDM or its partners may acquire the customer’s credit data from a third party. In such cases MYDM shall inform the customer of the same. MYDM reserves the right to exclude certain methods of payment at certain times, or pro-pose to change the method of payment of a specific order, if the method chosen by the customer does not function for some reason. Please note that the restrictions on the use of the available methods of payment are stated in the web shop and we recommend that you read them carefully before making any orders.</p>
                                 <h4 style="font-family:'gotham_boldregular'">Payment Services</h4>
@@ -182,33 +183,31 @@ e-mail: info@mydm.me
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">6. Shipping and handling</h3>
+	            <h3 class="bullet-row-topic">Shipping and handling</h3>
                             <div class="bullet-row-content">
-                                <p>All costs of delivery of products ordered in the web shop are inclusive of postage and packaging costs. The costs of different means of delivery are shown in the basket when the products have been chosen. MYDM delivers the item code of the package to the customer by e-mail when the products are shipped from MYDM’s warehouse. Please note that you bear the risk of damage or loss of the products you have ordered when the product has been delivered you. If the packaging appears to be damaged, please do not accept the shipment.<br><br>
-The UPS Standard delivery is applicable with extra charge according to the destination, please contact MYDM directly, if you want to apply
-</p>
+                                <p>All costs of delivery of products ordered in the web shop are inclusive of postage and packaging costs. The costs of different means of delivery are shown in the basket when the products have been chosen. MYDM delivers the item code of the package to the customer by e-mail when the products are shipped from MYDM’s warehouse. Please note that you bear the risk of damage or loss of the products you have ordered when the product has been delivered you. If the packaging appears to be damaged, please do not accept the shipment.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">7. Time of Delivery</h3>
+	            <h3 class="bullet-row-topic">Time of Delivery</h3>
                             <div class="bullet-row-content">
                                 <p>We will ship the product(s) ordered from the web shop without undue delay after we have confirmed the order, and in any event we use reasonable efforts to ship products(s) within thirty (30) days of the confirmation. In the event a product you have ordered is not available, we may separately agree with you that we will deliver another product that is essentially similar to the original product, provided that the price of the replacement product does not exceed that of the original product.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">8. Limitations of Liability</h3>
+	            <h3 class="bullet-row-topic">Limitations of Liability</h3>
                             <div class="bullet-row-content">
                                 <p>To the extent permitted by applicable mandatory legislation, MYDM shall not be liable for any economic losses, loss of income, loss of profits, loss of contracts, business or anticipated savings, loss of goodwill, or reputation or special or punitive losses, nor any consequential or other indirect damage. This liability exclusion does not apply in cases of gross negligence or unlawful intent and does not apply to the liability of the seller for death or personal injury caused by the goods to any person or where has been a breach of a fundamental contractual obligation. To the extent permitted by applicable mandatory legislation, there are no warranties, conditions or other terms binding on MYDM other than those mentioned in these general terms.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">9. Return and refund</h3>
+	            <h3 class="bullet-row-topic">Return and refund</h3>
                             <div class="bullet-row-content">
                                 <p>Unfortunately, MYDM has no return and refund policy at this moment, expect returning for Product defects.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">10. Product Defects</h3>
+	            <h3 class="bullet-row-topic">Product Defects</h3>
                             <div class="bullet-row-content">
                                 <p>In the event the customer notices that a product bought from the web shop is defective, as defined in applicable consumer legislation, the customer may submit a claim to MYDM. All claims must be made as soon as possible after becoming aware of the respective defect by using the contact details stated in the web shop.<br><br>
 In the event a claim leads to the product(s) being returned to MYDM, MYDM shall be liable for any costs of delivery caused by such return(s).<br><br>
@@ -220,31 +219,31 @@ MYDM does not guarantee the availability of all products in the web shop. MYDM i
                             </div>
                         </li>
 						<li>
-	            <h3 class="bullet-row-topic">11. Links</h3>
+	            <h3 class="bullet-row-topic">Links</h3>
                             <div class="bullet-row-content">
                                 <p>MYDM may provide links to other websites that are not under MYDM’s control, and websites that are not under MYDM’s control may provide links to the web shop. Although MYDM aims to ensure that MYDM only provides links to websites that are in compliance with privacy and security standards at least as extensive as MYDM’s privacy policy, MYDM is not liable for the security or confidentiality of any information or personal data that the customer enters into a third party’s website. MYDM recommends that the customer be careful when entering such information or data on a third party’s website and thoroughly read all applicable rules and practices regarding privacy.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">12. Force Majeure</h3>
+	            <h3 class="bullet-row-topic">Force Majeure</h3>
                             <div class="bullet-row-content">
                                 <p>Unless otherwise required by applicable mandatory legislation, MYDM shall not be liable for any delays or defects that are caused by impediments beyond MYDM’s control. These include without limitation industrial actions, acts of war and terrorism, fire, lightning, changes in applicable mandatory legislation, technical problems, interruptions in power/telecommunications/computer systems or other communication, as well as delays or defects in services provided by subcontractors caused by the aforesaid. In the event of such situation, MYDM shall notify the customer when it starts and when it ends. If the situation has lasted for more than two (2) months, both the customer and MYDM are entitled to cancel the order made in the web shop with immediate effect.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">13. Changes to the General Terms</h3>
+	            <h3 class="bullet-row-topic">Changes to the General Terms</h3>
                             <div class="bullet-row-content">
                                 <p>MYDM reserves the right to change these general terms at any time. All changes to these general terms are published in the web shop. The changes shall enter into force when the customer has accepted the general terms (when making a new purchase or when surfing on the web shop) and in any event after thirty (30) days of their publication. MYDM recommends that the customer visit the web shop regularly to gain information on any changes to these general terms.</p>
                             </div>
                         </li>
 						<li>
-	            <h3 class="bullet-row-topic">14. Invalidity</h3>
+	            <h3 class="bullet-row-topic">Invalidity</h3>
                             <div class="bullet-row-content">
                                 <p>In the event a competent court, authority or arbitral tribunal rules that any section or term of these general terms is fully or partially invalid or unenforceable, the remainder of such section or term and all other sections and terms of these general terms shall remain valid and enforceable to the largest extent allowed by applicable mandatory legislation. All sections or terms that are held to be invalid or unenforceable shall be replaced by similar valid and enforceable sections and terms.</p>
                             </div>
                         </li>
                         <li>
-	            <h3 class="bullet-row-topic">15. Applicable law and Dispute Resolution</h3>
+	            <h3 class="bullet-row-topic">Applicable Law and Dispute Resolution</h3>
                             <div class="bullet-row-content">
                                 <p>All disputes arising out of or relating to these general terms, the web shop or purchases made in the web shop shall be primarily settled by negotiations with MYDM’s customer service and finally by a competent court as determined by applicable mandatory legislation. In the event of disputes, MYDM aims to follow any decisions of the Thai Consumer Complaint Board.<br><br>
 The legislation applied to these general terms shall be determined in accordance with applicable mandatory legislation. Unless otherwise stipulated by applicable mandatory legislation, these general terms shall be subject to the laws of Thailand and any disputes arising out of or relating to these general terms shall be settled by the courts of Thailand.

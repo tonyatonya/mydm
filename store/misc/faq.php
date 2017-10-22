@@ -145,16 +145,10 @@
 	        <li>
 	            <h3 class="bullet-row-topic">Can I return a purchase?</h3>
 	            <div class="bullet-row-content">
-	                <p>There is no option for returning goods unfortunately, expect for product defects. If you wish to return for any reason at all, please let us know by e-mail to Customer service and we will look for a solution together.</p>
+	                <p>There is no option for returning goods unfortunately, except for product defects. If you wish to return for any reason at all, please let us know by e-mail to Customer service and we will look for a solution together.</p>
 	            </div>
 	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">Can I combine two orders that I have placed?</h3>
 
-	            <div class="bullet-row-content">
-	                <p>We process each order individually and cannot combine them later.</p>
-	            </div>
-	        </li>
 	        <li>
 	            <h3 class="bullet-row-topic">Can I order online and pay by invoice?</h3>
 
@@ -205,12 +199,7 @@
 	</p>
 	            </div>
 	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">Which countries do MYDM ship to?</h3>
-	            <div class="bullet-row-content">
-	                <p>We ship our Flow products all over the world. Are there problems with delivery in your country? Please send us an e-mail and we’ll see what we can do.</p>
-	            </div>
-	        </li>
+
 	        <li>
 	            <h3 class="bullet-row-topic">When will I receive my order?</h3>
 	            <div class="bullet-row-content">
@@ -235,17 +224,11 @@
 	        <li>
 	            <h3 class="bullet-row-topic">How long does delivery take?</h3>
 	            <div class="bullet-row-content">
-	                <p>Packing takes 1 to 3 working days, but shipping is varied by countries.
+	                <p>Packing takes 3-5 business days, but shipping is varied by countries.
 	</p>
 	            </div>
 	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">Can products be ordered as gifts?</h3>
-	            <div class="bullet-row-content">
-	                <p>Yes, you can select a separate shipping address.
-	</p>
-	            </div>
-	        </li>
+
 	        <li>
 	            <h3 class="bullet-row-topic">How will the recipient be informed of the delivery?</h3>
 	            <div class="bullet-row-content">
@@ -253,34 +236,8 @@
 	</p>
 	            </div>
 	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">Do I have to register to place orders online?</h3>
-	            <div class="bullet-row-content">
-	                <p>No. You may shop online without registering as a customer or signing in. Please note, however, that some of our benefits are only available to registered users.
-	</p>
-	            </div>
-	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">I have registered as a MYDM member. How can I update my contact details?</h3>
-	            <div class="bullet-row-content">
-	                <p>Once you have signed in on our website, you can change your password and update your contact details when logged in. In some countries, when you move, we will receive your new address automatically from the population register, unless you have chosen to prevent companies from accessing your details.
-	</p>
-	            </div>
-	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">What is the width of MYDM fabrics?</h3>
-	            <div class="bullet-row-content">
-	                <p>The fabrics are 145 to 150 cm wide.
-	</p>
-	            </div>
-	        </li>
-	        <li>
-	            <h3 class="bullet-row-topic">What are fabrics sold by the repeat?</h3>
-	            <div class="bullet-row-content">
-	                <p>Some of our fabrics are sold by the repeat rather than by the meter. This means that the unit of measurement is the length of one entire repeated pattern. Check the product page of the individual fabric to see whether it is sold by the meter or by the repeat.
-	</p>
-	            </div>
-	        </li>
+
+
 	        <li>
 	            <h3 class="bullet-row-topic">I forgot my password.</h3>
 	            <div class="bullet-row-content">

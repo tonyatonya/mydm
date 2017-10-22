@@ -46,8 +46,9 @@ if ($user_type == "admin")
     <link href="../css/grid.css" rel="stylesheet" type="text/css"/>
     <link href="../css/gen-font.css" rel="stylesheet" type="text/css"/>
 
-    <script language="javascript" type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script language="javascript" type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <!--   ################ Smart  Ajax ####################-->
     <script type="text/javascript" src="../shops/library/Common/appfunction.js"></script>

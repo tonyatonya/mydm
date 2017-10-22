@@ -27,7 +27,8 @@
 <link href="css/accordion.css" rel="stylesheet" type="text/css" />
 <link href="../css/faq.css" rel="stylesheet" type="text/css" />
 
-<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.accordion.js"></script>
@@ -148,25 +149,6 @@
 
                     <ul>
                         <li>
-	            <h3 class="bullet-row-topic">1. Data Controller</h3>
-                            <div class="bullet-row-content">
-                                <p>MYDM<br><br>
-								13 Sukumvit 85 Bangkok Thailand</p>
-                            </div>
-                        </li>
-                        <li>
-	            <h3 class="bullet-row-topic">2. The contact person for matters relating to the register</h3>
-                            <div class="bullet-row-content">
-                                <p>Subhawita Klunsorn</p>
-                            </div>
-                        </li>
-                        <li>
-	            <h3 class="bullet-row-topic">3. Name of the register</h3>
-                            <div class="bullet-row-content">
-                                <p>MYDM’s customer register.</p>
-                            </div>
-                        </li>
-                        <li>
 	            <h3 class="bullet-row-topic">4.  Group of data subject</h3>
                             <div class="bullet-row-content">
                                 <p>Persons signed-up for the MYDM Corporation’s loyal customer program and customers of MYDM Corporation’s web shop.</p>
@@ -197,11 +179,11 @@ Updates to the personal data are also received from authorities, organizations, 
                         <li>
                              <h3 class="bullet-row-topic">8. Regular destinations of disclosed data and the transfer of data to countries outside of the European Union or the European Economic Area</h3>
                             <div class="bullet-row-content">
-                                <p>MYDM may disclose personal data within the limitations imposed by effective legislation as follows:<br><br>
+                                <p><i>MYDM may disclose personal data within the limitations imposed by effective legislation as follows:</i><br><br>
 - On the basis of a data subject’s consent;<br><br>
 - To companies belonging to the MYDM group and to authorized third parties to the extent they participate in the realization of the purposes of use stated in this description of data file. MYDM obliges said parties to keep confidential all personal data disclosed to them and to secure such personal data in an adequate manner; and
 - On the basis of a claim based on mandatory legislation.<br><br>
-Disclosures and transfers outside of the EU / EEA countries:<br><br>
+<i>Disclosures and transfers outside of the EU / EEA countries:</i><br><br>
 - MYDM may transfer personal data outside of the EU / EEA countries for the realization of the purposes stated in this description of file; and<br><br>
 - MYDM shall disclose or transfer personal data outside of the EU / EEA countries only to such companies, with respect to which MYDM has ensured an adequate level of data protection by means of agreements or otherwise as required by applicable law.
 For technical reasons and practical reasons relating to usage, data may be stored on servers of third-party service providers used by MYDM, or such third-party service providers may process data on behalf of MYDM.</p>
