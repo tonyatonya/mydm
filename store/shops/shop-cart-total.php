@@ -69,7 +69,7 @@
 </head>
 
 <!-- HEADER BOX -->
-<header class="header">
+<!--<header class="header">
     <div id="top-nav">
         <div class="boxleft">
             <a id="swit-btn" class="current" href="../index.html">STORE</a>
@@ -107,6 +107,50 @@
             <a href="../story/story.php" class="navitem">STORY</a>
             <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
+        </nav>
+    </div>
+</header>-->
+<header class="header">
+    <div id="top-nav">
+        <div class="boxleft">
+            <a id="swit-btn" class="current" href="../index.html">STORE</a>
+            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
+        </div>
+
+    </div>
+    <div class="container clearfix">
+        <a id="logo" href="../index.html"></a>
+        <div class="boxright">
+            <ul>
+                <li>
+                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+                       onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
+                            src="../images/top-icon-fav.svg"></a>
+                </li>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
+                </li>
+
+
+                <li>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
+            <a href="contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
 </header>
