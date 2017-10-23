@@ -1,0 +1,755 @@
+/* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row {
+  display: block;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+/* line 2, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 14, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row .headtopic {
+  font-family: 'gotham_boldregular';
+  font-weight: bold;
+  color: #d5c080;
+  font-size: 31px;
+  padding-bottom: 45px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #d5c080;
+}
+
+/* line 25, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 29, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 1px solid #d5c080;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 36, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li:hover .bullet-row-topic {
+  color: #d3bd8d;
+}
+
+/* line 40, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li .bullet-row-topic {
+  position: relative;
+  font-family: 'gotham_boldregular';
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 51, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li .bullet-row-topic:before {
+  content: url(../images/addtheme/line-arrow-right.png);
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+/* line 58, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/faq.scss */
+.bullet-row > ul > li .bullet-row-content {
+  font-family: 'gotham_lightregular';
+  font-size: 14px;
+  color: #1d1714;
+  display: none;
+}
+
+/* line 14, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 18, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group label {
+  font-family: Helvetica;
+  color: #58595b;
+  font-size: 14px;
+  font-weight: lighter;
+  float: left;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group label:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 30, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group label span {
+  color: #f28c78;
+  font-size: 12px;
+}
+
+/* line 35, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group input {
+  border: none;
+  border: none;
+  box-shadow: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #919191;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 53, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group input:focus {
+  outline: none;
+}
+
+/* line 57, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group textarea {
+  border: none;
+  border: none;
+  box-shadow: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #919191;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  width: 100%;
+  max-width: 100%;
+  min-height: 130px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 76, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group textarea:focus {
+  outline: none;
+}
+
+/* line 80, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group .select-holder {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group .select-holder:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 88, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group .select-holder > div {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 1;
+}
+
+/* line 95, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group select {
+  border: none;
+  box-shadow: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 0;
+  color: #919191;
+  width: 100%;
+  height: 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  position: relative;
+}
+
+/* line 135, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-group select:focus {
+  outline: none;
+}
+
+/* line 140, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-link {
+  color: #f28c78;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+/* line 145, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.form-section-link:hover {
+  text-decoration: underline;
+}
+
+/* line 152, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+button {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-indent: 3px;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: #c6b15a;
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 164, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.btn-group {
+  width: 100%;
+  display: block;
+}
+
+/* line 6, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 169, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.btn-group.al-right {
+  text-align: right;
+}
+
+/* line 172, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/form.scss */
+.btn-group button {
+  display: inline-block;
+}
+
+/* line 16, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.clear {
+  width: 100%;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 22, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-open {
+  overflow: hidden;
+}
+
+/* line 26, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+/* line 37, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+
+/* line 46, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 54, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 59, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+/* line 65, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* line 78, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+
+/* line 86, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+/* line 90, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+/* line 96, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 100, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 105, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+
+/* line 110, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+
+/* line 115, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 119, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+/* line 123, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+/* line 126, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+/* line 131, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+/*======================= login popup ======================*/
+/* line 143, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 145, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-dialog {
+  max-width: 580px;
+}
+
+/* line 148, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-content {
+  background-color: #f2f2f2;
+  border: 2.5px solid #c6b15a;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 25px 30px;
+}
+
+/* line 156, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-title {
+  font-family: "Yaquote Script Personal Use";
+  color: #1f4396;
+  font-size: 60px;
+  font-weight: 100px;
+  text-align: center;
+}
+
+/* line 163, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+
+/* line 166, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-header p {
+  color: #808285;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* line 172, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-header button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: none;
+  padding: 0;
+  float: right;
+  background: none;
+  font-size: 25px;
+  color: #c6b15a;
+}
+
+/* line 183, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-header .line-section {
+  position: relative;
+  border-top: 1px solid #c6b15a;
+  margin-top: 30px;
+}
+
+/* line 187, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-header .line-section:before {
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  left: -7px;
+  top: -10px;
+  content: url(../images/addtheme/line-arrow-left.png);
+}
+
+/* line 196, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-header .line-section:after {
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  right: -7px;
+  top: -10px;
+  content: url(../images/addtheme/line-arrow-right.png);
+}
+
+/* line 207, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-footer {
+  border-top: none;
+}
+
+/* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-footer:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 210, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.std-popup .modal-footer button {
+  display: inline;
+  float: right;
+  width: auto;
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-indent: 3px;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: #c6b15a;
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+/*======================= end login popup ======================*/
+/* line 229, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.text-response {
+  text-align: center;
+  color: #808285;
+  font-size: 16px;
+  font-family: 'Source Serif Pro', serif;
+  font-style: italic;
+  text-align: center;
+}
+
+/* line 237, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.archer {
+  width: 100%;
+  display: block;
+  height: auto;
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.archer:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 244, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.archer img {
+  display: inline-block;
+}
+
+/* line 248, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.al-center {
+  text-align: center;
+}
+
+/* line 250, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.al-center button {
+  float: none !important;
+  display: inline-block;
+}
+
+/* line 257, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.filter-group {
+  padding-bottom: 15px;
+}
+
+/* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.filter-group:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 260, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.filter-group button, .filter-group .select-holder {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 266, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.filter-group button {
+  background-color: #28313f;
+  color: white;
+  font-size: 10px;
+  font-family: Helvetica, Arial;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding: 6px 8px;
+  letter-spacing: 0;
+  text-indent: 0;
+}
+
+/* line 278, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.filter-group .select-holder {
+  background-color: #f0f0f0;
+  min-width: 90px;
+  background-image: url(../images/addtheme/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 90%;
+}
+
+/* line 285, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.filter-group .select-holder select {
+  font-size: 10px;
+  font-family: Helvetica, Arial;
+  font-weight: lighter;
+  width: 100%;
+  border: none;
+  background: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 10px;
+  -moz-padding-end: 10px;
+  -webkit-padding-before: 6px;
+  -webkit-padding-after: 6px;
+  -webkit-padding-start: 8px;
+  -moz-padding-start: 8px;
+}
+
+/* line 319, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider {
+  position: relative;
+  text-align: center;
+}
+
+/* line 323, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-viewport {
+  border: none;
+  left: auto;
+  top: auto;
+  box-shadow: none;
+}
+
+/* line 329, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-controls-direction {
+  display: block;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 5px;
+  background-image: url(../images/addtheme/product-slide-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 337, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-controls-direction a {
+  position: relative;
+  text-align: center;
+  top: 2px;
+  left: auto;
+  right: auto;
+  display: inline-block;
+  margin-left: 18px;
+  margin-right: 18px;
+  width: 13px;
+  height: 15px;
+  margin-top: 0;
+}
+
+/* line 351, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-prev {
+  background-image: url(../images/addtheme/product-slide-left.png);
+  background-position: center center;
+}
+
+/* line 354, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-prev:hover {
+  background-position: center center;
+}
+
+/* line 358, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-next {
+  background-image: url(../images/addtheme/product-slide-right.png);
+  background-position: center center;
+}
+
+/* line 361, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .bx-wrapper .bx-next:hover {
+  background-position: center center;
+}
+
+/* line 366, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider .product-name {
+  border: 1px solid #231f20;
+  width: auto;
+  padding: 10px;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+/*================================= Responsive =============================*/
+@media (min-width: 768px) {
+  /* line 382, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  /* line 386, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  /* line 390, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  .modal-sm {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 396, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  .modal-lg {
+    width: 900px;
+  }
+}

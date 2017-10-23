@@ -29,117 +29,168 @@
 <!--<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
+
+<script src="../account.js"></script>
+<script src="../addcart.js"></script>
+
 <script type="text/javascript">
 	$(document).ready(function() {
-
-	var nice = $("html").niceScroll();  // The document page (body)
-
-  });
+		var nice = $("html").niceScroll();  // The document page (body)
+	});
 </script>
 </head>
 <body>
 <header class="header">
-	<div id="top-nav">
+    <div id="top-nav">
         <div class="boxleft">
             <a id="swit-btn" class="current" href="../index.html">STORE</a>
-            <a id="swit-btn" href="../../studio/index.html" style="margin-right:20px;">STUDIO</a>
-            <ul>
-                <li><a id="others-btn" href="#modal" class="current">THAILAND</a></li>
-                <li id="others-btn">$ USD</li>
-                <li><a id="others-btn" href="#modal">ENGLISH</a></li>
-            </ul>
-		</div>
+            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
+        </div>
 
-  </div>
-<div class="container clearfix">
-	<a id="logo" class="col" href="../index.html"></a>
-    <div class="boxright">
-    	<ul>
-    	<li><a id="icon-btn" href="#modal"><img src="../images/top-icon-fav.svg"></a></li>
-        <li><a id="icon-btn" href="#modal"><img src="../images/top-icon-count.svg"></a></li>
-        <li><a id="icon-btn" href="#modal"><img src="../images/top-icon-member.svg"></a></li>
-        </ul>
-	</div>
-	<nav>
-		<a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
-		<a href="index.html" class="navitem">SHOP</a>
-		<a href="../story/story.php" class="navitem">STORY</a>
-        <a href="../blog/blog.php" class="navitem">BLOG</a>
-        <a href="../misc/contact.php" class="navitem">LOCATION</a>
-	</nav>
+    </div>
+    <div class="container clearfix">
+        <a id="logo" href="../index.html"></a>
+        <div class="boxright">
+            <ul>
+                <li>
+                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+                       onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
+                            src="../images/top-icon-fav.svg"></a>
+                </li>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
+                </li>
+
+
+                <li>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
+            <a href="contact.php" class="navitem">LOCATION</a>
+        </nav>
     </div>
 </header>
 
+
+
 <section class="container clearfix">
+
 	<div id="cont">
-	<article class="gallcontainer">
+		<div class="filter-group">
+			<button class="viewall">VIEW ALL ITEMS</button>
+			<div class="select-holder">
+				<select>
+					<option>Price</option>
+					<option>100</option>
+					<option>200</option>
+				</select>
+			</div>
+			<div class="select-holder">
+				<select>
+					<option>Category</option>
+					<option>Category Name</option>
+					<option>Category Name</option>
+				</select>
+			</div>
+			<div class="select-holder">
+				<select>
+					<option>Pattern</option>
+					<option>Pattern Name</option>
+					<option>Pattern Name</option>
+				</select>
+			</div>
+			<!-- เลือกแล้ว Jump ไปที่หน้ารวม Products แล้ว Filter ตามสิ่งที่เลือกมา ตัว Option น่าจะต้องเขียนโปรแกรม -->
+		</div>
+		<div class="img-product-slider">
+			<h2 class="product-name">PAINT & POINT Square Pillow Case</h2>
+			<ul>
+				<li> <img src="images/prod-slide/01.jpg" alt="Square Pillow Case"> </li>
+		        <li> <img src="images/prod-slide/02.jpg" alt="Square Pillow Case"> </li>
+		        <li> <img src="images/prod-slide/03.jpg" alt="Square Pillow Case"> </li>
+		        <li> <img src="images/prod-slide/04.jpg" alt="Square Pillow Case"> </li>
+		        <li> <img src="images/prod-slide/05.jpg" alt="Square Pillow Case"> </li>
+		        <li> <img src="images/prod-slide/06.jpg" alt="Square Pillow Case"> </li>
+		    </ul>
+		</div>
+		<article class="gallcontainer">
 
-	    <div class="carousel">
-	      <ul>
-	        <li> <img src="images/prod-slide/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/02.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/03.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/04.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/05.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/06.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	      </ul>
-	      <div class="controls">
-	        <div class="prev"></div>
-	        <div class="next"></div>
-	      </div>
-	    </div>
-	    <div class="thumbnails">
-	      <ul>
-	        <li> <img src="images/prod-slide/thumbs/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/thumbs/02.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/thumbs/03.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/thumbs/04.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/thumbs/05.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	        <li> <img src="images/prod-slide/thumbs/06.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-	      </ul>
-	    </div>
+		    <div class="carousel">
+		      <ul>
+		        <li> <img src="images/prod-slide/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/02.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/03.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/04.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/05.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/06.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		      </ul>
+		      <div class="controls">
+		        <div class="prev"></div>
+		        <div class="next"></div>
+		      </div>
+		    </div>
+		    <div class="thumbnails">
+		      <ul>
+		        <li> <img src="images/prod-slide/thumbs/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/thumbs/02.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/thumbs/03.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/thumbs/04.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/thumbs/05.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		        <li> <img src="images/prod-slide/thumbs/06.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
+		      </ul>
+		    </div>
 
-    </article>
+	    </article>
+		<article class="detailcolleft">
+			   	<div class="motto">“Comfy is not enough for your couch, pattern it up!”</div>
+			        <div class="head">Description</div>
+			    <p>A couch is the first thing your guests will see when enter your house and
+			    the first thing you think of when you’re tired. I know it’s comfy, but it
+			    looks sad and plain. So just colour it up with our cool Cut and Paint pillow
+			    case. And your guests will be WOW and your tiresome will fly away.</p>
+					<div class="head">Information</div>
+			    <p>Item no: CP001<br>
+					Size: 50 x 50 cm</p>
+			        <div class="head">Material and care</div>
+			        <p>It’s 100% linen with handcraft pattern, with 3 patterns to choose and mix.</p>
+			    <img src="images/care-icon.jpg">
+			    <div class="price">$68</div>
+			    <img src="images/productdetail/02.jpg" class="prod">
+			    <img src="images/productdetail/01.jpg" class="prod">
+			    </article>
+	    <article class="detailcolright">
+	    	<div class="colorbox">
+	         <div class="items" style="line-height:10px;">Color :</div>
+	         <a href="#"><img src="images/color-bullet/01.jpg" class="items"></a>
+	         <a href="#"><img src="images/color-bullet/02.jpg" class="items"></a>
+	         <a href="#"><img src="images/color-bullet/03.jpg" class="items"></a>
+	        </div>
+	        <div class="colorbox2">
+	         <a href="#"><img src="images/btn-fav.svg" class="items"></a>
+	         <a href="#"><img src="images/btn-add.svg" class="items"></a>
+	        </div>
+	        <table width="100%">
+	          <tr>
+	            <td><a href="#"><img src="images/icon-fb.svg"></a></td>
+	            <td><a href="#"><img src="images/icon-tw.svg"></a></td>
+	            <td><a href="#"><img src="images/icon-pi.svg"></a></td>
+	          </tr>
+	        </table>
 
-
-      <article class="detailcolleft">
-       	<div class="motto">“Comfy is not enough for your couch, pattern it up!”</div>
-            <div class="head">Description</div>
-        <p>A couch is the first thing your guests will see when enter your house and
-        the first thing you think of when you’re tired. I know it’s comfy, but it
-        looks sad and plain. So just colour it up with our cool Cut and Paint pillow
-        case. And your guests will be WOW and your tiresome will fly away.</p>
-			<div class="head">Information</div>
-        <p>Item no: CP001<br>
-			Size: 50 x 50 cm</p>
-            <div class="head">Material and care</div>
-            <p>It’s 100% linen with handcraft pattern, with 3 patterns to choose and mix.</p>
-        <img src="images/care-icon.jpg">
-        <div class="price">$68</div>
-        <img src="images/productdetail/02.jpg" class="prod">
-        <img src="images/productdetail/01.jpg" class="prod">
-        </article>
-        <article class="detailcolright">
-        	<div class="colorbox">
-             <div class="items" style="line-height:10px;">Color :</div>
-             <a href="#"><img src="images/color-bullet/01.jpg" class="items"></a>
-             <a href="#"><img src="images/color-bullet/02.jpg" class="items"></a>
-             <a href="#"><img src="images/color-bullet/03.jpg" class="items"></a>
-            </div>
-            <div class="colorbox2">
-             <a href="#"><img src="images/btn-fav.svg" class="items"></a>
-             <a href="#"><img src="images/btn-add.svg" class="items"></a>
-            </div>
-            <table width="100%">
-              <tr>
-                <td><a href="#"><img src="images/icon-fb.svg"></a></td>
-                <td><a href="#"><img src="images/icon-tw.svg"></a></td>
-                <td><a href="#"><img src="images/icon-pi.svg"></a></td>
-              </tr>
-            </table>
-
-        </article>
-
+	    </article>
 	</div>
 </section>
 
@@ -185,17 +236,37 @@
 
 <script type="text/javascript" src="../js/main.js"></script>
 <!--------------------------- ---------------------------------------->
-<link href="../css/modal.css" rel="stylesheet"/>
-<link href="../css/form.css" rel="stylesheet"/>
+<link href="../css/fixed.css" rel="stylesheet"/>
+
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 <?php include('../login.php'); ?>
 <!--------------------------- ---------------------------------------->
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var slider = $('.img-product-slider ul').bxSlider({
+	            mode: 'horizontal', //mode: 'fade',
+	            speed: 300,
+	            auto: true,
+	            infiniteLoop: true,
+	            hideControlOnEnd: true,
+	            useCSS: false,
+	            pager:false,
+	            onSlideAfter: function() {
+		            slider.startAuto();
+		        }
+	        });
+	})
+</script>
+<!--
 <script src="js/jquery.light-carousel.js"></script>
 <script>
 	$(function(){
 		$('.gallcontainer').lightCarousel();
 	})
-
 </script>
+-->
+
 </body>
 </html>

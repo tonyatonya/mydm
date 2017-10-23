@@ -1,6 +1,9 @@
 $writing : 'Yaquote Script Personal Use';
 $btntext : 'Bebas Neue';
 $gold: #c6b15a;
+@import 'faq.scss';
+@import 'form.scss';
+
 
 @mixin clearfix{
 	&:after{
@@ -133,25 +136,7 @@ $gold: #c6b15a;
   overflow: scroll;
 }
 
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  .modal-sm {
-    width: 300px;
-  }
-}
 
-@media (min-width: 992px) {
-  .modal-lg {
-    width: 900px;
-  }
-}
 
 /*======================= login popup ======================*/
 
@@ -266,4 +251,149 @@ $gold: #c6b15a;
 		float: none !important;
 		display: inline-block;
 	}
+}
+
+
+.filter-group{
+	padding-bottom: 15px;
+	@include clearfix;
+	button,.select-holder{
+		display: inline-block;
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	button{
+		background-color: #28313f;
+		color: white;
+		font-size: 10px;
+		font-family: Helvetica, Arial;
+		font-weight: lighter;
+		text-transform: uppercase;
+		padding: 6px 8px;
+		letter-spacing: 0;
+		text-indent: 0;
+
+	}
+	.select-holder{
+		background-color: #f0f0f0;
+		min-width: 90px;
+		background-image: url(../images/addtheme/select-arrow.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-position-x: 90%;
+		select{
+			font-size: 10px;
+			font-family: Helvetica, Arial;
+			font-weight: lighter;
+			width: 100%;
+			border:none;
+			background:none;
+			-webkit-appearance: button;
+			-moz-appearance: button;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-webkit-padding-end: 10px;
+			-moz-padding-end: 10px;
+			-webkit-padding-before: 6px;
+			-webkit-padding-after: 6px;
+			-webkit-padding-start: 8px;
+			-moz-padding-start: 8px;
+
+			::-webkit-input-placeholder {
+
+			}
+			:-moz-placeholder {
+
+			}
+			::-moz-placeholder {
+
+			}
+			:-ms-input-placeholder {
+
+			}
+		}
+	}
+}
+
+.img-product-slider{
+	position: relative;
+	text-align: center;
+	.bx-wrapper{
+		.bx-viewport{
+			border: none;
+			left: auto;
+			top:auto;
+			box-shadow: none;
+		}
+		.bx-controls-direction{
+			display: block;
+			text-align: center;
+			margin-top: 45px;
+			margin-bottom: 5px;
+			background-image: url(../images/addtheme/product-slide-bg.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			a{
+				position: relative;
+				text-align: center;
+				top:2px;
+				left: auto;
+				right: auto;
+				display: inline-block;
+				margin-left: 18px;
+				margin-right: 18px;
+				width: 13px;
+				height: 15px;
+				margin-top: 0;
+			}
+		}
+		.bx-prev{
+			background-image: url(../images/addtheme/product-slide-left.png);
+			background-position: center center;
+			&:hover{
+				background-position: center center;
+			}
+		}
+		.bx-next{
+			background-image: url(../images/addtheme/product-slide-right.png);
+			background-position: center center;
+			&:hover{
+				background-position: center center;
+			}
+		}
+	}
+	.product-name{
+		border: 1px solid #231f20;
+		width: auto;
+		padding: 10px;
+		background-color: white;
+		margin: auto;
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translate(-50%,0);
+		z-index: 1;
+	}
+}
+
+/*================================= Responsive =============================*/
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
 }

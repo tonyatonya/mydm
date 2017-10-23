@@ -269,8 +269,8 @@
 	})
 </script>
 <!--------------------------- ---------------------------------------->
-<link href="../css/modal.css" rel="stylesheet"/>
-<link href="../css/form.css" rel="stylesheet"/>
+<link href="../css/fixed.css" rel="stylesheet"/>
+
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 <?php include('../login.php'); ?>
 <!--------------------------- ---------------------------------------->

@@ -25,7 +25,8 @@
 <link href="../css/gen-font.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {

@@ -25,7 +25,7 @@
 <link href="../css/grid.css" rel="stylesheet" type="text/css" />
 <link href="../css/gen-font.css" rel="stylesheet" type="text/css" />
 <link href="css/accordion.css" rel="stylesheet" type="text/css" />
-<link href="../css/faq.css" rel="stylesheet" type="text/css" />
+
 
 <!--<script  language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
@@ -309,8 +309,8 @@ The shipping fee will be added to your order after the shipping method is chosen
 
 <script type="text/javascript" src="../js/main.js" ></script>
 <!--------------------------- ---------------------------------------->
-<link href="../css/modal.css" rel="stylesheet"/>
-<link href="../css/form.css" rel="stylesheet"/>
+<link href="../css/fixed.css" rel="stylesheet"/>
+
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 <?php include('../login.php'); ?>
 <!--------------------------- ---------------------------------------->
