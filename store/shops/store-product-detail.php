@@ -468,7 +468,11 @@ while ($db->read()) {
                     <img src="images/btn-fav.svg" class="items" style="cursor: pointer;"
                          onclick="addFav(<?= $product_id ?>)">
                 <?php } else { ?>
-                    <a href="../account/login.php"><img src="images/btn-fav.svg" class="items"
+                	<!--
+                    <a  href="../account/login.php"><img src="images/btn-fav.svg" class="items"
+                                                            style="cursor: pointer;"> </a>
+                    -->
+                    <a class="member-btn" href="#"><img src="images/btn-fav.svg" class="items"
                                                             style="cursor: pointer;"> </a>
                 <?php } ?>
 
