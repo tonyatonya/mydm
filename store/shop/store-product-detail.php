@@ -118,16 +118,15 @@
 		<div class="img-product-slider">
 			<h2 class="product-name">PAINT & POINT Square Pillow Case</h2>
 			<ul>
-				<li> <img src="images/prod-slide/01.jpg" alt="Square Pillow Case"> </li>
-		        <li> <img src="images/prod-slide/02.jpg" alt="Square Pillow Case"> </li>
-		        <li> <img src="images/prod-slide/03.jpg" alt="Square Pillow Case"> </li>
-		        <li> <img src="images/prod-slide/04.jpg" alt="Square Pillow Case"> </li>
-		        <li> <img src="images/prod-slide/05.jpg" alt="Square Pillow Case"> </li>
-		        <li> <img src="images/prod-slide/06.jpg" alt="Square Pillow Case"> </li>
+				<li data-slide-index="0"> <img src="images/prod-slide/01.jpg" alt="Square Pillow Case"> </li>
+		        <li data-slide-index="1"> <img src="images/prod-slide/02.jpg" alt="Square Pillow Case"> </li>
+		        <li data-slide-index="2"> <img src="images/prod-slide/03.jpg" alt="Square Pillow Case"> </li>
+		        <li data-slide-index="3"> <img src="images/prod-slide/04.jpg" alt="Square Pillow Case"> </li>
+		        <li data-slide-index="4"> <img src="images/prod-slide/05.jpg" alt="Square Pillow Case"> </li>
+		        <li data-slide-index="5"> <img src="images/prod-slide/06.jpg" alt="Square Pillow Case"> </li>
 		    </ul>
 		</div>
-		<article class="gallcontainer">
-
+		<!--<article class="gallcontainer">
 		    <div class="carousel">
 		      <ul>
 		        <li> <img src="images/prod-slide/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
@@ -142,18 +141,7 @@
 		        <div class="next"></div>
 		      </div>
 		    </div>
-		    <div class="thumbnails">
-		      <ul>
-		        <li> <img src="images/prod-slide/thumbs/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-		        <li> <img src="images/prod-slide/thumbs/02.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-		        <li> <img src="images/prod-slide/thumbs/03.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-		        <li> <img src="images/prod-slide/thumbs/04.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-		        <li> <img src="images/prod-slide/thumbs/05.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-		        <li> <img src="images/prod-slide/thumbs/06.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"> </li>
-		      </ul>
-		    </div>
-
-	    </article>
+	    </article>-->
 		<article class="detailcolleft">
 			   	<div class="motto">“Comfy is not enough for your couch, pattern it up!”</div>
 			        <div class="head">Description</div>
@@ -172,6 +160,16 @@
 			    <img src="images/productdetail/01.jpg" class="prod">
 			    </article>
 	    <article class="detailcolright">
+		    <div class="img-product-slider-pager" id="#bx-pager">
+			    <ul>
+			        <li  data-slide-index="0"><a href="#"><img src="images/prod-slide/thumbs/01.jpg" alt="PAINT & POINT Square Pillow Case"></a></li>
+			        <li  data-slide-index="1"><a href="#"><img src="images/prod-slide/thumbs/02.jpg" alt="PAINT & POINT Square Pillow Case"></a></li>
+			        <li  data-slide-index="2"><a href="#"><img src="images/prod-slide/thumbs/03.jpg" alt="PAINT & POINT Square Pillow Case"></a></li>
+			        <li  data-slide-index="3"><a href="#"><img src="images/prod-slide/thumbs/04.jpg" alt="PAINT & POINT Square Pillow Case"></a></li>
+			        <li  data-slide-index="4"><a href="#"><img src="images/prod-slide/thumbs/05.jpg" alt="PAINT & POINT Square Pillow Case"></a></li>
+			        <li  data-slide-index="5"><a href="#"><img src="images/prod-slide/thumbs/06.jpg" alt="PAINT & POINT Square Pillow Case"></a></li>
+			    </ul>
+		    </div>
 	    	<div class="colorbox">
 	         <div class="items" style="line-height:10px;">Color :</div>
 	         <a href="#"><img src="images/color-bullet/01.jpg" class="items"></a>
@@ -246,27 +244,23 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		var slider = $('.img-product-slider ul').bxSlider({
-	            mode: 'horizontal', //mode: 'fade',
-	            speed: 300,
-	            auto: true,
+	            mode: 'fade', //mode: 'fade','horizontal'
+	            //speed: 300,
+	            auto: false,
 	            infiniteLoop: true,
 	            hideControlOnEnd: true,
 	            useCSS: false,
 	            pager:false,
-	            onSlideAfter: function() {
-		            slider.startAuto();
-		        }
 	        });
+		$(".img-product-slider-pager ul li a").click(function(e){
+			e.preventDefault();
+			$(".bx-thumb ul li a.active").removeClass("active");
+			$(this).addClass("active");
+			var _index = $(this).parent().attr("data-slide-index");
+			console.log("_index = ", _index);
+			slider.goToSlide(_index);
+		})
 	})
 </script>
-<!--
-<script src="js/jquery.light-carousel.js"></script>
-<script>
-	$(function(){
-		$('.gallcontainer').lightCarousel();
-	})
-</script>
--->
-
 </body>
 </html>

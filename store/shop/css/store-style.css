@@ -1,17 +1,17 @@
 @charset "utf-8";
 a{ text-decoration:none;}
 #cont {
-	width:100%; 
-	margin: 17% auto 0 auto; 
-	padding-bottom:5%; 
-	height:auto; 
-	position:relative; 
+	width:100%;
+	margin: 17% auto 0 auto;
+	padding-bottom:5%;
+	height:auto;
+	position:relative;
 	overflow:hidden
 	}/* CSS Document */
 .collcolumn{
-	float:left; 
-	width:49%; 
-	text-align:right;	
+	float:left;
+	width:49%;
+	text-align:right;
 	font-family:'gotham_mediumregular', sans-serif;
 	color:#27313f;
 	letter-spacing:2px;
@@ -38,9 +38,9 @@ a{ text-decoration:none;}
 	font-size:1rem;
 }
 .collcolumn2{
-	float:right; 
-	width:49%; 
-	text-align:right;	
+	float:right;
+	width:49%;
+	text-align:right;
 	font-family:'gotham_mediumregular', sans-serif;
 	color:#27313f;
 	letter-spacing:2px;
@@ -155,16 +155,16 @@ a{ text-decoration:none;}
 	position:relative;
 	overflow:hidden;
 	}
-/*--------------- leftinfo -----------------*/	
+/*--------------- leftinfo -----------------*/
 .detailcolleft{
-	float:left; 
-	width:49%; 
-	text-align:left;	
+	float:left;
+	width:49%;
+	text-align:left;
 	color:#27313f;
 	clear:left;
 	overflow:hidden;
 	position:relative;
-	margin-top:-300px;
+	/*margin-top:-300px;*/
 	}
 .detailcolleft .motto{
 	font-family:'gotham_boldregular', sans-serif;
@@ -173,7 +173,7 @@ a{ text-decoration:none;}
 	letter-spacing:1px;
 	margin-bottom:20px;
 	text-align:center;
-	}	
+	}
 .detailcolleft .head{
 	font-family:'gotham_boldregular', sans-serif;
 	font-size:1rem;
@@ -199,10 +199,10 @@ a{ text-decoration:none;}
 	width:100%;
 	margin:20px 0;
 }
-/*--------------- rightinfo -----------------*/	
+/*--------------- rightinfo -----------------*/
 .detailcolright{
-	float:right; 
-	width:40%; 
+	float:right;
+	width:40%;
 	color:#27313f;
 	clear:right;
 	overflow:hidden;
@@ -219,12 +219,12 @@ a{ text-decoration:none;}
 	text-align:center;
 	width:100%;
 	padding:20px 0;
-	}	
+	}
 .detailcolright .colorbox .items{
 	display:inline-block;
 	margin:0 10px;
 	}
-	
+
 .detailcolright .colorbox img{
 	margin:0 10px;
 	}
@@ -240,7 +240,7 @@ a{ text-decoration:none;}
 .detailcolright .colorbox2 img{
 	margin:0 20px;
 	zoom:120%;
-	}						
+	}
 .detailcolright table{
 	border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC;
@@ -257,4 +257,4 @@ a{ text-decoration:none;}
 	}
 .detailcolright td:last-child{
 	border-right:none;
-	}	
+	}

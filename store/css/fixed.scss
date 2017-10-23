@@ -319,6 +319,9 @@ $gold: #c6b15a;
 .img-product-slider{
 	position: relative;
 	text-align: center;
+	margin-bottom: 40px;
+	@include clearfix;
+
 	.bx-wrapper{
 		.bx-viewport{
 			border: none;
@@ -374,6 +377,33 @@ $gold: #c6b15a;
 		left: 50%;
 		transform: translate(-50%,0);
 		z-index: 1;
+	}
+}
+.img-product-slider-pager{
+	@include clearfix;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-left: -5px;
+		margin-right: -5px;
+		@include clearfix;
+		li{
+			display: inline;
+			float: left;
+			padding: 5px;
+			width: 33.33%;
+			box-sizing: border-box;
+			a{
+				display: block;
+				overflow: hidden;
+				position: relative;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
 	}
 }
 
