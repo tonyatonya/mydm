@@ -680,9 +680,10 @@ button {
   left: auto;
   top: auto;
   box-shadow: none;
+  overflow: visible !important;
 }
 
-/* line 335, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 336, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .bx-wrapper .bx-controls-direction {
   display: block;
   text-align: center;
@@ -693,7 +694,7 @@ button {
   background-repeat: no-repeat;
 }
 
-/* line 343, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 344, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .bx-wrapper .bx-controls-direction a {
   position: relative;
   text-align: center;
@@ -708,29 +709,29 @@ button {
   margin-top: 0;
 }
 
-/* line 357, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 358, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .bx-wrapper .bx-prev {
   background-image: url(../images/addtheme/product-slide-left.png);
   background-position: center center;
 }
 
-/* line 360, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 361, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .bx-wrapper .bx-prev:hover {
   background-position: center center;
 }
 
-/* line 364, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 365, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .bx-wrapper .bx-next {
   background-image: url(../images/addtheme/product-slide-right.png);
   background-position: center center;
 }
 
-/* line 367, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 368, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .bx-wrapper .bx-next:hover {
   background-position: center center;
 }
 
-/* line 372, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+/* line 373, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
 .img-product-slider .product-name {
   border: 1px solid #231f20;
   width: auto;
@@ -738,12 +739,11 @@ button {
   background-color: white;
   margin: auto;
   position: absolute;
-  /*bottom: 40px;*/
-  top: 441px;
+  z-index: 999999;
+  top: 100%;
   left: 50%;
   margin-top: -25px;
   transform: translate(-50%, 0);
-  z-index: 1;
 }
 
 /* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
@@ -793,39 +793,65 @@ button {
   height: auto;
 }
 
+/* line 413, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider-pager.mobile-thumb {
+  margin-top: 15px;
+  display: none;
+}
+
+/* line 417, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+.img-product-slider-pager.mobile-thumb ul li {
+  width: 25%;
+}
+
 /*================================= Responsive =============================*/
 @media (min-width: 768px) {
-  /* line 417, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  /* line 426, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
   }
-  /* line 421, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  /* line 430, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-  /* line 425, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  /* line 434, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
   .modal-sm {
     width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 430, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  /* line 439, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
   .modal-lg {
     width: 900px;
   }
 }
 
-@media (max-width: 768px) {
-  /* line 437, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+@media (max-width: 920px) {
+  /*
+	.img-product-slider{
+		.product-name{
+			position: relative;
+			top:auto;
+			left: auto;
+			transform: none;
+			float: left;
+			margin: auto;
+		}
+	}
+	*/
+  /* line 458, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
   .img-product-slider .product-name {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    float: left;
-    margin: auto;
+    width: 80%;
+  }
+  /* line 462, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  .img-product-slider-pager {
+    display: none;
+  }
+  /* line 464, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/mydm/store/css/fixed.scss */
+  .img-product-slider-pager.mobile-thumb {
+    display: block;
   }
 }

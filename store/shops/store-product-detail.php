@@ -329,6 +329,38 @@ while ($db->read()) {
         <!-- end main slider -->
 
 
+		<!-- thumb for mobile -->
+		<div class="img-product-slider-pager mobile-thumb">
+			    <ul>
+
+			        <?php if (isset($product_collection) && !empty($product_collection)) {
+				        $i=0;
+			        ?>
+                        <?php foreach ($product_collection as $item) { ?>
+                            <li data-slide-index="<?php echo $i ; ?>">
+                                <?php if(isset($item['p_img_show']) && !empty($item['p_img_show'])) {?>
+                                <a href="#">
+                                <img
+                                    src="../images/products/product-detail/<?= $item['p_id'] ?>/collect/<?= $item['p_img_show'] ?>"
+                                    alt="<?= $product_detail['p_pattern_name'] ?> <?= $product_detail['p_name'] ?>">
+                                </a>
+                                <?php } else{ ?>
+                                    <a href="#">
+                                        <img src="../images/nopic.png" alt="Product Collection Coming Soon ...>">
+                                    </a>
+                                <? } ?>
+                            </li>
+
+                        <?php
+	                        $i++;
+	                        } ?>
+                    <?php } else { ?>
+                        <li><img src="../images/nopic.png" alt="Product Collection Coming Soon ...>"></li>
+                    <?php } ?>
+			    </ul>
+		    </div>
+		<!-- end thumb for mobile -->
+
 		<!--
         <article class="gallcontainer">
             <div class="carousel">
@@ -570,6 +602,9 @@ while ($db->read()) {
 			console.log("_index = ", _index);
 			slider.goToSlide(_index);
 		})
+
+		$(".product-name").appendTo($(".img-product-slider .bx-viewport"));
+		//product-name
 	})
 </script>
 

@@ -331,6 +331,7 @@ $gold: #c6b15a;
 			left: auto;
 			top:auto;
 			box-shadow: none;
+			overflow: visible !important;
 		}
 		.bx-controls-direction{
 			display: block;
@@ -376,12 +377,11 @@ $gold: #c6b15a;
 		background-color: white;
 		margin: auto;
 		position: absolute;
-		/*bottom: 40px;*/
-		top:441px;
+		z-index: 999999;
+		top:100%;
 		left: 50%;
-		margin-top: -25px;
+		margin-top:-25px;
 		transform: translate(-50%,0);
-		z-index: 1;
 	}
 }
 .img-product-slider-pager{
@@ -410,6 +410,15 @@ $gold: #c6b15a;
 			}
 		}
 	}
+	&.mobile-thumb{
+		margin-top: 15px;
+		display: none;
+		ul{
+			li{
+				width: 25%;
+			}
+		}
+	}
 }
 
 /*================================= Responsive =============================*/
@@ -432,7 +441,8 @@ $gold: #c6b15a;
   }
 }
 
-@media(max-width:768px){
+@media(max-width:920px){
+	/*
 	.img-product-slider{
 		.product-name{
 			position: relative;
@@ -441,6 +451,18 @@ $gold: #c6b15a;
 			transform: none;
 			float: left;
 			margin: auto;
+		}
+	}
+	*/
+	.img-product-slider{
+		.product-name{
+			width: 80%;
+		}
+	}
+	.img-product-slider-pager{
+		display: none;
+		&.mobile-thumb{
+			display: block;
 		}
 	}
 }
