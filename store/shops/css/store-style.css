@@ -1,17 +1,17 @@
 @charset "utf-8";
 a{ text-decoration:none;}
 #cont {
-	width:100%; 
-	margin: 17% auto 0 auto; 
-	padding-bottom:5%; 
-	height:auto; 
-	position:relative; 
+	width:100%;
+	margin: 17% auto 0 auto;
+	padding-bottom:5%;
+	height:auto;
+	position:relative;
 	overflow:hidden
 	}/* CSS Document */
 .collcolumn{
-	float:left; 
-	width:49%; 
-	text-align:right;	
+	float:left;
+	width:49%;
+	text-align:right;
 	font-family:'gotham_mediumregular', sans-serif;
 	color:#27313f;
 	letter-spacing:2px;
@@ -38,9 +38,9 @@ a{ text-decoration:none;}
 	font-size:1rem;
 }
 .collcolumn2{
-	float:right; 
-	width:49%; 
-	text-align:right;	
+	float:right;
+	width:49%;
+	text-align:right;
 	font-family:'gotham_mediumregular', sans-serif;
 	color:#27313f;
 	letter-spacing:2px;
@@ -156,28 +156,43 @@ a{ text-decoration:none;}
 	width:100%;
 	position:relative;
 	}
-/*--------------- leftinfo -----------------*/	
+/*--------------- leftinfo -----------------*/
 .detailcolleft{
-	float:left; 
-	width:49%; 
-	text-align:left;	
+	float:left;
+	width:49%;
+	text-align:left;
 	color:#27313f;
 	clear:left;
 	overflow:hidden;
 	position:relative;
-	margin-top:-300px;
 	}
 .detailcolleft .motto{
+	/*
 	font-family:'gotham_boldregular', sans-serif;
 	font-size:1rem;
+	*/
+	font-family: 'Yaquote Script Personal Use',sans-serif;;
+	font-size: 29px;
 	color:#000;
 	letter-spacing:1px;
 	margin-bottom:20px;
 	text-align:center;
-	}	
+	}
+.detailcolleft .motto:before{
+	content:open-quote;
+}
+.detailcolleft .motto:after{
+	content:close-quote;
+}
+.detailcolleft .motto:before,.detailcolleft .motto:after{
+	font-size: 67px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 .detailcolleft .head{
 	font-family:'gotham_boldregular', sans-serif;
-	font-size:1rem;
+	/*font-size:1rem;*/
+	font-size: 19px;
 	color:#000;
 	letter-spacing:2px;
 	margin-bottom:5px;
@@ -201,10 +216,10 @@ a{ text-decoration:none;}
 	width:100%;
 	margin:20px 0;
 }
-/*--------------- rightinfo -----------------*/	
+/*--------------- rightinfo -----------------*/
 .detailcolright{
-	float:right; 
-	width:40%; 
+	float:right;
+	width:40%;
 	color:#27313f;
 	clear:right;
 	overflow:hidden;
@@ -221,13 +236,13 @@ a{ text-decoration:none;}
 	text-align:center;
 	width:100%;
 	padding:20px 0;
-	}	
+	}
 .detailcolright .colorbox .items{
 	display:inline-block;
 	margin:0 10px;
 	padding:10px
 	}
-	
+
 .detailcolright .colorbox img{
 	margin:0 10px;
 	}
@@ -244,7 +259,7 @@ a{ text-decoration:none;}
 .detailcolright .colorbox2 img{
 	margin:0 20px;
 	zoom:120%;
-	}						
+	}
 .detailcolright table{
 	border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC;
@@ -261,7 +276,7 @@ a{ text-decoration:none;}
 	}
 .detailcolright td:last-child{
 	border-right:none;
-	
+
 }
 .amout{zoom:150%;}
 .selectst {
@@ -274,7 +289,7 @@ a{ text-decoration:none;}
 	top:2px !important;
 	height:20px;
 	position:relative;
-}	
+}
 @media (max-width : 1440px){ }
 @media (max-width : 1360px){ }
 @media (max-width : 1280px){ }
@@ -291,7 +306,7 @@ a{ text-decoration:none;}
 .collcolumn2{
 	float:none;
 	margin: 0 auto;
-	width:96%; 
+	width:96%;
 	}
 .collcolumn2 .imgcol{
 	float:left;
@@ -302,14 +317,14 @@ a{ text-decoration:none;}
 	width:90%;
 	margin:5px auto !important;
 	}
-select { 
+select {
 	width:100%;
 	font-size:14px;
-	font-family:'gotham_boldregular', sans-serif;	
+	font-family:'gotham_boldregular', sans-serif;
 }
 .selectst {
 	margin-bottom:4px;
-}				
+}
 /*--------------- 	grid   -----------------*/
 .filterGrid li{
 	width:100%;
@@ -317,20 +332,20 @@ select {
 /*--------------- rightinfo -----------------*/
 .detailcolright{
 	position:relative;
-	float:none !important; 
-	width:100%; 
+	float:none !important;
+	width:100%;
 	color:#27313f;
 	clear: both;
 	overflow:hidden;
 	}
-/*--------------- leftinfo -----------------*/		
+/*--------------- leftinfo -----------------*/
 .detailcolleft{
 	float:none !important;
-	text-align:left;	
+	text-align:left;
 	color:#27313f;
 	width:90%;
 	margin:0 auto;
 	margin-top:-150px;
 	}
-.amout{zoom:100%; width:100%}	
+.amout{zoom:100%; width:100%}
 	}

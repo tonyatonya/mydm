@@ -130,7 +130,7 @@ if (!$_POST) {
 </head>
 
 <!-- HEADER BOX -->
-<header class="header">
+<!--<header class="header">
     <div id="top-nav">
         <div class="boxleft">
             <a id="swit-btn" class="current" href="../index.html">STORE</a>
@@ -168,6 +168,50 @@ if (!$_POST) {
             <a href="../story/story.php" class="navitem">STORY</a>
             <a href="../blog/blog.php" class="navitem">BLOG</a>
             <a href="../misc/contact.php" class="navitem">LOCATION</a>
+        </nav>
+    </div>
+</header>-->
+<header class="header">
+    <div id="top-nav">
+        <div class="boxleft">
+            <a id="swit-btn" class="current" href="../index.html">STORE</a>
+            <a id="swit-btn" href="../../studio/index.html" target="_blank" style="margin-right:20px;">STUDIO</a>
+        </div>
+
+    </div>
+    <div class="container clearfix">
+        <a id="logo" href="../index.html"></a>
+        <div class="boxright">
+            <ul>
+                <li>
+                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+                       onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
+                            src="../images/top-icon-fav.svg"></a>
+                </li>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
+                </li>
+
+
+                <li>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
+            <a href="../story/story.php" class="navitem">STORY</a>
+            <a href="../blog/blog.php" class="navitem">BLOG</a>
+            <a href="contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
 </header>
@@ -400,12 +444,14 @@ if (!$_POST) {
 <section class="container clearfix">
     <div id="cont">
         <div class="collcolumn clearfix">
+	        <!--
             <div class="allitem-nav">
                 <a id="swit-btn" class="current" href="#modal" style="font-size:10px !important">VIEW ALL ITEMS</a>
             </div>
+            -->
             <img src="images/head-img-coll1.jpg" alt="collection1" style="width:100%;">
             <img src="../images/cutnpaint.svg" class="cnp">
-            <a href="../pdf/MYDM Catalogue_151217 with no price.pdf" target="_blank" class="dl">download catalogue here
+            <a href="../pdf/MYDM Catalogue.pdf" target="_blank" class="dl">download catalogue here
                 > ></a>
         </div>
         <div class="collcolumn2 clearfix">
@@ -511,78 +557,15 @@ if (!$_POST) {
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="../js/main.js"></script>
+<!--------------------------- ---------------------------------------->
+<link href="../css/fixed.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<?php include('../login.php'); ?>
+<!--------------------------- ---------------------------------------->
 
 
-<script>
-    $(document).ready(function() {
-        $('nav').before('<div id="smartbutton"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-
-        // add click listener
-        $('#smartbutton').click(function(event)
-        {
-            $('nav').animate({height:'toggle'},200);
-        });
-    });
-</script>
-<script>
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 50) {
-            $(".header").addClass("active");
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("active");
-        }
-    });
-
-</script>
-
-<script>
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
-
-    $(window).scroll(function(event){
-        didScroll = true;
-    });
-
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down
-            $('header').removeClass('header').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if(st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('header');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-    $(function() {
-
-        $('#st-accordion').accordion();
-
-    });
-</script>
 <script src="js/filterGrid.js"></script>
 </body>
 </html>

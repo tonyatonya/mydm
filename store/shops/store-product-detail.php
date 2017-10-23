@@ -98,21 +98,22 @@ while ($db->read()) {
     <link href="../css/grid.css" rel="stylesheet" type="text/css"/>
     <link href="../css/gen-font.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <script language="javascript" type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script language="javascript" type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
     <!--   ################ Smart  Ajax ####################-->
-    <script type="text/javascript" src="/store/shops/library/Common/appfunction.js"></script>
+    <script type="text/javascript" src="../shops/library/Common/appfunction.js"></script>
 
-    <link rel="stylesheet" href="/store/css/remodal.css">
-    <link rel="stylesheet" href="/store/css/remodal-default-theme.css">
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
     <!--    TOOL TIPS -->
     <link href="../css/tooltip.css" rel="stylesheet" type="text/css"/>
     <script src="../js/tooltip.js" type="text/javascript"></script>
 
 
     <!--  Favorite -->
-    <script type="text/javascript" src="/store/addfav.js"></script>
+    <script type="text/javascript" src="../addfav.js"></script>
     <!--  CART  -->
     <script type="text/javascript" src="../addcart.js"></script>
     <!--  Account -->
@@ -141,7 +142,7 @@ while ($db->read()) {
             $("#pinterest-share").on("click", function () {
                 var url = window.location.href;     // Returns full URL
                 var title = $('#title').text();
-                var img_url = 'http://mydm.me/store/' + $('#url_img').val();
+                var img_url = 'http://mydm.me../' + $('#url_img').val();
                 var fbpopup = window.open("http://pinterest.com/pin/create/button/?url=" + url + "&media=" + img_url + "&description=" + title, "pop", "width=700, height=450, scrollbars=no");
                 return false;
             });
@@ -154,6 +155,7 @@ while ($db->read()) {
 
 </head>
 <!-- HEADER BOX -->
+
 <header class="header">
     <div id="top-nav">
         <div class="boxleft">
@@ -163,7 +165,7 @@ while ($db->read()) {
 
     </div>
     <div class="container clearfix">
-        <a id="logo" class="col" href="../index.html"></a>
+        <a id="logo" href="../index.html"></a>
         <div class="boxright">
             <ul>
                 <li>
@@ -171,27 +173,30 @@ while ($db->read()) {
                        onclick="tooltip.pop(this, '#tip1', {sticky:true, position:4, cssClass:'no-padding'})"><img
                             src="../images/top-icon-fav.svg"></a>
                 </li>
-
-                <li style="position:relative">
-                    <div class="bagcount"></div>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-count.svg"></a>
+				<li style="position:relative">
+                	<div class="bag-container">
+                    	<div class="bagcount"></div>
+	                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
+	                       onclick="tooltip.pop(this, '#tip2', {sticky:true, position:4, cssClass:'no-padding'})">
+		                       <img src="../images/top-icon-count.svg">
+		                </a>
+                	</div>
                 </li>
 
+
                 <li>
-                    <a id="icon-btn" class="tooltip" href="#demo1_tip"
-                       onclick="tooltip.pop(this, '#tip3', {sticky:true, position:4, cssClass:'no-padding'})"><img
-                            src="../images/top-icon-member.svg"></a>
+                    <a id="icon-btn" class="tooltip member-btn" href="#">
+	                    <img src="../images/top-icon-member.svg">
+	                </a>
                 </li>
             </ul>
         </div>
         <nav>
             <a href="../collection/collection.php" class="navitem">COLLECTIONS</a>
-            <a href="index.html" class="navitem">SHOP</a>
+            <a href="../shops/store-home.php" class="navitem">SHOP</a>
             <a href="../story/story.php" class="navitem">STORY</a>
             <a href="../blog/blog.php" class="navitem">BLOG</a>
-            <a href="../misc/contact.php" class="navitem">LOCATION</a>
+            <a href="contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
 </header>
@@ -203,7 +208,7 @@ while ($db->read()) {
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="../account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -217,9 +222,9 @@ while ($db->read()) {
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="/store/shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="../shops/shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="/store/shops/" class="btn">SHOP NOW!!</a>
+                    <a href="../shops/" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -251,8 +256,8 @@ while ($db->read()) {
 
             </div>
             <div class="bottom">
-                <a href="/store/account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="/store/account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="../account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="../account/login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>
@@ -262,12 +267,73 @@ while ($db->read()) {
 <!-- HEADER BOX -->
 <section class="container clearfix">
     <div id="cont">
+	    <div class="filter-group">
+			<button class="viewall">VIEW ALL ITEMS</button>
+			<div class="select-holder">
+				<select>
+					<option>Price</option>
+					<option>100</option>
+					<option>200</option>
+				</select>
+			</div>
+			<div class="select-holder">
+				<select>
+					<option>Category</option>
+					<option>Category Name</option>
+					<option>Category Name</option>
+				</select>
+			</div>
+			<div class="select-holder">
+				<select>
+					<option>Pattern</option>
+					<option>Pattern Name</option>
+					<option>Pattern Name</option>
+				</select>
+			</div>
+			<!-- เลือกแล้ว Jump ไปที่หน้ารวม Products แล้ว Filter ตามสิ่งที่เลือกมา ตัว Option น่าจะต้องเขียนโปรแกรม -->
+		</div>
         <input type="hidden" id="url_img"
                value="./images/products/product-thumbs/<?= $product_detail['p_thumb_image'] ?>">
+
+        <!-- main slider -->
+        <div class="img-product-slider">
+			<ul>
+		         <?php if (isset($product_collection) && !empty($product_collection)) {
+			         $i=0;
+		         ?>
+
+                        <?php foreach ($product_collection as $item) { ?>
+
+                            <li data-slide-index="<? echo $i; ?>">
+
+                                <img src="../images/products/product-detail/<?= $item['p_id'] ?>/<?= $item['p_img'] ?>"
+                                     alt="">
+
+                            </li>
+
+
+                        <?php
+	                        $i++;
+	                        }
+	                    ?>
+
+                    <?php } else { ?>
+                        <li><img src="../images/nopic.png" alt="Product Collection Comming Soon ...>"></li>
+                    <?php } ?>
+
+		    </ul>
+		    <!-- product-name -->
+		    <h2 class="product-name"><?= $product_detail['p_pattern_name'] ?> <?= $product_detail['p_name'] ?></h2>
+		    <!-- end product-name -->
+		</div>
+        <!-- end main slider -->
+
+
+		<!--
         <article class="gallcontainer">
             <div class="carousel">
-                <ul>
 
+                <ul>
 
                     <?php if (isset($product_collection) && !empty($product_collection)) { ?>
                         <?php foreach ($product_collection as $item) { ?>
@@ -313,18 +379,18 @@ while ($db->read()) {
                     <?php } else { ?>
                         <li><img src="../images/nopic.png" alt="Product Collection Coming Soon ...>"></li>
                     <?php } ?>
-<!--                    <li><img src="images/prod-slide/thumbs/01.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"></li>-->
-<!--                    <li><img src="images/prod-slide/thumbs/02.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"></li>-->
-<!--                    <li><img src="images/prod-slide/thumbs/03.jpg" alt="PAINT & POINT <p>Square Pillow Case</p>"></li>-->
+
                 </ul>
             </div>
         </article>
-
+        -->
+		<!--
         <style>
             .small > p  {
                 line-height: 140%;
             }
         </style>
+        -->
 
         <article class="detailcolleft">
             <div class="motto"><?= $product_detail['p_title'] ?></div>
@@ -353,11 +419,40 @@ while ($db->read()) {
         </article>
 
         <article class="detailcolright">
+	        <div class="img-product-slider-pager" id="#bx-pager">
+			    <ul>
+
+			        <?php if (isset($product_collection) && !empty($product_collection)) {
+				        $i=0;
+			        ?>
+                        <?php foreach ($product_collection as $item) { ?>
+                            <li data-slide-index="<?php echo $i ; ?>">
+                                <?php if(isset($item['p_img_show']) && !empty($item['p_img_show'])) {?>
+                                <a href="#">
+                                <img
+                                    src="../images/products/product-detail/<?= $item['p_id'] ?>/collect/<?= $item['p_img_show'] ?>"
+                                    alt="<?= $product_detail['p_pattern_name'] ?> <?= $product_detail['p_name'] ?>">
+                                </a>
+                                <?php } else{ ?>
+                                    <a href="#">
+                                        <img src="../images/nopic.png" alt="Product Collection Coming Soon ...>">
+                                    </a>
+                                <? } ?>
+                            </li>
+
+                        <?php
+	                        $i++;
+	                        } ?>
+                    <?php } else { ?>
+                        <li><img src="../images/nopic.png" alt="Product Collection Coming Soon ...>"></li>
+                    <?php } ?>
+			    </ul>
+		    </div>
             <div class="colorbox">
                 <div class="items" style="line-height:10px;">Color :</div>
                 <?php if (isset($product_link) && !empty($product_link)) { ?>
                     <?php foreach ($product_link as $link) { ?>
-                        <a href="/store/shops/store-product-detail.php?p_id=<?= $link['p_id'] ?>"><img
+                        <a href="../shops/store-product-detail.php?p_id=<?= $link['p_id'] ?>"><img
                                 src="../images/products/product-thumbs/<?= $link['p_thumb_image'] ?> " width="50px"
                                 height="50px"></a>
 
@@ -373,7 +468,7 @@ while ($db->read()) {
                     <img src="images/btn-fav.svg" class="items" style="cursor: pointer;"
                          onclick="addFav(<?= $product_id ?>)">
                 <?php } else { ?>
-                    <a href="/store/account/login.php"><img src="images/btn-fav.svg" class="items"
+                    <a href="../account/login.php"><img src="images/btn-fav.svg" class="items"
                                                             style="cursor: pointer;"> </a>
                 <?php } ?>
 
@@ -397,37 +492,7 @@ while ($db->read()) {
 
     </div>
 </section>
-<style>
-    .thumbnails .squre-img {
-        height: auto;
-        width: 100%;
-        /*overflow: hidden;*/
-    }
 
-    .thumbnails img {
-        /*width: 150px;*/
-        /*height:150px;*/
-        /*max-width: 100%;*/
-        /*max-height: 100%;*/
-        /*height: inherit !important;*/
-    }
-
-    .carousel .coruoselContainner {
-
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .carousel img {
-        max-width: 100%;
-        max-height: 100%;
-        height: inherit;
-
-    }
-
-
-</style>
 <section class="container clearfix">
     <div class="grid_12">
         <div class="wrapper grid3">
@@ -472,80 +537,44 @@ while ($db->read()) {
     </div>
 </footer>
 
+<script type="text/javascript" src="../js/main.js"></script>
+<!--------------------------- ---------------------------------------->
+<link href="../css/fixed.css" rel="stylesheet"/>
 
-<script>
-    $(document).ready(function () {
-        $('nav').before('<div id="smartbutton"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
-        $('#smartbutton').append('<div class="buttonline"></div>');
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<?php include('../login.php'); ?>
+<!--------------------------- ---------------------------------------->
 
-        // add click listener
-        $('#smartbutton').click(function (event) {
-            $('nav').animate({height: 'toggle'}, 200);
-        });
-    });
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var slider = $('.img-product-slider ul').bxSlider({
+	            mode: 'fade', //mode: 'fade','horizontal'
+	            //speed: 300,
+	            auto: false,
+	            infiniteLoop: true,
+	            hideControlOnEnd: true,
+	            useCSS: false,
+	            pager:false,
+	        });
+		$(".img-product-slider-pager ul li a").click(function(e){
+			e.preventDefault();
+			$(".bx-thumb ul li a.active").removeClass("active");
+			$(this).addClass("active");
+			var _index = $(this).parent().attr("data-slide-index");
+			console.log("_index = ", _index);
+			slider.goToSlide(_index);
+		})
+	})
 </script>
-<script>
-    $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-            $(".header").addClass("active");
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("active");
-        }
-    });
 
-</script>
 
-<script>
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
-
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $('header').removeClass('header').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('header');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-    $(function () {
-
-        $('#st-accordion').accordion();
-
-    });
-
-</script>
+<!--
 <script src="js/jquery.light-carousel.js"></script>
 <script>
     $('.gallcontainer').lightCarousel();
 </script>
+-->
 </body>
 </html>

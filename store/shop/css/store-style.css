@@ -167,16 +167,34 @@ a{ text-decoration:none;}
 	/*margin-top:-300px;*/
 	}
 .detailcolleft .motto{
+	/*
 	font-family:'gotham_boldregular', sans-serif;
 	font-size:1rem;
+	*/
+	font-family: 'Yaquote Script Personal Use',sans-serif;;
+	font-size: 29px;
 	color:#000;
 	letter-spacing:1px;
 	margin-bottom:20px;
 	text-align:center;
 	}
+
+.detailcolleft .motto:before{
+	content:open-quote;
+}
+.detailcolleft .motto:after{
+	content:close-quote;
+}
+.detailcolleft .motto:before,.detailcolleft .motto:after{
+	font-size: 67px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .detailcolleft .head{
 	font-family:'gotham_boldregular', sans-serif;
-	font-size:1rem;
+	/*font-size:1rem;*/
+	font-size: 19px;
 	color:#000;
 	letter-spacing:2px;
 	margin-bottom:5px;

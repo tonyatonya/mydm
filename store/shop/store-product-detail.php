@@ -116,7 +116,6 @@
 			<!-- เลือกแล้ว Jump ไปที่หน้ารวม Products แล้ว Filter ตามสิ่งที่เลือกมา ตัว Option น่าจะต้องเขียนโปรแกรม -->
 		</div>
 		<div class="img-product-slider">
-			<h2 class="product-name">PAINT & POINT Square Pillow Case</h2>
 			<ul>
 				<li data-slide-index="0"> <img src="images/prod-slide/01.jpg" alt="Square Pillow Case"> </li>
 		        <li data-slide-index="1"> <img src="images/prod-slide/02.jpg" alt="Square Pillow Case"> </li>
@@ -125,6 +124,7 @@
 		        <li data-slide-index="4"> <img src="images/prod-slide/05.jpg" alt="Square Pillow Case"> </li>
 		        <li data-slide-index="5"> <img src="images/prod-slide/06.jpg" alt="Square Pillow Case"> </li>
 		    </ul>
+		    <h2 class="product-name">PAINT & POINT Square Pillow Case</h2>
 		</div>
 		<!--<article class="gallcontainer">
 		    <div class="carousel">
@@ -143,7 +143,7 @@
 		    </div>
 	    </article>-->
 		<article class="detailcolleft">
-			   	<div class="motto">“Comfy is not enough for your couch, pattern it up!”</div>
+			   	<div class="motto">Comfy is not enough for your couch, pattern it up!</div>
 			        <div class="head">Description</div>
 			    <p>A couch is the first thing your guests will see when enter your house and
 			    the first thing you think of when you’re tired. I know it’s comfy, but it
@@ -187,7 +187,6 @@
 	            <td><a href="#"><img src="images/icon-pi.svg"></a></td>
 	          </tr>
 	        </table>
-
 	    </article>
 	</div>
 </section>
