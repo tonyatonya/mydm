@@ -1,0 +1,348 @@
+#pageheader{
+	width:86px;
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:48px;
+	color:#28313f;
+	text-align:left;
+	height:65px;
+	line-height:65px;
+	position:relative;
+	}
+article{ overflow:hidden;}
+#articlecont{ margin:0 auto;height:100%; padding:20px 0; margin-bottom:20px; width:71%
+}
+#articlecont2{margin:0 auto; height:40px; width:100%; border-bottom:solid 1px #999; margin-top:20px; margin-bottom:100px;
+}
+#articlecont h2{
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:30px;
+	color:#28313f;
+	margin-bottom:10px;
+	}
+#articlecont2 h3{
+	font-family:'bebas_neueregular', sans-serif;
+	float:left;
+	font-size:24px;
+	color:#28313f;
+	font-weight:100;
+	padding:30px 0;
+	}	
+#articlecont hr{
+	border:none;
+	background:#666;
+	width:100%;
+	height:1px;
+	margin-bottom:10px
+	}	
+#articlecont p{
+	color:#333;
+	font-size:11px;
+	}
+#prodcont{background:url(../images/bg-pattern4.png) repeat-x top; 
+	width:100%; 
+	padding-top:15px;}
+#totalcont{
+	padding:20px 0;
+	width:100%;
+	
+	height:auto;	
+	}
+/*******************/
+/*     table
+/*******************/	
+table.totalunit{
+	width:100%;
+	background:url(../images/bg-pattern4.png) repeat-x bottom;
+	}
+table.totalunit tr{
+	color:#666;
+	height:60px;	
+	}	
+table.totalunit th{
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:16px;
+	font-weight:100;
+	padding:10px 0;
+	}
+table.totalunit th.item{
+	text-align:left;
+	width:15%;
+	}
+table.totalunit th.description{
+	text-align:left;
+	width:45%;		
+	}
+table.totalunit th.quantity{
+	width:10%;		
+	}
+table.totalunit th.price{
+	width:10%;	
+	}
+table.totalunit th.total{
+	width:10%;	
+	}	
+table.totalunit th.remove{
+	width:10%	
+	}
+	
+table.totalunit td{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:100;
+	padding:10px 0;
+	}
+table.totalunit td.item{
+	text-align:left;
+	width:15%;
+	}
+table.totalunit td.item img{
+	width:60%;
+	}	
+table.totalunit td.description{
+	text-align:left;
+	width:45%;		
+	}
+table.totalunit td.quantity{
+	width:10%;		
+	}
+table.totalunit td.price{
+	width:10%;	
+	}
+table.totalunit td.total{
+	width:10%;	
+	}	
+table.totalunit td.remove{
+	width:10%		
+	}
+	
+/*******************/
+/*     result
+/*******************/	
+#resultcont{
+	border-top:1px solid #999;
+	padding-top:20px;
+	width:100%;
+
+	}
+#resultcont .leftcont{
+	text-align:left;
+	width:45%;
+	float:left;
+	}
+#resultcont .rightcont{
+	text-align:right;
+	width:45%;
+	float:right;
+	}			
+
+#resultcont .leftcont .btncart a{
+	width:150px;
+	height:16px;
+	text-align:center;
+	background:#28313F;
+	color:#FFF;
+	display:block;
+	line-height:16px;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	margin-bottom:10px;
+	z-index:999 !important;
+}
+
+#resultcont .leftcont .btncart a:hover{
+	background:#D54F27;
+	color:#fff;
+}
+#resultcont .leftcont p{
+	text-align:left;
+	font-family:'Arial' sans-serif;
+	font-size:11px;
+	color:#666;
+}
+
+#resultcont .rightcont .subtotal{
+	display: inline-block;
+	float:right;
+	text-align:right;
+	width:100%;
+	height:16px;
+	color:#28313F;
+	line-height:16px;
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:16px;
+	font-weight:100;
+}
+#resultcont .rightcont .subtotal ul{
+	float:right;
+}
+#resultcont .rightcont .subtotal li{
+	display: inline-block;
+	width:50px;
+	float:left;
+}
+#resultcont .rightcont .btngoon a{
+	float:right;
+	width:35%;
+	text-align:center;
+	background:#28313F;
+	color:#FFF;
+	display:block;
+	line-height:16px;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	margin-right:10px;
+	z-index:999 !important;
+}
+#resultcont .rightcont .proceed a{
+	float:right;
+	width:35%;
+	text-align:center;
+	background:#28313F;
+	color:#FFF;
+	display:block;
+	line-height:16px;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	margin-bottom:10px;
+	z-index:999 !important;
+}
+#resultcont .rightcont .proceed a:hover{
+	background:#D54F27;
+	color:#fff;
+}
+#resultcont .rightcont .btngoon a:hover{
+	background:#D54F27;
+	color:#fff;
+}
+
+/*******************/
+/*    added item
+/*******************/
+
+#fixed-additem{
+	z-index:999;
+	right:20px;
+	bottom:160px;
+	position:fixed;
+	width:120px;
+	padding:10px;
+	height:40px;
+	background:#fff;
+	border:1px solid #999;
+	}
+#fixed-additem .text{
+	line-height:24px;
+	float:right;
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:18px;
+	color:#999;
+	font-weight:100;
+	}
+#fixed-additem .value{
+	line-height:24px;
+	margin-right:10px;
+	float:right;
+	font-family:'bebas_neueregular', sans-serif;
+	font-size:24px;
+	color:#28313F;
+	font-weight:100;
+	}
+	#fixed-additem hr{
+	margin-bottom: 5px;
+	width:100%;
+	height:1px;
+	border:none;
+	background:#999;
+	}
+	#fixed-additem .seedetail a{
+	text-decoration:none;
+	float:right;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	color:#999;
+	}
+	#fixed-additem .seedetail a:hover{
+	text-decoration:none;
+	float:right;
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	color:#999;
+	}		
+
+									
+@media screen and (max-width : 650px) {
+	#pageheader{
+		margin:0 auto;
+	}
+	section{
+	margin-top:30px !important;
+	}
+	
+	#resultcont .leftcont{
+	text-align:left;
+	width:100%;
+	float:none;
+	margin-bottom:20px;
+	}
+
+	
+	#resultcont .rightcont{
+	margin:0 auto  !important;
+	text-align:center ;
+	width:100%;
+	float:left !important;
+	}
+	#resultcont .rightcont .subtotal{
+	width:90%;
+	float:none;
+	margin:0 auto 50px auto; !important;
+	}
+	#resultcont .rightcont .subtotal ul{
+	float:none;
+	margin:0 auto;
+	padding-left:10px;
+}
+	#resultcont .rightcont .btngoon a{
+	float:none;
+	width:80%;
+	margin-right:0;
+	margin:5px auto !important;
+	}
+	#resultcont .rightcont .proceed a{
+	float:none;
+	width:80%;
+	margin:0 auto !important;
+
+	}
+
+	
+	}	
+@media screen and (max-width : 480px) {
+	section{
+	margin-top:30px !important;
+	}
+	#resultcont .leftcont{
+	
+	float:none !important;
+	}
+	#resultcont .leftcont .btncart a{
+		width:80%;
+	margin:0 auto 10px auto!important;
+	}
+	#resultcont .leftcont p{
+		text-align:center;
+		border-bottom:1px #666 solid;
+		padding-bottom:20px;
+}
+table.totalunit td{
+	font-size:11px;
+	padding:15px 0;
+	}
+table.totalunit th{
+	font-family:'Arial' sans-serif;
+	font-size:12px;
+	padding:15px 0;
+	}	
+	
+	
+	}

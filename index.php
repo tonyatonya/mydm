@@ -65,12 +65,12 @@ document.onload = init();
     	</div>
    </div>
    </a>
-   <a href="store/index.php">
+   <a href="store/index.html">
    <div class="row2">
       	<div class="white2">
-			<h1>STORE</h1>
+						<h1>STORE</h1>
             <p>Inspiring Handcraft Patterns And Products</p>
-    	</div>
+    		</div>
    </div>
   </a>
 </div>

@@ -1,0 +1,140 @@
+#intro{
+	width:100%;}
+nav{
+	position:fixed;
+	width:100%;	
+	}
+.mainmenu {
+	z-index:999;
+	width:100%;
+	background:url(../images/bg-menu.jpg) repeat-x;
+	height: 165px;
+	font-family:'gotham_boldregular', sans-serif;
+	font-size:14px;
+}
+
+.mainmenu .logo{
+	float:left;
+	width:206px;
+	height:81px;
+	background:url(../images/logo-mydm-landing.png) no-repeat;
+	margin-top:4%;
+}
+
+.mainmenu ul {
+	margin: 0;
+	padding: 0;
+}
+.mainmenu li {
+	line-height:165px;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	*display:inline;
+	text-align:right;
+}
+.mainmenu a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #28313f;
+	line-height: 90%;
+}
+.mainmenu a:hover {
+	color: #d54f27;
+}
+.mainmenu .current a {
+	color: #d54f27;
+}
+
+/* right nav */
+.mainmenu.right ul {
+	text-align: right;
+}
+
+/* center nav */
+.mainmenu.center ul {
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.mainmenu {
+		text-align:center !important;
+		position: relative;
+		min-height: 40px;
+	}	
+	.mainmenu ul {
+		margin-top:165px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(40, 49, 63, 1 );
+	}
+	.mainmenu li {
+
+		border-bottom:1px #86878a dotted;
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.mainmenu li a{
+		color:#FFF;
+		text-align:center !important;
+		padding:0 !important;
+		line-height:30px;
+	}
+	.mainmenu .current {
+		display: block;
+		color:#d54f27; /* show only current <li> item */
+	}
+	.mainmenu a {
+		
+		display: block;
+		text-align: left;
+	}
+	.mainmenu .current a {
+		background: none;
+		color: #d54f27;
+	}
+
+	/* on nav hover */
+	.mainmenu ul:hover {
+		background-image: none;
+	}
+	.mainmenu ul:hover li {
+		display: block;
+	}
+	.mainmenu ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
+
+	/* right nav */
+	.mainmenu.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.mainmenu.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+	.mainmenu .logo{
+	float:none;
+	margin:42px auto 0 auto !important;
+}
+	
+}
+
+@media screen and (max-width: 820px) {
+	.mainmenu {
+	font-size:12px;
+}
+	.mainmenu a {
+	padding: 3px 6px;
+}
+	.mainmenu .logo{
+	margin-top:6%;
+}
+	
+}

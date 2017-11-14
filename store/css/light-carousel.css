@@ -1,0 +1,309 @@
+/* Light Carousel v1.0.0 | (c) 2015 Taisuke J | This project is released under the MIT license. */
+
+/*-------------------------------------------------------------------------------------------*/
+/* Settings (tweek it for your use) */
+/*-------------------------------------------------------------------------------------------*/
+
+.caption {
+	border:2px solid #000;
+	background: rgba(255, 255, 255, 0.7);
+	color: #000;
+	
+}
+.thumbnails{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	padding:0;
+	margin-bottom:30px;	
+}
+.thumbnails ul{
+	width:40%;
+	float:right;
+	clear:right;
+	height:380px;
+}
+.thumbnails li {
+	float:right;
+	clear:right;
+    /*height: auto;*/
+	width: 32.1%;
+	padding: 6px 0 0 6px;
+
+}
+
+@media screen and (max-width: 767px) {
+	.thumbnails li {
+		width: 20%;
+		padding: 3px;
+	}
+}
+.thumbnails .selected div:before {
+	border-color: #e57649;
+	background: #e57649;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Core CSS */
+/*-------------------------------------------------------------------------------------------*/
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	width:100%
+}
+.carousel ul {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.carousel li {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	-webkit-transition: 0.4s linear;
+	transition: 0.4s linear;
+	overflow: hidden;
+}
+.carousel li:first-child {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.carousel li.current {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.carousel img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: bottom;
+
+
+}
+.caption {
+	opacity: 0;
+	-webkit-transform: translate3d(30px, 0, 0);
+	transform: translate3d(30px, 0, 0);
+	position: absolute;
+	width:500px;
+	font-size:1.8rem;
+	-webkit-transition: 0.6s 0.8s;
+	transition: 0.6s 0.8s;
+	text-align:center;
+  	bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+}
+@media screen and (max-width: 767px) {
+.caption {
+		bottom: 0;
+		width: 80%;
+		padding: 15px 15px;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 400px) {
+.caption {
+		padding: 10px 15px;
+		font-size: 16px;
+		
+	}
+.caption span{
+	font-size:1rem;
+
+}
+}
+.caption span{
+	text-align:center;
+	display: inline-block;
+	opacity: 0;
+	-webkit-transform: translate3d(0, -5px, 0);
+	transform: translate3d(0, -5px, 0);
+	-webkit-transition: 0.6s 1.2s;
+	transition: 0.6s 1.2s;
+	font-family: "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:bold;
+	font-size:1.5rem;
+	margin:0 0 0  30px;
+
+}
+.caption p {
+	font-family:'gotham_mediumregular', sans-serif;
+	font-style: normal;
+	display: inline-block;
+	margin:0 10px 0 10px;
+	
+}
+.current .caption,
+.current .caption span {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.mobile .controls {
+	display: none;
+}
+.carousel:hover .prev,
+.carousel:hover .next {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel:hover .prev:hover,
+.carousel:hover .next:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.prev {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	left: 47%;
+	top: 100%;
+	line-height: 1;
+	margin-top: -15px;
+	font-size: 70px;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	-webkit-transform: translate3d(-10px, 0, 0);
+	transform: translate3d(-10px, 0, 0);
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.prev:before {
+	display: block;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	content: "<";
+	font-size:18px;
+}
+.next {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	right: 47%;
+	top: 100%;
+	line-height: 1;
+	margin-top: -15px;
+	font-size: 70px;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	-webkit-transform: translate3d(10px, 0, 0);
+	transform: translate3d(10px, 0, 0);
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.next:before {
+	display: block;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	content: ">";
+	font-size:18px;
+}
+
+.thumbnails {
+	width:100% !important;
+	overflow:hidden;
+	position:relative;
+	margin-top:20px;
+}
+.thumbnails ul {
+	float:right;
+	width:40%;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 3px;
+}
+.thumbnails li {
+	width:32.1%;
+	display:inline-block;
+	float: left;
+}
+.thumbnails li img {
+	width:100%;
+}
+.thumbnails div {
+	position: relative;
+	background: #fff;
+}
+.thumbnails .selected div:before {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.imgContainer {
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+.thumbnails img {
+
+
+
+
+	border: none;
+	vertical-align: bottom;
+	cursor: pointer;
+	-webkit-transform: translateZ(0); /* bug fix for chrome */
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+    /*object-fit: contain !important;*/
+    max-width: 100%;
+    max-height: 100%;
+
+
+
+
+
+}
+.thumbnails img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.thumbnails .selected img {
+	cursor: default;
+}
+.thumbnails .selected img:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+@media screen and (max-width: 767px) {
+.carousel{
+	overflow: visible !important;
+}	
+.caption{
+	paading:0;
+	bottom:-10px ;
+	border:none;
+}	
+.caption span{
+	font-size:0.7rem;
+}
+.thumbnails ul {
+	float:none;
+	width:100%;
+}
+.thumbnails li {
+	width:31%;
+	display:inline-block;
+	float: left;
+}
+}
