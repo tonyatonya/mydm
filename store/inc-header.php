@@ -4,7 +4,6 @@
             <a id="swit-btn" class="current" href="index.php">STORE</a>
             <a id="swit-btn" href="../studio/index.php" target="_blank" style="margin-right:20px;">STUDIO</a>
         </div>
-
     </div>
     <div class="container clearfix">
         <a id="logo" class="col" href="index.php"></a>
@@ -38,7 +37,7 @@
             <a href="shops.php" class="navitem">SHOP</a>
             <a href="story.php" class="navitem">STORY</a>
             <a href="blog.php" class="navitem">BLOG</a>
-            <a href="misc/contact.php" class="navitem">LOCATION</a>
+            <a href="contact.php" class="navitem">LOCATION</a>
         </nav>
     </div>
 </header>
@@ -50,7 +49,7 @@
                 <p>COLLECT YOUR FAVOURITE ITEMS AND REVIEW THEM NEXT VISITFOR INSPIRATION.</p>
             </div>
             <div class="bottom">
-                <a href="account/member-account.php" class="btn">VIEW MY FAVOURITE</a>
+                <a href="member-account.php" class="btn">VIEW MY FAVOURITE</a>
             </div>
         </div>
     </div>
@@ -64,9 +63,9 @@
             <div class="bottom">
                 <div class="seedetail">
                     <span>
-                    <a href="shops/shop-cart-total.php" class="btn" id="viewbag"
+                    <a href="shop-cart-total.php" class="btn" id="viewbag"
                        style="display: none">VIEW BAG </a>
-                    <a href="shops/" class="btn">SHOP NOW!!</a>
+                    <a href="shops.php" class="btn">SHOP NOW!!</a>
                         </span>
                 </div>
             </div>
@@ -98,8 +97,8 @@
 
             </div>
             <div class="bottom">
-                <a href="account/member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
-                <a href="account/login.php" class="btn" id="signin">SIGN IN</a>
+                <a href="member-account.php" class="btn" id="member" style="display: none">YOUR INFO</a>
+                <a href="login.php" class="btn" id="signin">SIGN IN</a>
                 <a class="btn" id="signout" style="display: none;cursor: pointer">SIGN OUT</a>
             </div>
         </div>

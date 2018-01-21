@@ -40,7 +40,21 @@ Class User
 			return false;
 	}
 
-	public function keep_login($u_id,$u_login, $u_name, $u_email, $usertype)
+	public function userData()
+	{
+		$db = $this->db;
+		$sql = "select *
+						from m_user where username = '" . $_SESSION[$this->app_name . "_username"] . "' ";
+		$db = $db->execute($sql);
+
+		if (!$db){
+			return false;
+		} else {
+			return $db->result;
+		}
+	}
+
+	public function keep_login($u_id,$u_login, $u_name, $u_email, $usertype,$u_country)
 	{
 		$_SESSION["u_id"] = $u_id;
 		$_SESSION["u_login"] = $u_login;
@@ -48,6 +62,7 @@ Class User
 		$_SESSION["u_name"] = $u_name;
 		$_SESSION["u_email"] = $u_email;
 		$_SESSION["usertype"] = $usertype;
+		$_SESSION["u_country"] = $u_country;
 	}
 
 	public function checkUser()
@@ -138,7 +153,7 @@ Class User
 //				return false;
 //			}
 
-			$this->keep_login($db->result['u_id'],$db->result['u_login'] ,$db->result['u_name'], $db->result['u_email'], $db->result['usertype']);
+			$this->keep_login($db->result['u_id'],$db->result['u_login'] ,$db->result['u_name'], $db->result['u_email'], $db->result['usertype'],$db->result['u_country']);
 
 			$sql = "update sto_user set last_access_time = NOW() where u_login = '" . $param['u_login'] . "' ";
 			if (!$db->execute($sql))

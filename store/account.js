@@ -3,7 +3,7 @@ $(function(){
 
     $.ajax({
         method: "POST",
-        url: "/store/account/myinfo.php",
+        url: "myinfo.php",
 
         success : function (data) {
             var user = $.parseJSON(data);
@@ -26,27 +26,17 @@ $(function(){
                 $('#member').show();
                 $('#signout').show();
             }
-
         }
     });
-
-
-
-
-
     $('#signout').on('click',function() {
-
-
         if(confirm("Are you sure you want log out")){
 
             $.ajax({
                 method: "POST",
-                url: "/store/account/logout.php",
+                url: "logout.php",
 
                 success : function (data) {
                     var msg = $.parseJSON(data);
-
-                    // alert(msg.msg);
                     location.reload();
 
                     // $('#myemail').html('-');
@@ -70,9 +60,3 @@ $(function(){
 
     });
 });
-
-
-
-
-
-

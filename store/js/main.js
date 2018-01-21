@@ -142,3 +142,112 @@ $(document).ready(function () {
 });
 
 
+// Page loginUser
+function processLogin() {
+    var u_login = $('#u_login').val()
+    var u_password =  $('#u_password').val()
+
+    if (!u_login) {
+        $('#user_err_msg').html('Please enter username')
+        u_login.required = true;
+        return false;
+    }else{
+         $('#user_err_msg').html('')
+    }
+
+     if (!u_password) {
+         $('#password_err_msg').html('Please enter Password')
+        u_password.required = true;
+        return false;
+    }else{
+         $('#password_err_msg').html('')
+    }
+
+    ajax = new SmartAjax('POSTFORM', 'operations.php', 'form');
+    ajax.executeAjax("loginUser",
+        function (result) {
+          console.log(result);
+            if (result[0] == "true") {
+
+                // if (confirm("Login Successfuly Do you want go to previous page.")) {
+
+                   window.location = "./";
+
+                // } else {
+                //     window.location = "/store";
+                // }
+
+
+            } else
+                alert(result[1]);
+        }
+    );
+}
+function requestPass() {
+    document.getElementById('imgAjaxLogin').style.display = "none";
+    document.getElementById('imgSubmit_Pass').style.display = "none";
+}
+
+function sendform() {
+
+       var name = $('input[name^=name]').val();
+       var email = $('input[name^=email]').val();
+       var login_name = $('input[name^=login_name]').val();
+       var country = $('#country option:selected').val();
+       var address = $('textarea#address').val();
+
+       console.log(address)
+       if(!name){
+            $('#msg_name').html('Please Enter your name')
+            return false
+       }else{
+            $('#msg_name').html('')
+       }
+
+       if(!email){
+            $('#msg_email').html('Please Enter your email')
+         return false
+       }else{
+            $('#msg_email').html('')
+       }
+         if(!login_name){
+            $('#msg_username').html('Please Enter your login name')
+            return false
+       }else{
+            $('#msg_username').html('')
+       }
+        if(country == '- please select -'){
+            $('#msg_country').html('Please Enter your Country')
+            return false
+       }else{
+            $('#msg_country').html('')
+       }
+        if(!address){
+            $('#msg_address').html('Please Enter your Address')
+            return false
+       }else{
+            $('#msg_address').html('')
+       }
+
+        var password = $('input[name^=password]').val();
+        var re_password = $('input[name^=re_password]').val();
+
+        if(!password){
+            $('#msg_password').html('Please Enter your Password')
+            return false
+        }else{
+            $('#msg_password').html('')
+        }
+
+        if(!re_password){
+            $('#msg_repassword').html('Please Enter your Password Match On Upper')
+             return false
+        }else{
+            $('#msg_repassword').html('')
+        }
+        if (password == re_password) {
+            form.submit();
+        } else {
+            alert('Please input your password with a same password')
+        }
+}

@@ -1,44 +1,25 @@
 <?php
 session_start();
 require_once "initapp.php";
-
 $type = "";
-
 if($_GET){
     $type = $_GET['type'];
 }
-
-
-
-$list_page = "store-home.php";
+$list_page = "shops.php";
 $products_list = "";
 $i = 0;
-
-if (!$_POST) {
-
-} else {
-
+if ( $_POST ) {
+    // echo '<pre>', print_r( $_POST ) ,'</pre>';
     if ($_POST['cmd'] == 'loadProduct') {
         $command = $_POST['cmd'];
         $category_id = $_POST['category_id'];
         $pattern_id = $_POST['pattern_id'];
-//        $price = $_POST['price'];
-
-
         if (!empty($category_id)) {
-
             $cause .= "and pro.p_cate_id = '" . $category_id . "'";
         }
         if (!empty($pattern_id)) {
-
             $cause2 .= "and pro.p_pattern_id = '" . $pattern_id . "'";
         }
-//        if (isset($price) && !empty($price)) {
-//
-//
-//            $price = explode('-', $price);
-//            $cause3 .= " and pro.p_price BETWEEN '" . $price[0] . "' and '" . $price[1] . "'";
-//        }
         $sql = "select * from sto_products pro join sto_pattern pat on pro.p_pattern_id = pat.p_pattern_id join sto_category cate on cate.p_cate_id = pro.p_cate_id where pro.p_id <> 0 " . $cause . $cause2 . $cause3 . $cause4 ."order by pro.seq desc";
 
         if (!$db->execute($sql))
@@ -48,8 +29,7 @@ if (!$_POST) {
 
         while ($db->read()) {
             $i += 1;
-
-            $products_list .= "<a href=\"store-product-detail.php?p_id=" . $db->result['p_id'] . "\">";
+            $products_list .= "<a href=\"product-detail.php?p_id=" . $db->result['p_id'] . "\">";
             $products_list .= " <li class=\"price all\">";
             $products_list .= "   <img src=\"images/products/product-thumbs/" . $db->result['p_thumb_image'] . "\">";
             $products_list .= "    <div class=\"name\">" . $db->result['p_pattern_name'] . "</div>";
@@ -58,19 +38,12 @@ if (!$_POST) {
             $products_list .= "     <div class=\"view\">view</div>";
             $products_list .= " </li>";
             $products_list .= "</a>";
-
         }
         $products_list .= "</ul>";
-
         $data = array();
-
         $data['content_data'] = $products_list;
-
         $result['message'] = $data;
-
-
     }
-
     echo json_encode($result);
     exit();
 }
@@ -113,204 +86,37 @@ if (!$_POST) {
 
     <link rel="stylesheet" href="css/remodal.css">
     <link rel="stylesheet" href="css/remodal-default-theme.css">
-
-
+    <link rel="stylesheet" href="css/store-shops.css">
     <!--  CART  -->
     <script type="text/javascript" src="addcart.js"></script>
     <!--  Account -->
     <script type="text/javascript" src="account.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-
-            var nice = $("html").niceScroll();  // The document page (body)
-
-
-        });
+      var list_page = 'shops.php';
     </script>
+    <script type="text/javascript" src="js/store-shops.js"></script>
 </head>
 
+<body>
 <!-- HEADER BOX -->
 <?php include 'inc-header.php'; ?>
 <!-- HEADER BOX -->
-
-
-    <script type="text/javascript">
-
-
-        function keepdata() {
-
-        }
-
-
-        function searchProduct(cat_id) {
-            var submit = 1;
-            var price = $('#price').val();
-            if(cat_id != null){
-                var category = cat_id;
-            }else{
-                var category = '';
-
-                 category = $('#cateogory').val();
-            }
-                  var pattern = $('#pattern').val();
-
-
-//            if(price_start > 0 && price_end <= 0 | price_end == ""){
-//                alert('Please type input Price End');
-//                submit = 0;
-//            }
-//
-//            if(price_start > 0 && price_end <= 0 | price_start == ""){
-//                alert('Please type input Price start');
-//                submit = 0;
-//            }
-            if (submit == 1) {
-                var ajax = new SmartAjax('POST', '<?=$list_page?>', 'category_id=' + category + '&pattern_id=' + pattern + '&price=' + price);
-                ajax.requestJSON("loadProduct",
-                    function (response) {
-                        var msg = response.message;
-
-                        $('#dataSpan').html(msg.content_data);
-                        $('#dataSpan').trigger("create");
-
-                    }
-                );
-            }
-
-        }
-
-        $(document).ready(function () {
-            var type = $('#type').val()
-            console.log(type)
-            if(type){
-                $('#cateogory').val(type)
-                searchProduct(type);
-            }else{
-
-                 searchProduct();
-            }
-
-        });
-
-
-        $(document).ready(function () {
-
-            $('#all').click(function () {
-                $('#pattern').val('');
-                $('#cateogory').val('');
-                $('#price').val('');
-                searchProduct();
-            });
-
-            $('#pattern').change(function () {
-                searchProduct();
-            });
-
-            $('#cateogory').change(function () {
-                searchProduct();
-            });
-
-            /*$('#price').change(function () {
-                searchProduct();
-            });
-*/
-            $('#cat_home').click(function () {
-                searchProduct(1);
-            });
-            $('#cat_wear').click(function () {
-                searchProduct(2);
-            });
-            $('#cat_fab').click(function () {
-                searchProduct(3);
-            });
-        });
-    </script>
-
-    <style>
-
-        .filterGrid {
-            margin-top: 25px;
-            font-size: 21px;
-            text-align: center;
-            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-            -moz-animation: fadein 2s; /* Firefox < 16 */
-            -ms-animation: fadein 2s; /* Internet Explorer */
-            -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-        }
-
-        @keyframes fadein {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Firefox < 16 */
-        @-moz-keyframes fadein {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Safari, Chrome and Opera > 12.1 */
-        @-webkit-keyframes fadein {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Internet Explorer */
-        @-ms-keyframes fadein {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Opera < 12.1 */
-        @-o-keyframes fadein {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-
 <section class="container clearfix">
     <div id="cont">
         <div class="collcolumn clearfix">
-	        <!--
             <div class="allitem-nav">
                 <a id="swit-btn" class="current" href="#modal" style="font-size:10px !important">VIEW ALL ITEMS</a>
             </div>
-            -->
-            <img src="images/head-img-coll1.jpg" alt="collection1" style="width:100%;">
+            <img src="images/shops/head-img-coll1.jpg" alt="collection1" style="width:100%;">
             <img src="images/cutnpaint.svg" class="cnp">
-            <a href="pdf/MYDM Catalogue.pdf" target="_blank" class="dl">download catalogue here
+            <a href="pdf/MYDM-Catalogue.pdf" target="_blank" class="dl">download catalogue here
                 > ></a>
         </div>
         <div class="collcolumn2 clearfix">
-            <div class="imgcol"><img src="images/head-img-coll3.jpg" alt="collection1"></div>
-            <div class="imgcol"><img src="images/head-img-coll2.jpg" alt="collection1"></div>
-            <div class="imgcol"><img src="images/head-img-coll51.jpg" alt="collection1"></div>
-            <div class="imgcol"><img src="images/head-img-coll4.jpg" alt="collection1"></div>
+            <div class="imgcol"><img src="images/shops/head-img-coll3.jpg" alt="collection1"></div>
+            <div class="imgcol"><img src="images/shops/head-img-coll2.jpg" alt="collection1"></div>
+            <div class="imgcol"><img src="images/shops/head-img-coll51.jpg" alt="collection1"></div>
+            <div class="imgcol"><img src="images/shops/head-img-coll4.jpg" alt="collection1"></div>
         </div>
     </div>
 
@@ -337,13 +143,10 @@ if (!$_POST) {
                     <div class="name" id="cat_fab" style="cursor: pointer">FABRIC </div>
                     <hr>
                     <p>Be creative and inspired</p>
-
                 </a>
             </article>
-
         </div>
     </div>
-
 
     <div class="centered">
         <button href="" id="all" class="button filterLink">VIEW ALL ITEMS</button>
@@ -362,11 +165,11 @@ if (!$_POST) {
     </div>
     <div id="dataSpan">
         <!-- ##################Products Item List #######################-->
-        <?= $products_list ?>
+        <?php echo $products_list ?>
 
     </div>
 
-    <div style="width:100%; text-align:center; height:60px; margin:50px 0;"><img src="images/amout-order.svg" class="amout"></div>
+    <div style="width:100%; text-align:center; height:60px; margin:50px 0;"><img src="images/shops/amout-order.svg" class="amout"></div>
 </section>
 
 <?php include 'inc-footer.php'; ?>
@@ -377,8 +180,6 @@ if (!$_POST) {
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <?php include('login.php'); ?>
 <!--------------------------- ---------------------------------------->
-
-
 <script src="js/filterGrid.js"></script>
 </body>
 </html>

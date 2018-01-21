@@ -57,7 +57,7 @@ document.onload = init();
 <body>
 <header id="header"><img src="images/logo-mydm.svg"></header>
 <div class="row">
-   <a href="studio/index.html">
+   <a href="studio/index.php">
    <div class="row1">
    		<div class="white1">
 			<h1>STUDIO</h1>
@@ -65,7 +65,7 @@ document.onload = init();
     	</div>
    </div>
    </a>
-   <a href="store/index.html">
+   <a href="store/index.php">
    <div class="row2">
       	<div class="white2">
 						<h1>STORE</h1>
