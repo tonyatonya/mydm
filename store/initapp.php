@@ -21,7 +21,7 @@
 	$DB_PASSWORD = "setup123456";
 	*/
 	$DB_USERNAME = "root";
-	$DB_PASSWORD = "1125";
+	$DB_PASSWORD = "";
 	$DB_NAME = "mydmme_db";
 	$APP_NAME = "mydm_me";
 	$APP_VERSION = "1.0";
