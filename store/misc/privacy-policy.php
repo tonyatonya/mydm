@@ -246,7 +246,8 @@ Data subjects may use their above rights by contacting MYDM at the addresses sta
         </div>
 </footer>
 
-
+<link href="../css/fixed.css" rel="stylesheet"/>
 <script type="text/javascript" src="../js/main.js" ></script>
+
 </body>
 </html>

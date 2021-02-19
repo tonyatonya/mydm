@@ -129,7 +129,6 @@
         </div>
     </div>
 </div>
-
 <div id="complete" class="std-popup modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -142,6 +141,29 @@
 	           <h4>Login Complete</h4>
             </div>
             <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+<div id="thx-complete" class="std-popup modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Thank you</h4>
+                <div class="line-section"></div>
+            </div>
+            <div class="modal-body">
+	            <div class="text-response">
+	            	- We'll get back to you within 24 hours. -
+	            </div>
+	            <div class="archer">
+		            <img src="images/addtheme/archer.png">
+	            </div>
+            </div>
+            <div class="modal-footer al-center">
+	            <button type="button" class="btn btn-primary"  data-dismiss="modal">BACK TO HOME PAGE</button>
+            </div>
         </div>
     </div>
 </div>

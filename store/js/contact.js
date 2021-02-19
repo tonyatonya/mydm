@@ -1,7 +1,7 @@
 $(".send").click(function(){
 	// check เงื่อนไขว่ากรอกครบแล้วด้วยค่อยแสดง
 	// เมื่อปิดแล้วให้ Redirect กลับไปหน้า Home ตามชื่อปุ่ม
-	$("#contact-complete").modal('show');
+	$("#thx-complete").modal('show');
 })
 function refreshCaptcha() {
 		var img = document.images['captchaimg'];

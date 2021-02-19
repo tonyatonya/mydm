@@ -2,7 +2,7 @@
 
 	error_reporting(E_ERROR);
 	ini_set("display_errors", 1);
-	
+
 	require_once "library/Common/DBConnect.php";
 	require_once "library/Common/DateTimeObj.php";
 	require_once "library/Common/Encryption.php";
@@ -21,15 +21,15 @@
 	$APP_NAME = "mydm_me";
 	$APP_VERSION = "1.0";
 	$APP_TITLE = "MYDM";
-	
+
 	$current_page="";
-	
-	$db = new DBConnect($DB_TYPE,$DB_HOST,$DB_USERNAME,$DB_PASSWORD,$DB_NAME);	
+
+	$db = new DBConnect($DB_TYPE,$DB_HOST,$DB_USERNAME,$DB_PASSWORD,$DB_NAME);
 	$user = new User();
 	if($user->checkUser() != ""){
 		$user->load();
 	}
-	
+
 	function getRealIpAddr(){
 		if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
 		{
@@ -48,7 +48,7 @@
 
 	function checkBrowser(){
 		$browser = new Browser();
-		if(($browser->getVersion() >= 7.0 and $browser->getBrowser() == "Internet Explorer") or $browser->getBrowser()=="Chrome" or  $browser->getBrowser() == "Safari" or  
+		if(($browser->getVersion() >= 7.0 and $browser->getBrowser() == "Internet Explorer") or $browser->getBrowser()=="Chrome" or  $browser->getBrowser() == "Safari" or
 				$browser->getBrowser() == "Firefox" or $browser->getBrowser() == "iPhone" or $browser->getBrowser() == "Android"){
 
 		}else

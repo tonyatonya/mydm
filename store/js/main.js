@@ -79,6 +79,10 @@ $(document).ready(function () {
 		})
 	})
 
+	$('#thx-complete').on('hidden.bs.modal', function (e){
+			window.location.href="index.php";
+		})
+
 	$("#complete").on('show.bs.modal', function (e){
 		setTimeout(function(){
 			$("#complete").modal('hide');

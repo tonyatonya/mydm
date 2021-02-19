@@ -71,14 +71,14 @@
             found to inspire people’s life by
             creatively lively pattern for everyday use.</p>
         <div class="phai"><img src="images/story/phai.jpg">
-            <p>“</p>
+            <p style="text-align:center; color:#039; font-family:'MinionPro-Bold'; font-style:italic; font-size:2rem; font-weight:600">“</p>
             <p style="text-align:center; color:#039; font-family:'MinionPro-Bold'; font-style:italic; font-size:1rem; font-weight:600">
                  There is something amazing about pattern, it’s imperfectly perfect. When u move a piece just slightly,
                 everything changes.<br>
                 When you darken the shade just a bit, the mood changes. It’s fun to make it just right, and when you got
                 a perfect pattern, it’s never perfect.
                 Pattern and colour can light up our mood, and get us inspired. </p>
-                <p>”</p>
+                <p style="text-align:center; color:#039; font-family:'MinionPro-Bold'; font-style:italic; font-size:2rem; font-weight:600">”</p>
             <img src="images/story/brushes.jpg" style="width:100%;"></div>
 </section>
 <?php include 'inc-footer.php'; ?>

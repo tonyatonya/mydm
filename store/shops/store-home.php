@@ -451,7 +451,6 @@ if (!$_POST) {
         </div>
     </div>
 
-
     <div class="centered">
         <button href="" id="all" class="button filterLink">VIEW ALL ITEMS</button>
         <select class="selectst" id="cateogory" name="cateogory">
@@ -467,8 +466,11 @@ if (!$_POST) {
             <option value="3">Brush & Brushing</option>
         </select>
     </div>
+    <a name="productview"></a>
+
     <div id="dataSpan">
         <!-- ##################Products Item List #######################-->
+
         <?= $products_list ?>
 
     </div>

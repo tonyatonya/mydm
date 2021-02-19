@@ -4,11 +4,11 @@
 
             <article class="col">
                 <div class="footer-nav">
-                    <a id="footer-btn" href="misc/faq.php">FAQ</a>
+                    <a id="footer-btn" href="faq.php">FAQ</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="misc/terms.php">TERMS</a>
+                    <a id="footer-btn" href="terms.php">TERMS</a>
                     <div id="footer-btn-bullet"></div>
-                    <a id="footer-btn" href="misc/privacy-policy.php">PRIVACY POLICY</a>
+                    <a id="footer-btn" href="privacy-policy.php">PRIVACY POLICY</a>
                 </div>
             </article>
 

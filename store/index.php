@@ -126,21 +126,21 @@ if ($db->read()) {
 	                <a id="swit-btn" class="current" href="shops/store-home.php" style="font-size:10px !important">VIEW ALL ITEMS</a>
 	            </div>
 	            <article class="col">
-	                <a href="shops/store-home.php?type=1"><img src="images/home-coll-01.jpg">
+	                <a href="shops/store-home.php?type=1#productview"><img src="images/home-coll-01.jpg">
 	                    <div class="name">HOME & LIVING</div>
 	                    <hr>
 	                    <p>Make your home happy</p></a>
 	            </article>
 
 	            <article class="col">
-	                <a href="shops/store-home.php?type=2"><img src="images/home-coll-02.jpg">
+	                <a href="shops/store-home.php?type=2#productview"><img src="images/home-coll-02.jpg">
 	                    <div class="name">WEAR</div>
 	                    <hr>
 	                    <p>Make yourself lively</p>
 	            </article>
 
 	            <article class="col">
-	                <a href="shops/store-home.php?type=3"><img src="images/home-coll-03.jpg">
+	                <a href="shops/store-home.php?type=3#productview"><img src="images/home-coll-03.jpg">
 	                    <div class="name">FABRIC</div>
 	                    <hr>
 	                    <p>Be creative and inspired</p></a>

@@ -157,8 +157,9 @@ $gold: #c6b15a;
 	    font-family: $writing;
 	    color: #1f4396;
 	    font-size: 60px;
-	    font-weight: 100px;
+	    font-weight: lighter;
 	    text-align: center;
+	    opacity: 0.8;
 	}
 	.modal-header{
 		border-bottom: none;
@@ -419,6 +420,14 @@ $gold: #c6b15a;
 			}
 		}
 	}
+}
+
+
+
+/*======================= Other Fix ============================*/
+.col4 .contain .cont li{
+	width: auto;
+	height: auto;
 }
 
 /*================================= Responsive =============================*/
